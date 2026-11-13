@@ -20,6 +20,7 @@ from astropy.utils.exceptions import AstropyWarning
 from astropy.wcs import WCS
 
 from . import cache
+from . import flags as flags_module
 from .config import settings
 from .models import ImageRecord
 
@@ -27,7 +28,7 @@ warnings.simplefilter("ignore", AstropyWarning)
 astropy_log.setLevel("WARNING")
 log = logging.getLogger(__name__)
 
-REJECT_FLAGS = {"TRANSIENT", "SUR_ERROR", "NONFUNC", "MISSING_DATA", "HOT", "COLD", "OUTLIER", "STREAK", "SNOWBALL"}
+HALF_BOX_AT_TARGET = 1
 
 
 class OffDetector(Exception):
@@ -50,11 +51,7 @@ class Region:
         return WCS(self.header).celestial
 
     def bad_mask(self) -> np.ndarray:
-        bits = 0
-        for bit, name in self.flag_names.items():
-            if name in REJECT_FLAGS:
-                bits |= 1 << bit
-        return (self.flags & bits) != 0
+        return flags_module.bad_pixels(self.flags, self.flag_names)
 
 
 def s3_url(uri: str) -> str:
@@ -71,15 +68,9 @@ def cutout_url(uri: str, center: SkyCoord, size_deg: float) -> str:
 
 
 def flag_names(header: fits.Header) -> dict[int, str]:
-    names = {}
-    for card in header.cards:
-        if card.keyword.startswith("MSKN") and card.keyword[4:].isdigit():
-            names[int(card.keyword[4:])] = str(card.value).strip()
-    return names
-
-
-def _names(mask: int, table: dict[int, str]) -> list[str]:
-    return [table.get(bit, f"BIT{bit}") for bit in range(32) if mask >> bit & 1]
+    """Bit names for this file, falling back to the standard table when the file carries no MSKN cards (QR2)."""
+    table, _ = flags_module.names_from(header)
+    return table
 
 
 def _wavelength(header: fits.Header, hdul: fits.HDUList, x: float, y: float) -> float | None:
@@ -119,9 +110,10 @@ def _extract(hdul: fits.HDUList, center: SkyCoord, target: SkyCoord, half_px: in
     if np.isfinite(tx) and np.isfinite(ty):
         wavelength = _wavelength(header, hdul, tx, ty)
         lx, ly = int(round(tx)) - x0, int(round(ty)) - y0
-        box = flags[max(ly - 1, 0):ly + 2, max(lx - 1, 0):lx + 2]
+        half = HALF_BOX_AT_TARGET
+        box = flags[max(ly - half, 0):ly + half + 1, max(lx - half, 0):lx + half + 1]
         if box.size:
-            at_target = _names(int(np.bitwise_or.reduce(box.ravel())), names)
+            at_target = flags_module.names(int(np.bitwise_or.reduce(box.ravel())), names)
 
     header["CRPIX1"] = float(header["CRPIX1"]) - x0
     header["CRPIX2"] = float(header["CRPIX2"]) - y0
