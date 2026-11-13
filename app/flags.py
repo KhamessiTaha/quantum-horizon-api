@@ -142,3 +142,14 @@ def classify(found: list[str]) -> dict[str, list[str]]:
 
 def describe(found: list[str]) -> list[str]:
     return [f"{name}: {MEANINGS[name]}" for name in found if name in MEANINGS]
+
+
+def normalise(found: list[str]) -> list[str]:
+    """Turn placeholder names kept in older caches, such as BIT2, into the standard names."""
+    out = []
+    for name in found:
+        if name.startswith("BIT") and name[3:].isdigit():
+            out.append(STANDARD_NAMES.get(int(name[3:]), name))
+        else:
+            out.append(name)
+    return out

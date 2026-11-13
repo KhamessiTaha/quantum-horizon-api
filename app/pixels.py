@@ -178,7 +178,7 @@ def _load(name: str) -> Region | None:
         header=fits.Header.fromstring(str(stored["header"])),
         flag_names={int(k): v for k, v in meta["flag_names"].items()},
         wavelength_um=meta["wavelength_um"],
-        flags_at_target=list(meta["flags_at_target"]),
+        flags_at_target=flags_module.normalise(list(meta["flags_at_target"])),
         source="cache",
     )
 

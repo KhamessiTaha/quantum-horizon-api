@@ -5,7 +5,7 @@ from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse
 
-from . import analysis, cache, flags
+from . import analysis, cache, flags, render
 from .config import settings
 from .discovery import DiscoveryError
 from .models import DetectorId, FramesResponse, LightCurveResponse, Resolved, SpectrumResponse
@@ -23,7 +23,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-IMAGE_NAME = re.compile(r"^[0-9a-f]{20}_(pass\d{1,3}|diff)\.png$")
+IMAGE_NAME = re.compile(r"^[0-9a-f]{20}_(pass\d{1,3}|diff|diff_\d{1,3}_\d{1,3})\.png$")
 
 
 def _target(target: str | None, ra: float | None, dec: float | None) -> Resolved:
@@ -101,6 +101,27 @@ def lightcurve(
 ) -> LightCurveResponse:
     view = _view(_target(target, ra, dec), det, fov)
     return analysis.light_curve(view)
+
+
+@app.get("/api/difference")
+def difference(
+    target: str | None = Query(default=None, max_length=120),
+    ra: float | None = Query(default=None, ge=0, lt=360),
+    dec: float | None = Query(default=None, ge=-90, le=90),
+    det: DetectorId = "D2",
+    fov: float = Query(default=0.06, ge=0.03, le=0.2),
+    a: int = Query(ge=1, le=200, description="earlier pass"),
+    b: int = Query(ge=1, le=200, description="later pass"),
+) -> dict:
+    """The difference between any two passes, so epochs can be added and subtracted rather than only first and last."""
+    view = _view(_target(target, ra, dec), det, fov)
+    if a == b or max(a, b) > len(view.stacks):
+        raise HTTPException(status_code=400, detail=f"This view has {len(view.stacks)} passes; pick two different ones.")
+    name = f"{view.key}_diff_{a}_{b}.png"
+    path = cache.path("images", name)
+    if not path.exists():
+        cache.write_bytes("images", name, render.difference(view.stacks[b - 1], view.stacks[a - 1]))
+    return {"image": f"/api/images/{name}", "earlier_pass": a, "later_pass": b}
 
 
 @app.get("/api/flags")

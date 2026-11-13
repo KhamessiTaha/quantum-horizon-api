@@ -46,7 +46,7 @@ def test_predicted_track_moves_north_and_matches_the_star(client):
         png = client.get(p["image"])
         assert png.status_code == 200
         assert png.headers["content-type"] == "image/png"
-        pixels = np.asarray(Image.open(io.BytesIO(png.content)), dtype=float)
+        pixels = np.asarray(Image.open(io.BytesIO(png.content)).convert("L"), dtype=float)
         x, y = p["predicted_px"]
         yy, xx = np.mgrid[0:pixels.shape[0], 0:pixels.shape[1]]
         near = np.hypot(xx - x, yy - y) <= 4

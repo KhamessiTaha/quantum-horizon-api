@@ -10,6 +10,7 @@ import numpy as np
 from PIL import Image
 
 BACKGROUND = np.array([14, 17, 22], dtype=np.float64)
+NO_DATA = np.array([32, 42, 54], dtype=np.float64)
 ARRIVED = np.array([242, 165, 65], dtype=np.float64)
 LEFT = np.array([92, 200, 255], dtype=np.float64)
 
@@ -31,11 +32,13 @@ def _png(array: np.ndarray) -> bytes:
 
 
 def grayscale(image: np.ndarray, low: float, high: float, softening: float = 10.0) -> bytes:
-    scaled = np.clip((image - low) / (high - low), 0, 1)
+    """Grey sky with blanked pixels in slate, so a saturated core reads as missing data rather than as black sky."""
+    missing = ~np.isfinite(image)
+    scaled = np.clip((np.nan_to_num(image, nan=low) - low) / (high - low), 0, 1)
     stretched = np.arcsinh(softening * scaled) / np.arcsinh(softening)
-    stretched = np.where(np.isfinite(stretched), stretched, 0.0)
-    pixels = np.flipud((stretched * 255).round().astype(np.uint8))
-    return _png(pixels)
+    grey = (stretched[..., None] * 255).repeat(3, axis=2)
+    pixels = np.where(missing[..., None], NO_DATA, grey)
+    return _png(np.flipud(pixels.round().astype(np.uint8)))
 
 
 def difference(later: np.ndarray, earlier: np.ndarray) -> bytes:
