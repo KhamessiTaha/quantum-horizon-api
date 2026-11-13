@@ -5,10 +5,10 @@ from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse
 
-from . import analysis, cache, flags, render
+from . import analysis, cache, catalog, flags, render
 from .config import settings
 from .discovery import DiscoveryError
-from .models import DetectorId, FramesResponse, LightCurveResponse, Resolved, SpectrumResponse
+from .models import CatalogResponse, CatalogSource, DetectorId, FramesResponse, LightCurveResponse, Resolved, SpectrumResponse
 from .pipeline import build_view
 from .resolve import ResolveError, coordinates, resolve_name
 from .view import NoCoverage, ViewData, prepare
@@ -35,6 +35,12 @@ def _target(target: str | None, ra: float | None, dec: float | None) -> Resolved
         except ResolveError as error:
             raise HTTPException(status_code=404, detail=str(error)) from error
     raise HTTPException(status_code=400, detail="Give a target name, or both ra and dec in degrees.")
+
+
+def _predicted_for(view: ViewData, mjd: float):
+    from .resolve import position_at
+
+    return view.center if view.target.source == "user coordinates" else position_at(view.target, mjd)
 
 
 def _view(resolved: Resolved, detector: DetectorId, fov_deg: float) -> ViewData:
@@ -122,6 +128,72 @@ def difference(
     if not path.exists():
         cache.write_bytes("images", name, render.difference(view.stacks[b - 1], view.stacks[a - 1]))
     return {"image": f"/api/images/{name}", "earlier_pass": a, "later_pass": b}
+
+
+@app.get("/api/catalog", response_model=CatalogResponse)
+def catalogue(
+    target: str | None = Query(default=None, max_length=120),
+    ra: float | None = Query(default=None, ge=0, lt=360),
+    dec: float | None = Query(default=None, ge=-90, le=90),
+    det: DetectorId = "D2",
+    fov: float = Query(default=0.06, ge=0.03, le=0.2),
+    limit_mag: float = Query(default=catalog.DEFAULT_LIMIT_MAG, ge=6, le=21),
+) -> CatalogResponse:
+    """Gaia DR3 sources over the field, each propagated to the date of the pass it is drawn on."""
+    import time as _time
+
+    started = _time.perf_counter()
+    view = _view(_target(target, ra, dec), det, fov)
+    radius = fov * 0.75
+    try:
+        rows, provider = catalog.sources(view.center.ra.deg, view.center.dec.deg, radius, limit_mag)
+    except catalog.CatalogError as error:
+        raise HTTPException(status_code=503, detail=str(error)) from error
+
+    mids = [float(sum(view.records[i].mjd for i in group) / len(group)) for group in view.groups]
+    per_pass = {index + 1: catalog.at_epoch(rows, mid) for index, mid in enumerate(mids)}
+    target_px = [view.png_px(_predicted_for(view, mid)) for mid in mids]
+
+    found: list[CatalogSource] = []
+    for order, row in enumerate(rows):
+        positions: dict[str, tuple[float, float]] = {}
+        for index, coords in per_pass.items():
+            if not len(coords):
+                continue
+            place = view.png_px(coords[order])
+            if place is None:
+                continue
+            if -2 <= place[0] <= view.shape[1] + 1 and -2 <= place[1] <= view.shape[0] + 1:
+                positions[str(index)] = place
+        if not positions:
+            continue
+        first = next(iter(positions.values()))
+        near_target = any(
+            spot is not None and abs(first[0] - spot[0]) < 2 and abs(first[1] - spot[1]) < 2 for spot in target_px
+        )
+        found.append(
+            CatalogSource(
+                source_id=row["source_id"],
+                g_mag=row["g_mag"],
+                pm_total_arcsec_per_year=round(float((row["pmra"] ** 2 + row["pmdec"] ** 2) ** 0.5) / 1000, 3),
+                positions=positions,
+                is_target=near_target,
+            )
+        )
+
+    notes = [
+        f"Gaia DR3 positions are for epoch J2016.0 and are propagated to each pass date before being drawn.",
+        f"Showing sources brighter than G = {limit_mag:.1f}; fainter ones are below what SPHEREx resolves here.",
+    ]
+    if provider.startswith("cache"):
+        notes.append("Served from the stored copy of this field." if provider == "cache" else provider)
+    return CatalogResponse(
+        provider=provider,
+        limit_mag=limit_mag,
+        sources=found,
+        notes=notes,
+        elapsed_s=round(_time.perf_counter() - started, 3),
+    )
 
 
 @app.get("/api/flags")

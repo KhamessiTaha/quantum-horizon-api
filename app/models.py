@@ -182,3 +182,19 @@ class LightCurveResponse(BaseModel):
     summary: str
     notes: list[str]
     elapsed_s: float
+
+
+class CatalogSource(BaseModel):
+    source_id: str
+    g_mag: float | None
+    pm_total_arcsec_per_year: float
+    positions: dict[str, tuple[float, float]] = Field(description="pass index to pixel in the returned PNG")
+    is_target: bool
+
+
+class CatalogResponse(BaseModel):
+    provider: str
+    limit_mag: float
+    sources: list[CatalogSource]
+    notes: list[str]
+    elapsed_s: float
