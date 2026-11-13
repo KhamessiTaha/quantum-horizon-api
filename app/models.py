@@ -198,3 +198,32 @@ class CatalogResponse(BaseModel):
     sources: list[CatalogSource]
     notes: list[str]
     elapsed_s: float
+
+
+class MoverCandidate(BaseModel):
+    label: Literal["known", "unexplained", "unchecked"]
+    explanation: str
+    catalogue_match: str | None
+    catalogue_g_mag: float | None
+    speed_arcsec_per_year: float
+    speed_error_arcsec_per_year: float
+    catalogue_speed_arcsec_per_year: float | None
+    position_angle_deg: float
+    significance: float
+    snr: float
+    ra: float
+    dec: float
+    passes: list[int]
+    track_px: dict[str, tuple[float, float]]
+
+
+class MoversResponse(BaseModel):
+    target: Resolved
+    detector: DetectorId
+    candidates: list[MoverCandidate]
+    catalogue: str
+    searched: int
+    rejected: dict[str, int]
+    limit_arcsec_per_year: float | None
+    notes: list[str]
+    elapsed_s: float

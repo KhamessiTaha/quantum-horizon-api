@@ -5,10 +5,19 @@ from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse
 
-from . import analysis, cache, catalog, flags, render
+from . import analysis, cache, catalog, flags, movers, render
 from .config import settings
 from .discovery import DiscoveryError
-from .models import CatalogResponse, CatalogSource, DetectorId, FramesResponse, LightCurveResponse, Resolved, SpectrumResponse
+from .models import (
+    CatalogResponse,
+    CatalogSource,
+    DetectorId,
+    FramesResponse,
+    LightCurveResponse,
+    MoversResponse,
+    Resolved,
+    SpectrumResponse,
+)
 from .pipeline import build_view
 from .resolve import ResolveError, coordinates, resolve_name
 from .view import NoCoverage, ViewData, prepare
@@ -193,6 +202,28 @@ def catalogue(
         sources=found,
         notes=notes,
         elapsed_s=round(_time.perf_counter() - started, 3),
+    )
+
+
+@app.get("/api/movers", response_model=MoversResponse)
+def mover_search(
+    target: str | None = Query(default=None, max_length=120),
+    ra: float | None = Query(default=None, ge=0, lt=360),
+    dec: float | None = Query(default=None, ge=-90, le=90),
+    det: DetectorId = "D2",
+    fov: float = Query(default=0.06, ge=0.03, le=0.2),
+) -> MoversResponse:
+    """Everything in this field that moved between passes, each checked against Gaia DR3."""
+    import time as _time
+
+    started = _time.perf_counter()
+    view = _view(_target(target, ra, dec), det, fov)
+    found = movers.search(view)
+    return MoversResponse(
+        target=view.target,
+        detector=view.detector,
+        elapsed_s=round(_time.perf_counter() - started, 3),
+        **found,
     )
 
 
