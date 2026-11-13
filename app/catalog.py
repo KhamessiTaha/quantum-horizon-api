@@ -48,6 +48,9 @@ def _query(ra: float, dec: float, radius_deg: float, limit_mag: float) -> list[d
     for row in table:
         def value(name: str) -> float | None:
             raw = row[name]
+            # Gaia leaves parallax and proper motion masked for sources it could not solve; those are missing, not zero.
+            if raw is None or np.ma.is_masked(raw):
+                return None
             try:
                 number = float(raw)
             except (TypeError, ValueError):
