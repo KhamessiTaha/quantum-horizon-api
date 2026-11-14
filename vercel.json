@@ -7,6 +7,5 @@
       "includeFiles": "{app/**,cache/**}",
       "excludeFiles": "{tests/**,scripts/**,.venv/**,cache/cubes/**,cache/views/**,cache/images/**}"
     }
-  },
-  "rewrites": [{ "source": "/(.*)", "destination": "/api/index" }]
+  }
 }
