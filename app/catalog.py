@@ -17,6 +17,7 @@ from astropy.coordinates import Distance, SkyCoord
 from astropy.time import Time
 
 from . import cache
+from .http import TimeoutSession
 
 log = logging.getLogger(__name__)
 
@@ -40,7 +41,7 @@ def _query(ra: float, dec: float, radius_deg: float, limit_mag: float) -> list[d
         "ORDER BY phot_g_mean_mag ASC"
     )
     try:
-        table = pyvo.dal.TAPService(GAIA_TAP).run_sync(adql, timeout=60).to_table()
+        table = pyvo.dal.TAPService(GAIA_TAP, session=TimeoutSession(60)).run_sync(adql).to_table()
     except Exception as error:  # ESA's archive, like any archive, has bad days
         raise CatalogError(f"Gaia archive unavailable: {type(error).__name__}: {str(error)[:160]}") from error
 

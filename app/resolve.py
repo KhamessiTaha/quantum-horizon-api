@@ -13,6 +13,7 @@ from astropy.time import Time
 
 from . import cache
 from .config import settings
+from .http import TimeoutSession
 from .models import Resolved
 from .targets import FEATURED, SIMBAD_IDENTIFIERS, Astrometry, featured_slug
 
@@ -47,7 +48,7 @@ def _query_simbad(identifiers: list[str]) -> Astrometry | None:
     errors = []
     for url in settings.simbad_taps:
         try:
-            table = pyvo.dal.TAPService(url).run_sync(adql, timeout=20).to_table()
+            table = pyvo.dal.TAPService(url, session=TimeoutSession(20)).run_sync(adql).to_table()
         except Exception as error:
             errors.append(f"{url}: {type(error).__name__}")
             continue
