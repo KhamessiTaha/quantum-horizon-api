@@ -4,6 +4,7 @@ All passes of one view share a single brightness scale, so a change in brightnes
 artifact of per-image stretching.
 """
 
+import base64
 import io
 
 import numpy as np
@@ -52,3 +53,7 @@ def difference(later: np.ndarray, earlier: np.ndarray) -> bytes:
     rgb = BACKGROUND + (colour - BACKGROUND) * strength
     pixels = np.flipud(rgb.round().astype(np.uint8))
     return _png(pixels)
+
+
+def data_uri(png: bytes) -> str:
+    return "data:image/png;base64," + base64.b64encode(png).decode("ascii")
