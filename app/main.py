@@ -5,7 +5,7 @@ from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse
 
-from . import analysis, cache, catalog, flags, movers, render
+from . import analysis, cache, catalog, flags, movers, nearby, render
 from .config import settings
 from .discovery import DiscoveryError
 from .models import (
@@ -72,6 +72,19 @@ def resolve(q: str = Query(min_length=1, max_length=120)) -> Resolved:
         return resolve_name(q)
     except ResolveError as error:
         raise HTTPException(status_code=404, detail=str(error)) from error
+
+
+@app.get("/api/nearby")
+def nearby_objects(
+    ra: float = Query(ge=0, lt=360),
+    dec: float = Query(ge=-90, le=90),
+    radius: float = Query(default=0.25, gt=0, le=1.0),
+) -> dict:
+    """The best-known named objects within `radius` degrees, from SIMBAD, for labelling the sky map."""
+    try:
+        return nearby.named_objects(ra, dec, radius)
+    except nearby.NearbyError as error:
+        raise HTTPException(status_code=503, detail=str(error)) from error
 
 
 @app.get("/api/frames", response_model=FramesResponse)
