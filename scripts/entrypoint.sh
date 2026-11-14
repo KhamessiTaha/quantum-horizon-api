@@ -16,4 +16,5 @@ if [ -d "$SEED" ] && [ ! -f "$CACHE/.seeded" ]; then
 fi
 
 chown -R qh "$CACHE"
+export HOME=/home/qh
 exec setpriv --reuid=qh --regid=qh --init-groups "$@"
