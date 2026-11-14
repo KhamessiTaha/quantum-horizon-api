@@ -15,4 +15,5 @@ if [ -d "$SEED" ] && [ ! -f "$CACHE/.seeded" ]; then
   echo "cache seeded from the image into $CACHE"
 fi
 
-exec "$@"
+chown -R qh "$CACHE"
+exec setpriv --reuid=qh --regid=qh --init-groups "$@"
