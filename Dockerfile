@@ -17,9 +17,9 @@ COPY cache /srv/seed-cache
 
 RUN useradd --create-home --uid 10001 qh \
     && mkdir -p /data/cache \
+    && sed -i 's/\r$//' /srv/entrypoint.sh \
     && chmod +x /srv/entrypoint.sh \
     && chown -R qh /data /srv/seed-cache
-USER qh
 
 EXPOSE 8080
 ENTRYPOINT ["/srv/entrypoint.sh"]
