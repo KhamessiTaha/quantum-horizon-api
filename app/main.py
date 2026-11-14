@@ -133,10 +133,9 @@ def difference(
     if a == b or max(a, b) > len(view.stacks):
         raise HTTPException(status_code=400, detail=f"This view has {len(view.stacks)} passes; pick two different ones.")
     name = f"{view.key}_diff_{a}_{b}.png"
-    path = cache.path("images", name)
-    if not path.exists():
-        cache.write_bytes("images", name, render.difference(view.stacks[b - 1], view.stacks[a - 1]))
-    return {"image": f"/api/images/{name}", "earlier_pass": a, "later_pass": b}
+    png = render.difference(view.stacks[b - 1], view.stacks[a - 1])
+    cache.write_bytes("images", name, png)
+    return {"image": render.data_uri(png), "earlier_pass": a, "later_pass": b}
 
 
 @app.get("/api/catalog", response_model=CatalogResponse)

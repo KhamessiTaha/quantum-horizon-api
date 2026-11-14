@@ -1,3 +1,4 @@
+import base64
 import io
 
 import numpy as np
@@ -43,10 +44,10 @@ def test_predicted_track_moves_north_and_matches_the_star(client):
     shift_px = ys[0] - ys[2]
     assert 1.2 < shift_px < 2.2
     for p in body["passes"]:
-        png = client.get(p["image"])
-        assert png.status_code == 200
-        assert png.headers["content-type"] == "image/png"
-        pixels = np.asarray(Image.open(io.BytesIO(png.content)).convert("L"), dtype=float)
+        prefix = "data:image/png;base64,"
+        assert p["image"].startswith(prefix)
+        png = base64.b64decode(p["image"][len(prefix):])
+        pixels = np.asarray(Image.open(io.BytesIO(png)).convert("L"), dtype=float)
         x, y = p["predicted_px"]
         yy, xx = np.mgrid[0:pixels.shape[0], 0:pixels.shape[1]]
         near = np.hypot(xx - x, yy - y) <= 4

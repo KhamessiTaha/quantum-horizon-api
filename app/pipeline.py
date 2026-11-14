@@ -205,7 +205,8 @@ def build_view(target: Resolved, detector: DetectorId, fov_deg: float, refresh: 
         waves = [view.wavelengths[i] for i in group if view.wavelengths[i] is not None]
         mid = _pass_mid(view, group)
         name = f"{view.key}_pass{index}.png"
-        cache.write_bytes("images", name, render.grayscale(image, low, high))
+        png = render.grayscale(image, low, high)
+        cache.write_bytes("images", name, png)
         passes.append(
             PassInfo(
                 index=index,
@@ -218,15 +219,16 @@ def build_view(target: Resolved, detector: DetectorId, fov_deg: float, refresh: 
                 wavelength_min_um=round(min(waves), 4) if waves else None,
                 wavelength_max_um=round(max(waves), 4) if waves else None,
                 predicted_px=view.png_px(_predicted(view, mid)) if view.target.source != "user coordinates" else None,
-                image=f"/api/images/{name}",
+                image=render.data_uri(png),
             )
         )
 
     difference_image = None
     if len(view.stacks) >= 2:
         name = f"{view.key}_diff.png"
-        cache.write_bytes("images", name, render.difference(view.stacks[-1], view.stacks[0]))
-        difference_image = f"/api/images/{name}"
+        png = render.difference(view.stacks[-1], view.stacks[0])
+        cache.write_bytes("images", name, png)
+        difference_image = render.data_uri(png)
     else:
         notes.append("Only one pass covers this position so far, so there is nothing to compare yet.")
 
