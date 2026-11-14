@@ -11,6 +11,7 @@ import pyvo
 
 from . import cache
 from .config import settings
+from .http import TimeoutSession
 
 log = logging.getLogger(__name__)
 
@@ -42,7 +43,7 @@ def named_objects(ra: float, dec: float, radius: float) -> dict:
     errors = []
     for url in settings.simbad_taps:
         try:
-            table = pyvo.dal.TAPService(url).run_sync(adql, timeout=25).to_table()
+            table = pyvo.dal.TAPService(url, session=TimeoutSession(25)).run_sync(adql).to_table()
         except Exception as error:
             errors.append(f"{url.split('/')[2]}: {type(error).__name__}")
             continue

@@ -16,6 +16,8 @@ class Settings:
     s3_bucket: str = os.getenv("QH_S3_BUCKET", "nasa-irsa-spherex")
     irsa_root: str = os.getenv("QH_IRSA_ROOT", "https://irsa.ipac.caltech.edu/")
     irsa_tap: str = os.getenv("QH_IRSA_TAP", "https://irsa.ipac.caltech.edu/TAP")
+    irsa_sia: str = os.getenv("QH_IRSA_SIA", "https://irsa.ipac.caltech.edu/SIA")
+    tap_timeout_s: float = float(os.getenv("QH_TAP_TIMEOUT_S", "20"))
     simbad_taps: list[str] = field(
         default_factory=lambda: _list(
             os.getenv(

@@ -26,6 +26,9 @@ def env(tmp_path, monkeypatch, dataset):
             raise discovery.DiscoveryError("IRSA TAP unavailable: 503")
         return list(records)
 
+    def fake_sia(ra, dec):
+        raise discovery.DiscoveryError("IRSA SIA unavailable (test)")
+
     def fake_s3(record, center, target, half_px):
         if record.plane_id in state["s3_fail"]:
             raise OSError("simulated S3 failure")
@@ -39,6 +42,8 @@ def env(tmp_path, monkeypatch, dataset):
         raise ResolveError("SIMBAD unreachable (test)")
 
     monkeypatch.setattr(discovery, "_query_tap", fake_tap)
+    monkeypatch.setattr(discovery, "_query_sia", fake_sia)
+    monkeypatch.setattr(discovery, "_tap_down_until", 0.0)
     monkeypatch.setattr(pixels, "_read_s3", fake_s3)
     monkeypatch.setattr(pixels, "_read_cutout", fake_cutout)
     monkeypatch.setattr(pixels.time, "sleep", lambda s: None)
