@@ -71,10 +71,15 @@ def _query_sia(ra: float, dec: float) -> list[ImageRecord]:
     service = pyvo.dal.SIA2Service(settings.irsa_sia, session=TimeoutSession(30))
     records = []
     for collection in SIA_COLLECTIONS:
-        try:
-            table = service.search(pos=(ra, dec, 0.0001), collection=collection).to_table()
-        except Exception as error:
-            raise DiscoveryError(f"IRSA SIA unavailable: {type(error).__name__}: {str(error)[:160]}") from error
+        for attempt in range(3):
+            try:
+                table = service.search(pos=(ra, dec, 0.0001), collection=collection).to_table()
+                break
+            except Exception as error:
+                if attempt == 2:
+                    raise DiscoveryError(f"IRSA SIA unavailable: {type(error).__name__}: {str(error)[:160]}") from error
+                log.warning("IRSA SIA %s failed (%s); retrying", collection, type(error).__name__)
+                time.sleep(2 * (attempt + 1))
         for row in table:
             if str(row["dataproduct_subtype"]) != "science":
                 continue
