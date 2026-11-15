@@ -171,9 +171,10 @@ def prepare(target: Resolved, detector: DetectorId, fov_deg: float, refresh: boo
     selected = [r for r in records if r.detector == detector]
     if not selected:
         raise NoCoverage(f"SPHEREx has no {detector} images covering this position yet.")
-    if len(selected) > settings.max_frames:
-        notes.append(f"{len(selected)} images available; using {settings.max_frames} spread evenly in time.")
-        selected = _even_in_time(selected, settings.max_frames)
+    limit = settings.max_frames if target.featured else settings.max_frames_new
+    if len(selected) > limit:
+        notes.append(f"{len(selected)} images available; using {limit} spread evenly in time.")
+        selected = _even_in_time(selected, limit)
 
     key = view_key(target, detector, fov_deg, selected)
     center, grid, shape = _geometry(target, fov_deg, selected)
