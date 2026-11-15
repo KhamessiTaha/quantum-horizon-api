@@ -30,6 +30,7 @@ class Settings:
     read_attempts: int = int(os.getenv("QH_READ_ATTEMPTS", "3"))
     s3_block_bytes: int = int(os.getenv("QH_S3_BLOCK_KB", "512")) * 1024
     max_frames: int = int(os.getenv("QH_MAX_FRAMES", "120"))
+    max_frames_new: int = int(os.getenv("QH_MAX_FRAMES_NEW", os.getenv("QH_MAX_FRAMES", "120")))
 
 
 settings = Settings()
