@@ -33,6 +33,8 @@ log = logging.getLogger(__name__)
 PIXEL_ARCSEC = 6.15
 FOV_DEG = 0.08
 MAX_FRAMES = 16
+DESIGNATION = re.compile(r"^[A-Za-z0-9 /()-]{1,40}$")
+SAFE = re.compile(r"[^a-z0-9]+")
 MOST_URL = "https://irsa.ipac.caltech.edu/cgi-bin/MOST/nph-most"
 DETECTORS = ["D1", "D2", "D3", "D4", "D5", "D6"]
 
@@ -94,40 +96,62 @@ def parse_most(text: str) -> list[Sighting]:
     return sorted(sightings, key=lambda s: s.mjd)
 
 
-def query_most(number: int, end: str) -> list[Sighting]:
+def most_object(designation: str, kind: str) -> dict[str, str]:
+    """How MOST names a body: numbered asteroids by NAIF ID, everything else by its JPL designation."""
+    if designation.isdigit():
+        return {"obj_name": f"{20000000 + int(designation)}:NID"}
+    return {"obj_name": designation, "obj_type": "Comet" if kind == "comet" else "Asteroid"}
+
+
+def query_most(designation: str | int, end: str, kind: str = "asteroid") -> list[Sighting]:
     params = {
         "catalog": "spherex",
         "input_type": "name_input",
-        "obj_name": f"{20000000 + number}:NID",
+        **most_object(str(designation), kind),
         "obs_begin": "2025-03-12",
         "obs_end": end,
         "output_mode": "Brief",
     }
-    response = requests.get(MOST_URL, params=params, timeout=600)
+    response = requests.get(MOST_URL, params=params, timeout=240)
     response.raise_for_status()
+    if "Object Name Error" in response.text:
+        raise TrackError(f"JPL Horizons does not recognise {designation}")
+    if "ra_obj" not in response.text:
+        return []
     return parse_most(response.text)
 
 
-def stored(name: str) -> list[Sighting] | None:
-    data = cache.read_json("track", name.lower())
+def _key(name: str, designation: str | None) -> str:
+    if name in BODIES or not designation:
+        return name.lower()
+    return "id-" + SAFE.sub("-", designation.lower())
+
+
+def stored(name: str, designation: str | None = None) -> list[Sighting] | None:
+    data = cache.read_json("track", _key(name, designation))
     return [Sighting(**s) for s in data["sightings"]] if data else None
 
 
-def store(name: str, sightings: list[Sighting]) -> None:
-    cache.write_json("track", name.lower(), {"name": name, "sightings": [s.__dict__ for s in sightings]})
+def store(name: str, sightings: list[Sighting], designation: str | None = None) -> None:
+    cache.write_json("track", _key(name, designation), {"name": name, "sightings": [s.__dict__ for s in sightings]})
 
 
-def sightings_for(name: str) -> list[Sighting]:
-    found = stored(name)
+def sightings_for(name: str, designation: str | None = None, kind: str = "asteroid") -> list[Sighting]:
+    if name in BODIES:
+        designation = str(BODIES[name])
+    if not designation or not DESIGNATION.match(designation):
+        raise TrackError(f"{name} needs a JPL designation to be tracked")
+    found = stored(name, designation)
     if found is not None:
         return found
-    if name not in BODIES:
-        raise TrackError(f"{name} is not one of the asteroids that can be blinked yet")
     try:
-        found = query_most(BODIES[name], Time.now().iso[:10])
+        found = query_most(designation, Time.now().iso[:10], kind)
+    except TrackError:
+        raise
     except Exception as error:
         raise TrackError(f"NASA's moving-object search (IRSA MOST) is not answering: {type(error).__name__}") from error
-    store(name, found)
+    if found:
+        store(name, found, designation)
     return found
 
 
@@ -153,10 +177,12 @@ def _frame(sighting: Sighting) -> dict | None:
     return {"sighting": sighting, "image": aligned, "wavelength_um": region.wavelength_um, "flags": region.flags_at_target}
 
 
-def track(name: str, detector: str) -> dict:
+def track(name: str, detector: str, designation: str | None = None, kind: str = "asteroid") -> dict:
     if detector not in DETECTORS:
         raise TrackError("unknown detector")
-    every = sightings_for(name)
+    every = sightings_for(name, designation, kind)
+    if not every:
+        raise TrackError(f"SPHEREx has not caught {name} yet, according to NASA's moving-object search")
     on_detector = [s for s in every if s.detector == detector]
     if not on_detector:
         raise TrackError(f"SPHEREx has no {detector} exposures of {name} yet")
@@ -168,6 +194,10 @@ def track(name: str, detector: str) -> dict:
 
     low, high, softening = render.shared_limits([f["image"] for f in frames])
     centre_px = (frames[0]["image"].shape[1] - 1) / 2
+    stack = processing.stack([f["image"] for f in frames])
+    stack_at = centroid(stack, centre_px, centre_px, half=2)
+    stack_snr = photometry(stack, stack_at[0], stack_at[1])[2] if stack_at is not None else 0.0
+    seen = stack_at is not None and stack_snr >= 5 and math.hypot(stack_at[0] - centre_px, stack_at[1] - centre_px) <= 2
     shifts: list[tuple[float, float]] = []
     saturated_hits = 0
     out = []
@@ -176,9 +206,10 @@ def track(name: str, detector: str) -> dict:
         found = centroid(image, centre_px, centre_px, half=3)
         offset = snr = None
         measured_at = None
-        if found is not None:
+        if found is not None and seen:
             _, _, snr = photometry(image, found[0], found[1])
-            if snr >= 5:
+            near_stack = math.hypot(found[0] - stack_at[0], found[1] - stack_at[1]) <= 1.5
+            if snr >= 5 and near_stack:
                 dx = (found[0] - centre_px) * PIXEL_ARCSEC
                 dy = (found[1] - centre_px) * PIXEL_ARCSEC
                 offset = math.hypot(dx, dy)
@@ -205,7 +236,16 @@ def track(name: str, detector: str) -> dict:
 
     count = len(shifts)
     mean = sigma = None
-    if count >= 3:
+    mags = [f["sighting"].vmag for f in frames if f["sighting"].vmag is not None]
+    typical_v = float(np.median(mags)) if mags else None
+    if not seen:
+        label = "not-measurable"
+        faint = f" JPL predicts it at about V {typical_v:.1f}, fainter than SPHEREx reaches." if typical_v and typical_v > 16 else ""
+        summary = (
+            f"Not seen on {detector}: nothing stands out at the predicted position even in the median of all {len(frames)} "
+            f"frames, where the stars cancel out and the asteroid would add up.{faint}"
+        )
+    elif count >= 3:
         arr = np.array(shifts)
         centre_shift = arr.mean(axis=0)
         error = arr.std(axis=0, ddof=1) / math.sqrt(count)
@@ -224,6 +264,7 @@ def track(name: str, detector: str) -> dict:
             label = "measured" if count >= 5 else "marginal"
     elif count:
         label = "marginal"
+        mean = None
         summary = f"Detected in only {count} of {len(out)} frames; too few to test the orbit."
     else:
         label = "not-measurable"
@@ -237,6 +278,9 @@ def track(name: str, detector: str) -> dict:
         "exposures_on_detector": len(on_detector),
         "span_days": round(span_days, 1),
         "frames": out,
+        "stack_image": render.data_uri(render.grayscale(stack, low, high, softening)),
+        "stack_snr": round(float(stack_snr), 1) if seen else None,
+        "typical_vmag": round(typical_v, 1) if typical_v is not None else None,
         "fov_deg": FOV_DEG,
         "pixel_arcsec": PIXEL_ARCSEC,
         "measurement": {"mean_offset_arcsec": mean, "sigma_arcsec": sigma, "label": label, "summary": summary},

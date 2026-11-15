@@ -93,9 +93,14 @@ def track_bodies() -> dict:
 
 
 @app.get("/api/track")
-def track_body(body: str = Query(min_length=1, max_length=40), det: DetectorId = "D2") -> dict:
+def track_body(
+    body: str = Query(min_length=1, max_length=60),
+    det: DetectorId = "D2",
+    id: str | None = Query(default=None, max_length=40),
+    kind: str = Query(default="asteroid", pattern="^(asteroid|comet)$"),
+) -> dict:
     try:
-        return track.track(body, det)
+        return track.track(body, det, id, kind)
     except track.TrackError as error:
         status = 503 if "not answering" in str(error) else 404
         raise HTTPException(status_code=status, detail=str(error)) from error
