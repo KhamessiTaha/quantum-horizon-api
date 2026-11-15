@@ -68,11 +68,11 @@ def _query_tap(ra: float, dec: float) -> list[ImageRecord]:
 
 
 def _query_sia(ra: float, dec: float) -> list[ImageRecord]:
-    service = pyvo.dal.SIA2Service(settings.irsa_sia, session=TimeoutSession(30))
     records = []
     for collection in SIA_COLLECTIONS:
         for attempt in range(3):
             try:
+                service = pyvo.dal.SIA2Service(settings.irsa_sia, session=TimeoutSession(30), check_baseurl=False)
                 table = service.search(pos=(ra, dec, 0.0001), collection=collection).to_table()
                 break
             except Exception as error:
