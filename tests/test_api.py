@@ -47,7 +47,9 @@ def test_predicted_track_moves_north_and_matches_the_star(client):
         prefix = "data:image/png;base64,"
         assert p["image"].startswith(prefix)
         png = base64.b64decode(p["image"][len(prefix):])
-        pixels = np.asarray(Image.open(io.BytesIO(png)).convert("L"), dtype=float)
+        shown = Image.open(io.BytesIO(png)).convert("L")
+        original = shown.resize((shown.width // 4, shown.height // 4), Image.BOX)
+        pixels = np.asarray(original, dtype=float)
         x, y = p["predicted_px"]
         yy, xx = np.mgrid[0:pixels.shape[0], 0:pixels.shape[1]]
         near = np.hypot(xx - x, yy - y) <= 4

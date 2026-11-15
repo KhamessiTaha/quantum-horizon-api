@@ -198,14 +198,14 @@ def build_view(target: Resolved, detector: DetectorId, fov_deg: float, refresh: 
         return response
 
     notes = list(view.notes)
-    low, high = render.shared_limits(view.stacks)
+    low, high, softening = render.shared_limits(view.stacks)
     passes: list[PassInfo] = []
     for index, (group, image) in enumerate(zip(view.groups, view.stacks), start=1):
         mjds = [view.records[i].mjd for i in group]
         waves = [view.wavelengths[i] for i in group if view.wavelengths[i] is not None]
         mid = _pass_mid(view, group)
         name = f"{view.key}_pass{index}.png"
-        png = render.grayscale(image, low, high)
+        png = render.grayscale(image, low, high, softening)
         cache.write_bytes("images", name, png)
         passes.append(
             PassInfo(
