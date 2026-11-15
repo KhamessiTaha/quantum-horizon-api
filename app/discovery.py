@@ -9,6 +9,7 @@ the older QR2.
 import logging
 import re
 import time
+from concurrent.futures import ThreadPoolExecutor
 
 import pyvo
 
@@ -23,6 +24,8 @@ RELEASE = re.compile(r"/((?:qr|dr)\d+)/", re.IGNORECASE)
 DETECTOR = re.compile(r"SPHEREx-(D[1-6])")
 SIA_COLLECTIONS = ("spherex_qr3", "spherex_dr1")
 TAP_BACKOFF_S = 300.0
+SIA_TIMEOUT_S = 60
+SIA_ATTEMPTS = 3
 
 _tap_down_until = 0.0
 
@@ -67,36 +70,42 @@ def _query_tap(ra: float, dec: float) -> list[ImageRecord]:
     return sorted(records, key=lambda r: r.mjd)
 
 
-def _query_sia(ra: float, dec: float) -> list[ImageRecord]:
+def _sia_collection(ra: float, dec: float, collection: str) -> list[ImageRecord]:
+    for attempt in range(SIA_ATTEMPTS):
+        try:
+            service = pyvo.dal.SIA2Service(settings.irsa_sia, session=TimeoutSession(SIA_TIMEOUT_S), check_baseurl=False)
+            table = service.search(pos=(ra, dec, 0.0001), collection=collection).to_table()
+            break
+        except Exception as error:
+            if attempt == SIA_ATTEMPTS - 1:
+                raise DiscoveryError(f"IRSA SIA unavailable: {type(error).__name__}: {str(error)[:160]}") from error
+            log.warning("IRSA SIA %s failed (%s); retrying", collection, type(error).__name__)
+            time.sleep(3)
     records = []
-    for collection in SIA_COLLECTIONS:
-        for attempt in range(3):
-            try:
-                service = pyvo.dal.SIA2Service(settings.irsa_sia, session=TimeoutSession(30), check_baseurl=False)
-                table = service.search(pos=(ra, dec, 0.0001), collection=collection).to_table()
-                break
-            except Exception as error:
-                if attempt == 2:
-                    raise DiscoveryError(f"IRSA SIA unavailable: {type(error).__name__}: {str(error)[:160]}") from error
-                log.warning("IRSA SIA %s failed (%s); retrying", collection, type(error).__name__)
-                time.sleep(2 * (attempt + 1))
-        for row in table:
-            if str(row["dataproduct_subtype"]) != "science":
-                continue
-            uri = str(row["access_url"])
-            detector = DETECTOR.search(str(row["energy_bandpassname"]))
-            if not uri.lower().endswith(".fits") or not detector:
-                continue
-            records.append(
-                ImageRecord(
-                    plane_id=str(row["obs_publisher_did"]),
-                    mjd=float(row["t_min"]),
-                    detector=detector.group(1),
-                    release=release_of(uri),
-                    uri=uri,
-                )
+    for row in table:
+        if str(row["dataproduct_subtype"]) != "science":
+            continue
+        uri = str(row["access_url"])
+        detector = DETECTOR.search(str(row["energy_bandpassname"]))
+        if not uri.lower().endswith(".fits") or not detector:
+            continue
+        records.append(
+            ImageRecord(
+                plane_id=str(row["obs_publisher_did"]),
+                mjd=float(row["t_min"]),
+                detector=detector.group(1),
+                release=release_of(uri),
+                uri=uri,
             )
-    return sorted(records, key=lambda r: r.mjd)
+        )
+    return records
+
+
+def _query_sia(ra: float, dec: float) -> list[ImageRecord]:
+    """Both collections at once: SIA answers in about 20 s per query, so asking one after the other doubles the wait."""
+    with ThreadPoolExecutor(max_workers=len(SIA_COLLECTIONS)) as pool:
+        parts = list(pool.map(lambda c: _sia_collection(ra, dec, c), SIA_COLLECTIONS))
+    return sorted((r for part in parts for r in part), key=lambda r: r.mjd)
 
 
 def release_of(uri: str) -> str:
