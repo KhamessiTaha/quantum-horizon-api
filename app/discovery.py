@@ -25,7 +25,8 @@ DETECTOR = re.compile(r"SPHEREx-(D[1-6])")
 SIA_COLLECTIONS = ("spherex_qr3", "spherex_dr1")
 TAP_BACKOFF_S = 300.0
 SIA_TIMEOUT_S = 60
-SIA_ATTEMPTS = 3
+SIA_BUDGET_S = 150
+SIA_PAUSE_S = 2
 
 _tap_down_until = 0.0
 
@@ -71,16 +72,22 @@ def _query_tap(ra: float, dec: float) -> list[ImageRecord]:
 
 
 def _sia_collection(ra: float, dec: float, collection: str) -> list[ImageRecord]:
-    for attempt in range(SIA_ATTEMPTS):
+    """IRSA's SIA fails in bursts of instant 502s between slow successes, so keep asking until the time budget is spent."""
+    deadline = time.monotonic() + SIA_BUDGET_S
+    attempt = 0
+    while True:
+        attempt += 1
         try:
             service = pyvo.dal.SIA2Service(settings.irsa_sia, session=TimeoutSession(SIA_TIMEOUT_S), check_baseurl=False)
             table = service.search(pos=(ra, dec, 0.0001), collection=collection).to_table()
             break
         except Exception as error:
-            if attempt == SIA_ATTEMPTS - 1:
-                raise DiscoveryError(f"IRSA SIA unavailable: {type(error).__name__}: {str(error)[:160]}") from error
+            if time.monotonic() + SIA_PAUSE_S >= deadline:
+                raise DiscoveryError(
+                    f"IRSA SIA unavailable after {attempt} tries: {type(error).__name__}: {str(error)[:160]}"
+                ) from error
             log.warning("IRSA SIA %s failed (%s); retrying", collection, type(error).__name__)
-            time.sleep(3)
+            time.sleep(SIA_PAUSE_S)
     records = []
     for row in table:
         if str(row["dataproduct_subtype"]) != "science":
