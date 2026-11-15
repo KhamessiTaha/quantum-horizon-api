@@ -26,7 +26,7 @@ def main() -> int:
             continue
         for attempt in range(3):
             try:
-                found = query_most(number, end)
+                found = query_most(str(number), end)
                 store(name, found)
                 print(f"{name}: {len(found)} exposures", flush=True)
                 break

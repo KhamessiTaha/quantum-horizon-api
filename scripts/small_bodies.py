@@ -15,7 +15,7 @@ import requests
 
 API = "https://ssd-api.jpl.nasa.gov/sbdb_query.api"
 OUT = Path(__file__).resolve().parents[2] / "src" / "data" / "smallbodies.json"
-ELEMENTS = "full_name,epoch_mjd,a,e,i,om,w,ma,diameter,class,H"
+ELEMENTS = "full_name,epoch_mjd,a,e,i,om,w,ma,diameter,class,H,pdes"
 GAUSS_DEG_PER_DAY = 0.9856076686
 
 
@@ -41,13 +41,13 @@ def name_of(full: str) -> str:
 
 
 def asteroid(row: list[str | None], group: str) -> list:
-    full, epoch, a, e, i, om, w, ma, diameter, cls, h = row
+    full, epoch, a, e, i, om, w, ma, diameter, cls, h, pdes = row
     return [name_of(full or ""), group, cls, number(epoch, 6), number(a), number(e), number(i), number(om), number(w),
-            number(ma), number(diameter, 3), number(h, 3)]
+            number(ma), number(diameter, 3), number(h, 3), pdes]
 
 
 def comet(row: list[str | None]) -> list | None:
-    full, epoch, q, e, i, om, w, tp, cls = row
+    full, epoch, q, e, i, om, w, tp, cls, pdes = row
     q_au, ecc = float(q or 0), float(e or 1)
     if ecc >= 0.99 or q_au <= 0 or float(epoch or 0) < 40000 or "D/" in (full or ""):
         return None
@@ -56,7 +56,7 @@ def comet(row: list[str | None]) -> list | None:
     epoch_jd = float(epoch) + 2400000.5
     ma = (mean_motion * (epoch_jd - float(tp))) % 360
     return [(full or "").strip(), "comet", cls, number(epoch, 6), number(a), number(ecc), number(i), number(om),
-            number(w), number(ma), None, None]
+            number(w), number(ma), None, None, pdes]
 
 
 FAMOUS = ["Bennu", "Apophis", "Ryugu", "Didymos", "Itokawa", "Eros", "Arrokoth", "Psyche"]
@@ -74,7 +74,8 @@ def named(name: str) -> list[str | None] | None:
     epoch_mjd = str(float(data["orbit"]["epoch"]) - 2400000.5)
     cls = data["object"].get("orbit_class", {}).get("code")
     return [data["object"]["fullname"], epoch_mjd, elements.get("a"), elements.get("e"), elements.get("i"),
-            elements.get("om"), elements.get("w"), elements.get("ma"), physical.get("diameter"), cls, physical.get("H")]
+            elements.get("om"), elements.get("w"), elements.get("ma"), physical.get("diameter"), cls, physical.get("H"),
+            data["object"].get("des")]
 
 
 def main() -> int:
@@ -92,7 +93,7 @@ def main() -> int:
     add([row for row in (named(n) for n in FAMOUS) if row], "famous")
     add(query({"fields": ELEMENTS, "sb-kind": "a", "sb-ns": "n", "sort": "H", "limit": "6000"}), "asteroid")
 
-    comets = query({"fields": "full_name,epoch_mjd,q,e,i,om,w,tp,class", "sb-kind": "c", "sb-ns": "n", "limit": "600"})
+    comets = query({"fields": "full_name,epoch_mjd,q,e,i,om,w,tp,class,pdes", "sb-kind": "c", "sb-ns": "n", "limit": "600"})
     for row in comets:
         entry = comet(row)
         if entry:
@@ -101,7 +102,7 @@ def main() -> int:
     rows = sorted(bodies.values(), key=lambda b: (b[11] if b[11] is not None else 99))
     payload = {
         "source": "NASA/JPL Small-Body Database (SBDB) query API",
-        "fields": ["name", "group", "class", "epoch_mjd", "a", "e", "i", "om", "w", "ma", "diameter_km", "H"],
+        "fields": ["name", "group", "class", "epoch_mjd", "a", "e", "i", "om", "w", "ma", "diameter_km", "H", "designation"],
         "bodies": rows,
     }
     OUT.write_text(json.dumps(payload, separators=(",", ":"), ensure_ascii=False), encoding="utf-8")
