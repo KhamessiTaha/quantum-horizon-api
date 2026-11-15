@@ -1,0 +1,2930 @@
+{
+ "name": "Nemausa",
+ "sightings": [
+  {
+   "ra": 267.601746,
+   "dec": -13.678196,
+   "mjd": 61113.011718782,
+   "detector": "D4",
+   "uri": "ibe/data/spherex/dr1/level2/2026W11_2A/l2b-v27-2026-234/4/level2_2026W11_2A_0319_1D4_spx_l2b-v27-2026-234.fits",
+   "plane_id": "01A0ED47-90BB-7A84-8FFC-688FC9CBC841",
+   "vmag": 12.59
+  },
+  {
+   "ra": 267.601746,
+   "dec": -13.678196,
+   "mjd": 61113.011718782,
+   "detector": "D1",
+   "uri": "ibe/data/spherex/dr1/level2/2026W11_2A/l2b-v27-2026-234/1/level2_2026W11_2A_0319_1D1_spx_l2b-v27-2026-234.fits",
+   "plane_id": "01A0ED3E-6108-7CB7-99F4-E26E038F87F5",
+   "vmag": 12.59
+  },
+  {
+   "ra": 267.602254,
+   "dec": -13.678252,
+   "mjd": 61113.013211039,
+   "detector": "D4",
+   "uri": "ibe/data/spherex/dr1/level2/2026W11_2A/l2b-v27-2026-234/4/level2_2026W11_2A_0319_2D4_spx_l2b-v27-2026-234.fits",
+   "plane_id": "01A0ED47-A28A-7BEA-8691-E48BD65AA4E4",
+   "vmag": 12.59
+  },
+  {
+   "ra": 267.602254,
+   "dec": -13.678252,
+   "mjd": 61113.013211039,
+   "detector": "D1",
+   "uri": "ibe/data/spherex/dr1/level2/2026W11_2A/l2b-v27-2026-234/1/level2_2026W11_2A_0319_2D1_spx_l2b-v27-2026-234.fits",
+   "plane_id": "01A0ED3E-6F81-7689-84BD-62CB53298E03",
+   "vmag": 12.59
+  },
+  {
+   "ra": 268.660378,
+   "dec": -13.431631,
+   "mjd": 61116.340281374505,
+   "detector": "D4",
+   "uri": "ibe/data/spherex/dr1/level2/2026W12_1A/l2b-v27-2026-235/4/level2_2026W12_1A_0250_3D4_spx_l2b-v27-2026-235.fits",
+   "plane_id": "01A0ED64-EF47-7E99-8046-571DF89D64A3",
+   "vmag": 12.56
+  },
+  {
+   "ra": 268.660378,
+   "dec": -13.431631,
+   "mjd": 61116.340281374505,
+   "detector": "D1",
+   "uri": "ibe/data/spherex/dr1/level2/2026W12_1A/l2b-v27-2026-235/1/level2_2026W12_1A_0250_3D1_spx_l2b-v27-2026-235.fits",
+   "plane_id": "01A0ED5D-533D-7861-A53C-AF4EEB4732C7",
+   "vmag": 12.56
+  },
+  {
+   "ra": 268.66086,
+   "dec": -13.431671,
+   "mjd": 61116.341773608,
+   "detector": "D4",
+   "uri": "ibe/data/spherex/dr1/level2/2026W12_1A/l2b-v27-2026-235/4/level2_2026W12_1A_0250_4D4_spx_l2b-v27-2026-235.fits",
+   "plane_id": "01A0ED65-0F23-714A-9D08-DC38E256658F",
+   "vmag": 12.56
+  },
+  {
+   "ra": 268.66086,
+   "dec": -13.431671,
+   "mjd": 61116.34177362,
+   "detector": "D1",
+   "uri": "ibe/data/spherex/dr1/level2/2026W12_1A/l2b-v27-2026-235/1/level2_2026W12_1A_0250_4D1_spx_l2b-v27-2026-235.fits",
+   "plane_id": "01A0ED5D-6549-7AC8-BF52-BD41616463D6",
+   "vmag": 12.56
+  },
+  {
+   "ra": 268.806495,
+   "dec": -13.395062,
+   "mjd": 61116.8125088745,
+   "detector": "D4",
+   "uri": "ibe/data/spherex/dr1/level2/2026W12_1A/l2b_retry-v27-2026-235/4/level2_2026W12_1A_0334_1D4_spx_l2b_retry-v27-2026-235.fits",
+   "plane_id": "01A0ED26-865E-7C3F-B8CC-0BC1F0FDD378",
+   "vmag": 12.56
+  },
+  {
+   "ra": 268.806495,
+   "dec": -13.395062,
+   "mjd": 61116.812508886,
+   "detector": "D1",
+   "uri": "ibe/data/spherex/dr1/level2/2026W12_1A/l2b-v27-2026-235/1/level2_2026W12_1A_0334_1D1_spx_l2b-v27-2026-235.fits",
+   "plane_id": "01A0ED75-65B3-7755-9AB3-166C62F48E69",
+   "vmag": 12.56
+  },
+  {
+   "ra": 268.806981,
+   "dec": -13.395118,
+   "mjd": 61116.8140011315,
+   "detector": "D4",
+   "uri": "ibe/data/spherex/dr1/level2/2026W12_1A/l2b-v27-2026-235/4/level2_2026W12_1A_0334_2D4_spx_l2b-v27-2026-235.fits",
+   "plane_id": "01A0ED7E-F738-7312-A671-D681F27A93B8",
+   "vmag": 12.56
+  },
+  {
+   "ra": 268.806981,
+   "dec": -13.395118,
+   "mjd": 61116.814001143,
+   "detector": "D1",
+   "uri": "ibe/data/spherex/dr1/level2/2026W12_1A/l2b-v27-2026-235/1/level2_2026W12_1A_0334_2D1_spx_l2b-v27-2026-235.fits",
+   "plane_id": "01A0ED75-80F8-738C-8FD9-D75E8D0DE073",
+   "vmag": 12.56
+  },
+  {
+   "ra": 268.807463,
+   "dec": -13.395167,
+   "mjd": 61116.815493388494,
+   "detector": "D4",
+   "uri": "ibe/data/spherex/dr1/level2/2026W12_1A/l2b-v27-2026-235/4/level2_2026W12_1A_0334_3D4_spx_l2b-v27-2026-235.fits",
+   "plane_id": "01A0ED7F-0AD9-79F9-9B28-F7C9DA798A8D",
+   "vmag": 12.56
+  },
+  {
+   "ra": 268.807463,
+   "dec": -13.395167,
+   "mjd": 61116.815493388494,
+   "detector": "D1",
+   "uri": "ibe/data/spherex/dr1/level2/2026W12_1A/l2b-v27-2026-235/1/level2_2026W12_1A_0334_3D1_spx_l2b-v27-2026-235.fits",
+   "plane_id": "01A0ED75-A5FF-714E-B83E-06E56E1343DE",
+   "vmag": 12.56
+  },
+  {
+   "ra": 268.807943,
+   "dec": -13.395207,
+   "mjd": 61116.8169856335,
+   "detector": "D1",
+   "uri": "ibe/data/spherex/dr1/level2/2026W12_1A/l2b-v27-2026-235/1/level2_2026W12_1A_0334_4D1_spx_l2b-v27-2026-235.fits",
+   "plane_id": "01A0ED75-C386-78A2-9D04-BCD7A1D9CBB3",
+   "vmag": 12.56
+  },
+  {
+   "ra": 268.807943,
+   "dec": -13.395207,
+   "mjd": 61116.816985645,
+   "detector": "D4",
+   "uri": "ibe/data/spherex/dr1/level2/2026W12_1A/l2b-v27-2026-235/4/level2_2026W12_1A_0334_4D4_spx_l2b-v27-2026-235.fits",
+   "plane_id": "01A0ED7F-2105-7192-853A-61DEAB054D83",
+   "vmag": 12.56
+  },
+  {
+   "ra": 268.890361,
+   "dec": -13.374124,
+   "mjd": 61117.0849163975,
+   "detector": "D1",
+   "uri": "ibe/data/spherex/dr1/level2/2026W12_1A/l2b-v27-2026-235/1/level2_2026W12_1A_0379_1D1_spx_l2b-v27-2026-235.fits",
+   "plane_id": "01A0ED82-E37F-7DD1-87A0-DF7F0C76B049",
+   "vmag": 12.55
+  },
+  {
+   "ra": 268.890361,
+   "dec": -13.374124,
+   "mjd": 61117.0849163975,
+   "detector": "D4",
+   "uri": "ibe/data/spherex/dr1/level2/2026W12_1A/l2b-v27-2026-235/4/level2_2026W12_1A_0379_1D4_spx_l2b-v27-2026-235.fits",
+   "plane_id": "01A0ED8B-523A-7FE7-86B5-A224185C7BDA",
+   "vmag": 12.55
+  },
+  {
+   "ra": 268.890843,
+   "dec": -13.374177,
+   "mjd": 61117.086408654504,
+   "detector": "D1",
+   "uri": "ibe/data/spherex/dr1/level2/2026W12_1A/l2b-v27-2026-235/1/level2_2026W12_1A_0379_2D1_spx_l2b-v27-2026-235.fits",
+   "plane_id": "01A0ED82-F4ED-76AB-9845-4C0B71CBB41D",
+   "vmag": 12.55
+  },
+  {
+   "ra": 268.890843,
+   "dec": -13.374177,
+   "mjd": 61117.086408666,
+   "detector": "D4",
+   "uri": "ibe/data/spherex/dr1/level2/2026W12_1A/l2b-v27-2026-235/4/level2_2026W12_1A_0379_2D4_spx_l2b-v27-2026-235.fits",
+   "plane_id": "01A0ED8B-61DB-7B44-A384-ECE0FCF0F534",
+   "vmag": 12.55
+  },
+  {
+   "ra": 268.891323,
+   "dec": -13.374221,
+   "mjd": 61117.0879009,
+   "detector": "D4",
+   "uri": "ibe/data/spherex/dr1/level2/2026W12_1A/l2b-v27-2026-235/4/level2_2026W12_1A_0379_3D4_spx_l2b-v27-2026-235.fits",
+   "plane_id": "01A0ED8B-73DA-7B81-8244-88852592D9E3",
+   "vmag": 12.55
+  },
+  {
+   "ra": 268.891323,
+   "dec": -13.374221,
+   "mjd": 61117.0879009115,
+   "detector": "D1",
+   "uri": "ibe/data/spherex/dr1/level2/2026W12_1A/l2b-v27-2026-235/1/level2_2026W12_1A_0379_3D1_spx_l2b-v27-2026-235.fits",
+   "plane_id": "01A0ED83-06A4-75CB-BC7D-BEBDE4808AA4",
+   "vmag": 12.55
+  },
+  {
+   "ra": 268.891799,
+   "dec": -13.374254,
+   "mjd": 61117.089393157,
+   "detector": "D1",
+   "uri": "ibe/data/spherex/dr1/level2/2026W12_1A/l2b-v27-2026-235/1/level2_2026W12_1A_0379_4D1_spx_l2b-v27-2026-235.fits",
+   "plane_id": "01A0ED83-1ADD-7FB4-B8C0-B6F5D348CC82",
+   "vmag": 12.55
+  },
+  {
+   "ra": 268.994246,
+   "dec": -13.347761,
+   "mjd": 61117.4239779255,
+   "detector": "D4",
+   "uri": "ibe/data/spherex/dr1/level2/2026W12_1A/l2b-v27-2026-235/4/level2_2026W12_1A_0435_1D4_spx_l2b-v27-2026-235.fits",
+   "plane_id": "01A0ED96-392B-7111-8211-6BE32478B2CC",
+   "vmag": 12.55
+  },
+  {
+   "ra": 268.994246,
+   "dec": -13.347761,
+   "mjd": 61117.4239779255,
+   "detector": "D1",
+   "uri": "ibe/data/spherex/dr1/level2/2026W12_1A/l2b-v27-2026-235/1/level2_2026W12_1A_0435_1D1_spx_l2b-v27-2026-235.fits",
+   "plane_id": "01A0ED8F-3BC6-7833-974F-E06A5AD9D460",
+   "vmag": 12.55
+  },
+  {
+   "ra": 268.994726,
+   "dec": -13.347815,
+   "mjd": 61117.4254701825,
+   "detector": "D4",
+   "uri": "ibe/data/spherex/dr1/level2/2026W12_1A/l2b-v27-2026-235/4/level2_2026W12_1A_0435_2D4_spx_l2b-v27-2026-235.fits",
+   "plane_id": "01A0ED96-46A4-7CAE-B0FB-3A941C0090AB",
+   "vmag": 12.55
+  },
+  {
+   "ra": 268.995204,
+   "dec": -13.347862,
+   "mjd": 61117.426962427504,
+   "detector": "D4",
+   "uri": "ibe/data/spherex/dr1/level2/2026W12_1A/l2b-v27-2026-235/4/level2_2026W12_1A_0435_3D4_spx_l2b-v27-2026-235.fits",
+   "plane_id": "01A0ED96-5564-78E9-AB36-814CA87D6101",
+   "vmag": 12.55
+  },
+  {
+   "ra": 269.222098,
+   "dec": -13.289362,
+   "mjd": 61118.173640414,
+   "detector": "D4",
+   "uri": "ibe/data/spherex/dr1/level2/2026W12_1A/l2b-v27-2026-235/4/level2_2026W12_1A_0571_3D4_spx_l2b-v27-2026-235.fits",
+   "plane_id": "01A0EDAC-BBB3-7B72-83F1-7FFF92414208",
+   "vmag": 12.54
+  },
+  {
+   "ra": 269.222569,
+   "dec": -13.289398,
+   "mjd": 61118.1751326825,
+   "detector": "D1",
+   "uri": "ibe/data/spherex/dr1/level2/2026W12_1A/l2b-v27-2026-235/1/level2_2026W12_1A_0571_4D1_spx_l2b-v27-2026-235.fits",
+   "plane_id": "01A0EDA3-A069-7D2C-9C54-0AF2646D511E",
+   "vmag": 12.54
+  },
+  {
+   "ra": 269.222569,
+   "dec": -13.289398,
+   "mjd": 61118.1751326825,
+   "detector": "D4",
+   "uri": "ibe/data/spherex/dr1/level2/2026W12_1A/l2b_retry-v27-2026-235/4/level2_2026W12_1A_0571_4D4_spx_l2b_retry-v27-2026-235.fits",
+   "plane_id": "01A0ED28-6B3E-7C91-B6EE-27AA0D61BE92",
+   "vmag": 12.54
+  },
+  {
+   "ra": 269.384531,
+   "dec": -13.246268,
+   "mjd": 61118.71369443,
+   "detector": "D4",
+   "uri": "ibe/data/spherex/dr1/level2/2026W12_2A/l2b-v27-2026-235/4/level2_2026W12_2A_0042_1D4_spx_l2b-v27-2026-235.fits",
+   "plane_id": "01A0EDC0-33FA-7774-8060-E7262169F167",
+   "vmag": 12.53
+  },
+  {
+   "ra": 269.384531,
+   "dec": -13.246268,
+   "mjd": 61118.71369443,
+   "detector": "D1",
+   "uri": "ibe/data/spherex/dr1/level2/2026W12_2A/l2b-v27-2026-235/1/level2_2026W12_2A_0042_1D1_spx_l2b-v27-2026-235.fits",
+   "plane_id": "01A0EDBC-6398-712A-BAFF-E312A879BF1E",
+   "vmag": 12.53
+  },
+  {
+   "ra": 269.385003,
+   "dec": -13.246321,
+   "mjd": 61118.715186687,
+   "detector": "D4",
+   "uri": "ibe/data/spherex/dr1/level2/2026W12_2A/l2b-v27-2026-235/4/level2_2026W12_2A_0042_2D4_spx_l2b-v27-2026-235.fits",
+   "plane_id": "01A0EDC0-4239-72EC-AF64-BA89CE52DCBE",
+   "vmag": 12.53
+  },
+  {
+   "ra": 269.385003,
+   "dec": -13.246321,
+   "mjd": 61118.7151866985,
+   "detector": "D1",
+   "uri": "ibe/data/spherex/dr1/level2/2026W12_2A/l2b-v27-2026-235/1/level2_2026W12_2A_0042_2D1_spx_l2b-v27-2026-235.fits",
+   "plane_id": "01A0EDBC-7165-7E83-9F7D-0AD490B29C66",
+   "vmag": 12.53
+  },
+  {
+   "ra": 269.385479,
+   "dec": -13.246368,
+   "mjd": 61118.716696698495,
+   "detector": "D4",
+   "uri": "ibe/data/spherex/dr1/level2/2026W12_2A/l2b_retry-v27-2026-236/4/level2_2026W12_2A_0042_3D4_spx_l2b_retry-v27-2026-236.fits",
+   "plane_id": "01A0EDB4-B9EB-719C-A8F4-1AD1799E8A0F",
+   "vmag": 12.53
+  },
+  {
+   "ra": 269.385479,
+   "dec": -13.246368,
+   "mjd": 61118.71669671,
+   "detector": "D1",
+   "uri": "ibe/data/spherex/dr1/level2/2026W12_2A/l2b-v27-2026-235/1/level2_2026W12_2A_0042_3D1_spx_l2b-v27-2026-235.fits",
+   "plane_id": "01A0EDBC-7EC5-7BBE-9AEC-D4281695596C",
+   "vmag": 12.53
+  },
+  {
+   "ra": 269.385946,
+   "dec": -13.246404,
+   "mjd": 61118.718188943996,
+   "detector": "D1",
+   "uri": "ibe/data/spherex/dr1/level2/2026W12_2A/l2b-v27-2026-235/1/level2_2026W12_2A_0042_4D1_spx_l2b-v27-2026-235.fits",
+   "plane_id": "01A0EDBC-8B5B-7704-B55D-6DEEDDA3B9E5",
+   "vmag": 12.53
+  },
+  {
+   "ra": 269.385946,
+   "dec": -13.246404,
+   "mjd": 61118.718188943996,
+   "detector": "D4",
+   "uri": "ibe/data/spherex/dr1/level2/2026W12_2A/l2b-v27-2026-235/4/level2_2026W12_2A_0042_4D4_spx_l2b-v27-2026-235.fits",
+   "plane_id": "01A0EDC0-5F5D-78C8-81E4-47E05EAE7315",
+   "vmag": 12.53
+  },
+  {
+   "ra": 269.9651,
+   "dec": -13.087323,
+   "mjd": 61120.682439951,
+   "detector": "D4",
+   "uri": "ibe/data/spherex/dr1/level2/2026W12_2A/l2b_retry-v27-2026-236/4/level2_2026W12_2A_0396_1D4_spx_l2b_retry-v27-2026-236.fits",
+   "plane_id": "01A0EDB6-A9F5-76DD-A9FA-9C565FDBFF25",
+   "vmag": 12.51
+  },
+  {
+   "ra": 269.9651,
+   "dec": -13.087323,
+   "mjd": 61120.682439951,
+   "detector": "D1",
+   "uri": "ibe/data/spherex/dr1/level2/2026W12_2A/l2b-v27-2026-235/1/level2_2026W12_2A_0396_1D1_spx_l2b-v27-2026-235.fits",
+   "plane_id": "01A0EDF7-E128-7E95-9F9B-48E7CE99C418",
+   "vmag": 12.51
+  },
+  {
+   "ra": 269.965558,
+   "dec": -13.087375,
+   "mjd": 61120.683932208,
+   "detector": "D4",
+   "uri": "ibe/data/spherex/dr1/level2/2026W12_2A/l2b-v27-2026-235/4/level2_2026W12_2A_0396_2D4_spx_l2b-v27-2026-235.fits",
+   "plane_id": "01A0EE07-AD91-7706-B5FE-CE81A4DD9FCC",
+   "vmag": 12.51
+  },
+  {
+   "ra": 269.965558,
+   "dec": -13.087375,
+   "mjd": 61120.683932208,
+   "detector": "D1",
+   "uri": "ibe/data/spherex/dr1/level2/2026W12_2A/l2b-v27-2026-235/1/level2_2026W12_2A_0396_2D1_spx_l2b-v27-2026-235.fits",
+   "plane_id": "01A0EDF7-F363-75FB-A823-59474DA101BD",
+   "vmag": 12.51
+  },
+  {
+   "ra": 269.966015,
+   "dec": -13.08742,
+   "mjd": 61120.6854244765,
+   "detector": "D4",
+   "uri": "ibe/data/spherex/dr1/level2/2026W12_2A/l2b-v27-2026-235/4/level2_2026W12_2A_0396_3D4_spx_l2b-v27-2026-235.fits",
+   "plane_id": "01A0EE07-C370-74EB-970B-D4B74B121603",
+   "vmag": 12.51
+  },
+  {
+   "ra": 269.966015,
+   "dec": -13.08742,
+   "mjd": 61120.6854244765,
+   "detector": "D1",
+   "uri": "ibe/data/spherex/dr1/level2/2026W12_2A/l2b-v27-2026-235/1/level2_2026W12_2A_0396_3D1_spx_l2b-v27-2026-235.fits",
+   "plane_id": "01A0EDF8-0B2F-71D7-8911-66BE847896AA",
+   "vmag": 12.51
+  },
+  {
+   "ra": 269.96647,
+   "dec": -13.087455,
+   "mjd": 61120.686916721505,
+   "detector": "D4",
+   "uri": "ibe/data/spherex/dr1/level2/2026W12_2A/l2b-v27-2026-235/4/level2_2026W12_2A_0396_4D4_spx_l2b-v27-2026-235.fits",
+   "plane_id": "01A0EE07-DA17-7FA4-831A-7DC3B73CD7A9",
+   "vmag": 12.51
+  },
+  {
+   "ra": 269.96647,
+   "dec": -13.087455,
+   "mjd": 61120.686916721505,
+   "detector": "D1",
+   "uri": "ibe/data/spherex/dr1/level2/2026W12_2A/l2b-v27-2026-235/1/level2_2026W12_2A_0396_4D1_spx_l2b-v27-2026-235.fits",
+   "plane_id": "01A0EDF8-2085-71C5-B678-D338D074F57C",
+   "vmag": 12.51
+  },
+  {
+   "ra": 270.043931,
+   "dec": -13.065053,
+   "mjd": 61120.954705333,
+   "detector": "D5",
+   "uri": "ibe/data/spherex/dr1/level2/2026W12_2A/l2b-v27-2026-235/5/level2_2026W12_2A_0446_1D5_spx_l2b-v27-2026-235.fits",
+   "plane_id": "01A0EE0D-4AE4-71E9-B249-C1E8B2D193F8",
+   "vmag": 12.51
+  },
+  {
+   "ra": 270.043931,
+   "dec": -13.065053,
+   "mjd": 61120.9547053445,
+   "detector": "D2",
+   "uri": "ibe/data/spherex/dr1/level2/2026W12_2A/l2b-v27-2026-235/2/level2_2026W12_2A_0446_1D2_spx_l2b-v27-2026-235.fits",
+   "plane_id": "01A0EE09-5BA1-780B-B5D8-D063A90DE19E",
+   "vmag": 12.51
+  },
+  {
+   "ra": 270.044387,
+   "dec": -13.065102,
+   "mjd": 61120.956197589505,
+   "detector": "D5",
+   "uri": "ibe/data/spherex/dr1/level2/2026W12_2A/l2b-v27-2026-235/5/level2_2026W12_2A_0446_2D5_spx_l2b-v27-2026-235.fits",
+   "plane_id": "01A0EE0D-5ECE-77EE-8422-75B82CA764D8",
+   "vmag": 12.51
+  },
+  {
+   "ra": 270.044387,
+   "dec": -13.065102,
+   "mjd": 61120.956197601496,
+   "detector": "D2",
+   "uri": "ibe/data/spherex/dr1/level2/2026W12_2A/l2b-v27-2026-235/2/level2_2026W12_2A_0446_2D2_spx_l2b-v27-2026-235.fits",
+   "plane_id": "01A0EE09-6A30-70DE-B4E2-8F3CB19CA108",
+   "vmag": 12.51
+  },
+  {
+   "ra": 270.044841,
+   "dec": -13.065142,
+   "mjd": 61120.957689835,
+   "detector": "D5",
+   "uri": "ibe/data/spherex/dr1/level2/2026W12_2A/l2b-v27-2026-235/5/level2_2026W12_2A_0446_3D5_spx_l2b-v27-2026-235.fits",
+   "plane_id": "01A0EE0D-7141-7A42-BA08-6333211143B2",
+   "vmag": 12.51
+  },
+  {
+   "ra": 270.044841,
+   "dec": -13.065142,
+   "mjd": 61120.9576898465,
+   "detector": "D2",
+   "uri": "ibe/data/spherex/dr1/level2/2026W12_2A/l2b-v27-2026-235/2/level2_2026W12_2A_0446_3D2_spx_l2b-v27-2026-235.fits",
+   "plane_id": "01A0EE09-7BF4-7A0D-95B8-8771912C5A94",
+   "vmag": 12.51
+  },
+  {
+   "ra": 270.045292,
+   "dec": -13.065171,
+   "mjd": 61120.959182092,
+   "detector": "D2",
+   "uri": "ibe/data/spherex/dr1/level2/2026W12_2A/l2b-v27-2026-235/2/level2_2026W12_2A_0446_4D2_spx_l2b-v27-2026-235.fits",
+   "plane_id": "01A0EE09-966B-77F9-B962-4FAB735DA8ED",
+   "vmag": 12.51
+  },
+  {
+   "ra": 270.045292,
+   "dec": -13.065171,
+   "mjd": 61120.9591821035,
+   "detector": "D5",
+   "uri": "ibe/data/spherex/dr1/level2/2026W12_2A/l2b-v27-2026-235/5/level2_2026W12_2A_0446_4D5_spx_l2b-v27-2026-235.fits",
+   "plane_id": "01A0EE0D-858C-76D6-97A5-6725E11E5FDC",
+   "vmag": 12.51
+  },
+  {
+   "ra": 270.063449,
+   "dec": -13.059456,
+   "mjd": 61121.0223364325,
+   "detector": "D2",
+   "uri": "ibe/data/spherex/dr1/level2/2026W12_2A/l2b-v27-2026-235/2/level2_2026W12_2A_0458_1D2_spx_l2b-v27-2026-235.fits",
+   "plane_id": "01A0EE0C-88FA-7D2F-9335-78EEE7BD19C8",
+   "vmag": 12.51
+  },
+  {
+   "ra": 270.063449,
+   "dec": -13.059456,
+   "mjd": 61121.022336444,
+   "detector": "D5",
+   "uri": "ibe/data/spherex/dr1/level2/2026W12_2A/l2b-v27-2026-235/5/level2_2026W12_2A_0458_1D5_spx_l2b-v27-2026-235.fits",
+   "plane_id": "01A0EE10-4F67-78D2-B501-0F19134DDEBA",
+   "vmag": 12.51
+  },
+  {
+   "ra": 270.141564,
+   "dec": -13.037043,
+   "mjd": 61121.2937313395,
+   "detector": "D4",
+   "uri": "ibe/data/spherex/dr1/level2/2026W12_2A/l2b-v27-2026-235/4/level2_2026W12_2A_0507_1D4_spx_l2b-v27-2026-235.fits",
+   "plane_id": "01A0EE23-6E6F-7317-9FDD-DC5314F5D231",
+   "vmag": 12.5
+  },
+  {
+   "ra": 270.141564,
+   "dec": -13.037043,
+   "mjd": 61121.2937313395,
+   "detector": "D1",
+   "uri": "ibe/data/spherex/dr1/level2/2026W12_2A/l2b-v27-2026-235/1/level2_2026W12_2A_0507_1D1_spx_l2b-v27-2026-235.fits",
+   "plane_id": "01A0EE13-FCF5-751D-85E6-F9F4CDAFB548",
+   "vmag": 12.5
+  },
+  {
+   "ra": 270.142017,
+   "dec": -13.037094,
+   "mjd": 61121.295223596506,
+   "detector": "D4",
+   "uri": "ibe/data/spherex/dr1/level2/2026W12_2A/l2b-v27-2026-235/4/level2_2026W12_2A_0507_2D4_spx_l2b-v27-2026-235.fits",
+   "plane_id": "01A0EE23-8AD4-7434-9C41-F30AEA7740AC",
+   "vmag": 12.5
+  },
+  {
+   "ra": 270.142017,
+   "dec": -13.037094,
+   "mjd": 61121.295223596506,
+   "detector": "D1",
+   "uri": "ibe/data/spherex/dr1/level2/2026W12_2A/l2b-v27-2026-235/1/level2_2026W12_2A_0507_2D1_spx_l2b-v27-2026-235.fits",
+   "plane_id": "01A0EE14-10CD-758C-9E64-048C307F90BF",
+   "vmag": 12.5
+  },
+  {
+   "ra": 270.14247,
+   "dec": -13.037137,
+   "mjd": 61121.2967158535,
+   "detector": "D4",
+   "uri": "ibe/data/spherex/dr1/level2/2026W12_2A/l2b-v27-2026-235/4/level2_2026W12_2A_0507_3D4_spx_l2b-v27-2026-235.fits",
+   "plane_id": "01A0EE23-A6F8-763C-B8B4-79B247F3D2CA",
+   "vmag": 12.5
+  },
+  {
+   "ra": 270.14247,
+   "dec": -13.037137,
+   "mjd": 61121.2967158535,
+   "detector": "D1",
+   "uri": "ibe/data/spherex/dr1/level2/2026W12_2A/l2b-v27-2026-235/1/level2_2026W12_2A_0507_3D1_spx_l2b-v27-2026-235.fits",
+   "plane_id": "01A0EE14-22FF-7050-BE8E-0D5E0C7330BB",
+   "vmag": 12.5
+  },
+  {
+   "ra": 270.14292,
+   "dec": -13.037169,
+   "mjd": 61121.298208099,
+   "detector": "D4",
+   "uri": "ibe/data/spherex/dr1/level2/2026W12_2A/l2b-v27-2026-235/4/level2_2026W12_2A_0507_4D4_spx_l2b-v27-2026-235.fits",
+   "plane_id": "01A0EE23-C289-770D-A5DB-84A159882A86",
+   "vmag": 12.5
+  },
+  {
+   "ra": 270.14292,
+   "dec": -13.037169,
+   "mjd": 61121.298208099,
+   "detector": "D1",
+   "uri": "ibe/data/spherex/dr1/level2/2026W12_2A/l2b-v27-2026-235/1/level2_2026W12_2A_0507_4D1_spx_l2b-v27-2026-235.fits",
+   "plane_id": "01A0EE14-392C-77A9-88F3-7E4F77DB7443",
+   "vmag": 12.5
+  },
+  {
+   "ra": 270.373999,
+   "dec": -12.969314,
+   "mjd": 61122.108786525,
+   "detector": "D4",
+   "uri": "ibe/data/spherex/dr1/level2/2026W13_1A/l2b-v27-2026-236/4/level2_2026W13_1A_0025_1D4_spx_l2b-v27-2026-236.fits",
+   "plane_id": "01A0EDDC-2236-7D6C-AB15-38921DD7E3CD",
+   "vmag": 12.5
+  },
+  {
+   "ra": 270.373999,
+   "dec": -12.969314,
+   "mjd": 61122.108786525,
+   "detector": "D1",
+   "uri": "ibe/data/spherex/dr1/level2/2026W13_1A/l2b-v27-2026-236/1/level2_2026W13_1A_0025_1D1_spx_l2b-v27-2026-236.fits",
+   "plane_id": "01A0EDD8-52E9-7872-9BCB-B7A376F4E258",
+   "vmag": 12.5
+  },
+  {
+   "ra": 270.640709,
+   "dec": -12.889285,
+   "mjd": 61123.058641988,
+   "detector": "D2",
+   "uri": "ibe/data/spherex/dr1/level2/2026W13_1A/l2b-v27-2026-236/2/level2_2026W13_1A_0205_1D2_spx_l2b-v27-2026-236.fits",
+   "plane_id": "01A0EDF9-825D-70CC-B450-E0D1F106869F",
+   "vmag": 12.48
+  },
+  {
+   "ra": 270.640709,
+   "dec": -12.889285,
+   "mjd": 61123.058641988,
+   "detector": "D5",
+   "uri": "ibe/data/spherex/dr1/level2/2026W13_1A/l2b-v27-2026-236/5/level2_2026W13_1A_0205_1D5_spx_l2b-v27-2026-236.fits",
+   "plane_id": "01A0EE01-6829-7013-8B7C-17A0E26F3E36",
+   "vmag": 12.48
+  },
+  {
+   "ra": 270.64115,
+   "dec": -12.889335,
+   "mjd": 61123.060134245,
+   "detector": "D5",
+   "uri": "ibe/data/spherex/dr1/level2/2026W13_1A/l2b-v27-2026-236/5/level2_2026W13_1A_0205_2D5_spx_l2b-v27-2026-236.fits",
+   "plane_id": "01A0EE01-86F4-757F-8C76-E90E1D2C66E5",
+   "vmag": 12.48
+  },
+  {
+   "ra": 270.64115,
+   "dec": -12.889335,
+   "mjd": 61123.060134245,
+   "detector": "D2",
+   "uri": "ibe/data/spherex/dr1/level2/2026W13_1A/l2b-v27-2026-236/2/level2_2026W13_1A_0205_2D2_spx_l2b-v27-2026-236.fits",
+   "plane_id": "01A0EDF9-93BA-7D5F-9BC7-2A0957D87A1E",
+   "vmag": 12.48
+  },
+  {
+   "ra": 270.64159,
+   "dec": -12.889378,
+   "mjd": 61123.0616265015,
+   "detector": "D5",
+   "uri": "ibe/data/spherex/dr1/level2/2026W13_1A/l2b-v27-2026-236/5/level2_2026W13_1A_0205_3D5_spx_l2b-v27-2026-236.fits",
+   "plane_id": "01A0EE01-A436-7EA9-9E7F-2A487E039431",
+   "vmag": 12.48
+  },
+  {
+   "ra": 270.64159,
+   "dec": -12.889378,
+   "mjd": 61123.0616265015,
+   "detector": "D2",
+   "uri": "ibe/data/spherex/dr1/level2/2026W13_1A/l2b-v27-2026-236/2/level2_2026W13_1A_0205_3D2_spx_l2b-v27-2026-236.fits",
+   "plane_id": "01A0EDF9-A757-793D-9A09-5C1AC21431E7",
+   "vmag": 12.48
+  },
+  {
+   "ra": 270.642029,
+   "dec": -12.889411,
+   "mjd": 61123.063118747,
+   "detector": "D2",
+   "uri": "ibe/data/spherex/dr1/level2/2026W13_1A/l2b-v27-2026-236/2/level2_2026W13_1A_0205_4D2_spx_l2b-v27-2026-236.fits",
+   "plane_id": "01A0EDF9-BBFE-77C8-84C0-2A1B21AB6B2B",
+   "vmag": 12.48
+  },
+  {
+   "ra": 270.642029,
+   "dec": -12.889411,
+   "mjd": 61123.063118747,
+   "detector": "D5",
+   "uri": "ibe/data/spherex/dr1/level2/2026W13_1A/l2b-v27-2026-236/5/level2_2026W13_1A_0205_4D5_spx_l2b-v27-2026-236.fits",
+   "plane_id": "01A0EE01-BEAD-7AF3-AE0F-C57A046C36F5",
+   "vmag": 12.48
+  },
+  {
+   "ra": 270.772561,
+   "dec": -12.848906,
+   "mjd": 61123.534209268,
+   "detector": "D2",
+   "uri": "ibe/data/spherex/dr1/level2/2026W13_1A/l2b-v27-2026-236/2/level2_2026W13_1A_0290_1D2_spx_l2b-v27-2026-236.fits",
+   "plane_id": "01A0EE10-E232-7D69-B00C-94F578D266F7",
+   "vmag": 12.48
+  },
+  {
+   "ra": 270.772561,
+   "dec": -12.848906,
+   "mjd": 61123.5342092795,
+   "detector": "D5",
+   "uri": "ibe/data/spherex/dr1/level2/2026W13_1A/l2b-v27-2026-236/5/level2_2026W13_1A_0290_1D5_spx_l2b-v27-2026-236.fits",
+   "plane_id": "01A0EE17-5E97-7B6E-B677-DBD8386BE65F",
+   "vmag": 12.48
+  },
+  {
+   "ra": 270.772999,
+   "dec": -12.848955,
+   "mjd": 61123.535701525,
+   "detector": "D5",
+   "uri": "ibe/data/spherex/dr1/level2/2026W13_1A/l2b-v27-2026-236/5/level2_2026W13_1A_0290_2D5_spx_l2b-v27-2026-236.fits",
+   "plane_id": "01A0EE17-701F-772A-B469-D2E4A4AF9CEC",
+   "vmag": 12.48
+  },
+  {
+   "ra": 270.772999,
+   "dec": -12.848955,
+   "mjd": 61123.535701525,
+   "detector": "D2",
+   "uri": "ibe/data/spherex/dr1/level2/2026W13_1A/l2b-v27-2026-236/2/level2_2026W13_1A_0290_2D2_spx_l2b-v27-2026-236.fits",
+   "plane_id": "01A0EE10-F5BA-73A8-99A8-961DC446B20E",
+   "vmag": 12.48
+  },
+  {
+   "ra": 270.773435,
+   "dec": -12.848995,
+   "mjd": 61123.53719377,
+   "detector": "D2",
+   "uri": "ibe/data/spherex/dr1/level2/2026W13_1A/l2b-v27-2026-236/2/level2_2026W13_1A_0290_3D2_spx_l2b-v27-2026-236.fits",
+   "plane_id": "01A0EE11-101B-7DD6-9D8B-316DD3D4792A",
+   "vmag": 12.48
+  },
+  {
+   "ra": 270.773435,
+   "dec": -12.848995,
+   "mjd": 61123.537193782,
+   "detector": "D5",
+   "uri": "ibe/data/spherex/dr1/level2/2026W13_1A/l2b-v27-2026-236/5/level2_2026W13_1A_0290_3D5_spx_l2b-v27-2026-236.fits",
+   "plane_id": "01A0EE17-810F-7C74-8F11-D17E967670B3",
+   "vmag": 12.48
+  },
+  {
+   "ra": 270.77387,
+   "dec": -12.849025,
+   "mjd": 61123.538686039,
+   "detector": "D2",
+   "uri": "ibe/data/spherex/dr1/level2/2026W13_1A/l2b-v27-2026-236/2/level2_2026W13_1A_0290_4D2_spx_l2b-v27-2026-236.fits",
+   "plane_id": "01A0EE11-25CB-7985-9C46-D3D2773770CE",
+   "vmag": 12.48
+  },
+  {
+   "ra": 270.77387,
+   "dec": -12.849025,
+   "mjd": 61123.538686039,
+   "detector": "D5",
+   "uri": "ibe/data/spherex/dr1/level2/2026W13_1A/l2b-v27-2026-236/5/level2_2026W13_1A_0290_4D5_spx_l2b-v27-2026-236.fits",
+   "plane_id": "01A0EE17-976B-77D6-B029-A3CBB1E6C755",
+   "vmag": 12.48
+  },
+  {
+   "ra": 270.809928,
+   "dec": -12.837311,
+   "mjd": 61123.6697557265,
+   "detector": "D5",
+   "uri": "ibe/data/spherex/dr1/level2/2026W13_1A/l2b-v27-2026-236/5/level2_2026W13_1A_0316_1D5_spx_l2b-v27-2026-236.fits",
+   "plane_id": "01A0EE1D-E9F0-7052-AA9C-76FA082B4964",
+   "vmag": 12.48
+  },
+  {
+   "ra": 270.809928,
+   "dec": -12.837311,
+   "mjd": 61123.6697557265,
+   "detector": "D2",
+   "uri": "ibe/data/spherex/dr1/level2/2026W13_1A/l2b-v27-2026-236/2/level2_2026W13_1A_0316_1D2_spx_l2b-v27-2026-236.fits",
+   "plane_id": "01A0EE16-446A-7A12-A5AE-1E1ECFEE70DB",
+   "vmag": 12.48
+  },
+  {
+   "ra": 270.810364,
+   "dec": -12.837361,
+   "mjd": 61123.671247983,
+   "detector": "D5",
+   "uri": "ibe/data/spherex/dr1/level2/2026W13_1A/l2b-v27-2026-236/5/level2_2026W13_1A_0316_2D5_spx_l2b-v27-2026-236.fits",
+   "plane_id": "01A0EE1E-007F-7F62-990A-399EC00FBDC4",
+   "vmag": 12.48
+  },
+  {
+   "ra": 270.810364,
+   "dec": -12.837361,
+   "mjd": 61123.671247983,
+   "detector": "D2",
+   "uri": "ibe/data/spherex/dr1/level2/2026W13_1A/l2b-v27-2026-236/2/level2_2026W13_1A_0316_2D2_spx_l2b-v27-2026-236.fits",
+   "plane_id": "01A0EE16-520C-7C68-AB4B-E8520B167606",
+   "vmag": 12.48
+  },
+  {
+   "ra": 270.8108,
+   "dec": -12.837403,
+   "mjd": 61123.67274024,
+   "detector": "D5",
+   "uri": "ibe/data/spherex/dr1/level2/2026W13_1A/l2b-v27-2026-236/5/level2_2026W13_1A_0316_3D5_spx_l2b-v27-2026-236.fits",
+   "plane_id": "01A0EE1E-11C9-7436-AEE9-90E8CE946911",
+   "vmag": 12.48
+  },
+  {
+   "ra": 270.8108,
+   "dec": -12.837403,
+   "mjd": 61123.67274024,
+   "detector": "D2",
+   "uri": "ibe/data/spherex/dr1/level2/2026W13_1A/l2b-v27-2026-236/2/level2_2026W13_1A_0316_3D2_spx_l2b-v27-2026-236.fits",
+   "plane_id": "01A0EE16-5F0D-74FD-80D5-320B33C3948E",
+   "vmag": 12.48
+  },
+  {
+   "ra": 270.811234,
+   "dec": -12.837434,
+   "mjd": 61123.6742324855,
+   "detector": "D5",
+   "uri": "ibe/data/spherex/dr1/level2/2026W13_1A/l2b-v27-2026-236/5/level2_2026W13_1A_0316_4D5_spx_l2b-v27-2026-236.fits",
+   "plane_id": "01A0EE1E-21EA-767E-B02E-908258467122",
+   "vmag": 12.48
+  },
+  {
+   "ra": 270.811234,
+   "dec": -12.837434,
+   "mjd": 61123.6742324855,
+   "detector": "D2",
+   "uri": "ibe/data/spherex/dr1/level2/2026W13_1A/l2b-v27-2026-236/2/level2_2026W13_1A_0316_4D2_spx_l2b-v27-2026-236.fits",
+   "plane_id": "01A0EE16-6BFA-73AC-8B4D-B390B7C240C2",
+   "vmag": 12.48
+  },
+  {
+   "ra": 270.884735,
+   "dec": -12.814101,
+   "mjd": 61123.942056652,
+   "detector": "D5",
+   "uri": "ibe/data/spherex/dr1/level2/2026W13_1A/l2b-v27-2026-236/5/level2_2026W13_1A_0372_1D5_spx_l2b-v27-2026-236.fits",
+   "plane_id": "01A0EE2B-1CDF-780E-9B17-8FB0C396CD23",
+   "vmag": 12.47
+  },
+  {
+   "ra": 270.884735,
+   "dec": -12.814101,
+   "mjd": 61123.942056652,
+   "detector": "D2",
+   "uri": "ibe/data/spherex/dr1/level2/2026W13_1A/l2b-v27-2026-236/2/level2_2026W13_1A_0372_1D2_spx_l2b-v27-2026-236.fits",
+   "plane_id": "01A0EE21-F37D-7C9E-B5A5-09C6DE5152AF",
+   "vmag": 12.47
+  },
+  {
+   "ra": 270.885169,
+   "dec": -12.814147,
+   "mjd": 61123.943548909,
+   "detector": "D5",
+   "uri": "ibe/data/spherex/dr1/level2/2026W13_1A/l2b-v27-2026-236/5/level2_2026W13_1A_0372_2D5_spx_l2b-v27-2026-236.fits",
+   "plane_id": "01A0EE2B-2F91-779F-84B9-C05B23EB10B7",
+   "vmag": 12.47
+  },
+  {
+   "ra": 270.885169,
+   "dec": -12.814147,
+   "mjd": 61123.943548909,
+   "detector": "D2",
+   "uri": "ibe/data/spherex/dr1/level2/2026W13_1A/l2b-v27-2026-236/2/level2_2026W13_1A_0372_2D2_spx_l2b-v27-2026-236.fits",
+   "plane_id": "01A0EE22-0471-7E13-851D-4872573727B5",
+   "vmag": 12.47
+  },
+  {
+   "ra": 271.28787,
+   "dec": -12.68481,
+   "mjd": 61125.434204673,
+   "detector": "D2",
+   "uri": "ibe/data/spherex/dr1/level2/2026W13_1A/l2b-v27-2026-236/2/level2_2026W13_1A_0662_1D2_spx_l2b-v27-2026-236.fits",
+   "plane_id": "01A0EE53-F6C5-71C7-BAB6-CEA62A5E8655",
+   "vmag": 12.45
+  },
+  {
+   "ra": 271.28787,
+   "dec": -12.68481,
+   "mjd": 61125.4342046845,
+   "detector": "D5",
+   "uri": "ibe/data/spherex/dr1/level2/2026W13_1A/l2b-v27-2026-236/5/level2_2026W13_1A_0662_1D5_spx_l2b-v27-2026-236.fits",
+   "plane_id": "01A0EE5A-521F-7760-BC6D-0F5AA9104FB6",
+   "vmag": 12.45
+  },
+  {
+   "ra": 271.288294,
+   "dec": -12.684861,
+   "mjd": 61125.43569693,
+   "detector": "D5",
+   "uri": "ibe/data/spherex/dr1/level2/2026W13_1A/l2b-v27-2026-236/5/level2_2026W13_1A_0662_2D5_spx_l2b-v27-2026-236.fits",
+   "plane_id": "01A0EE5A-5CEB-72ED-8680-E36B88B6AF9D",
+   "vmag": 12.45
+  },
+  {
+   "ra": 271.288294,
+   "dec": -12.684861,
+   "mjd": 61125.43569693,
+   "detector": "D2",
+   "uri": "ibe/data/spherex/dr1/level2/2026W13_1A/l2b-v27-2026-236/2/level2_2026W13_1A_0662_2D2_spx_l2b-v27-2026-236.fits",
+   "plane_id": "01A0EE54-0357-7938-832A-340B6EE7211C",
+   "vmag": 12.45
+  },
+  {
+   "ra": 271.288717,
+   "dec": -12.684906,
+   "mjd": 61125.437189187,
+   "detector": "D5",
+   "uri": "ibe/data/spherex/dr1/level2/2026W13_1A/l2b-v27-2026-236/5/level2_2026W13_1A_0662_3D5_spx_l2b-v27-2026-236.fits",
+   "plane_id": "01A0EE5A-6829-7009-98E4-FACB401B5C38",
+   "vmag": 12.45
+  },
+  {
+   "ra": 271.288717,
+   "dec": -12.684906,
+   "mjd": 61125.437189187,
+   "detector": "D2",
+   "uri": "ibe/data/spherex/dr1/level2/2026W13_1A/l2b-v27-2026-236/2/level2_2026W13_1A_0662_3D2_spx_l2b-v27-2026-236.fits",
+   "plane_id": "01A0EE54-127A-7447-8F69-3F0735A03D8E",
+   "vmag": 12.45
+  },
+  {
+   "ra": 271.28914,
+   "dec": -12.684942,
+   "mjd": 61125.438681444,
+   "detector": "D2",
+   "uri": "ibe/data/spherex/dr1/level2/2026W13_1A/l2b-v27-2026-236/2/level2_2026W13_1A_0662_4D2_spx_l2b-v27-2026-236.fits",
+   "plane_id": "01A0EE54-20C7-745A-8083-8B04F1A5F9FF",
+   "vmag": 12.45
+  },
+  {
+   "ra": 271.28914,
+   "dec": -12.684942,
+   "mjd": 61125.438681444,
+   "detector": "D5",
+   "uri": "ibe/data/spherex/dr1/level2/2026W13_1A/l2b-v27-2026-236/5/level2_2026W13_1A_0662_4D5_spx_l2b-v27-2026-236.fits",
+   "plane_id": "01A0EE5A-7303-78A6-AC01-84F141EEC450",
+   "vmag": 12.45
+  },
+  {
+   "ra": 271.306181,
+   "dec": -12.678908,
+   "mjd": 61125.502937208,
+   "detector": "D2",
+   "uri": "ibe/data/spherex/dr1/level2/2026W13_2A/l2b-v27-2026-237/2/level2_2026W13_2A_0001_1D2_spx_l2b-v27-2026-237.fits",
+   "plane_id": "01A0F2E3-1B1F-70DF-8D7F-6045A9B73321",
+   "vmag": 12.45
+  },
+  {
+   "ra": 271.306181,
+   "dec": -12.678908,
+   "mjd": 61125.502937208,
+   "detector": "D5",
+   "uri": "ibe/data/spherex/dr1/level2/2026W13_2A/l2b-v27-2026-237/5/level2_2026W13_2A_0001_1D5_spx_l2b-v27-2026-237.fits",
+   "plane_id": "01A0F2ED-6BE7-7B5C-85A7-67038AAC03FD",
+   "vmag": 12.45
+  },
+  {
+   "ra": 271.43199,
+   "dec": -12.637245,
+   "mjd": 61125.9780781915,
+   "detector": "D3",
+   "uri": "ibe/data/spherex/dr1/level2/2026W13_2A/l2b-v27-2026-237/3/level2_2026W13_2A_0100_1D3_spx_l2b-v27-2026-237.fits",
+   "plane_id": "01A0F313-B0F8-7B56-8EE3-183B6BA6A347",
+   "vmag": 12.45
+  },
+  {
+   "ra": 271.43199,
+   "dec": -12.637245,
+   "mjd": 61125.9780781915,
+   "detector": "D6",
+   "uri": "ibe/data/spherex/dr1/level2/2026W13_2A/l2b-v27-2026-237/6/level2_2026W13_2A_0100_1D6_spx_l2b-v27-2026-237.fits",
+   "plane_id": "01A0F319-53E1-7E39-85F1-C702AE42444A",
+   "vmag": 12.45
+  },
+  {
+   "ra": 271.432409,
+   "dec": -12.637293,
+   "mjd": 61125.9795704485,
+   "detector": "D3",
+   "uri": "ibe/data/spherex/dr1/level2/2026W13_2A/l2b-v27-2026-237/3/level2_2026W13_2A_0100_2D3_spx_l2b-v27-2026-237.fits",
+   "plane_id": "01A0F313-D060-76D7-B77A-EDA83ADCCF46",
+   "vmag": 12.45
+  },
+  {
+   "ra": 271.432409,
+   "dec": -12.637293,
+   "mjd": 61125.9795704485,
+   "detector": "D6",
+   "uri": "ibe/data/spherex/dr1/level2/2026W13_2A/l2b-v27-2026-237/6/level2_2026W13_2A_0100_2D6_spx_l2b-v27-2026-237.fits",
+   "plane_id": "01A0F319-6E13-7D73-871E-404228403781",
+   "vmag": 12.45
+  },
+  {
+   "ra": 271.432828,
+   "dec": -12.637334,
+   "mjd": 61125.981062694,
+   "detector": "D6",
+   "uri": "ibe/data/spherex/dr1/level2/2026W13_2A/l2b-v27-2026-237/6/level2_2026W13_2A_0100_3D6_spx_l2b-v27-2026-237.fits",
+   "plane_id": "01A0F319-8F91-7A6A-A765-D2DC40BA5549",
+   "vmag": 12.45
+  },
+  {
+   "ra": 271.432828,
+   "dec": -12.637334,
+   "mjd": 61125.9810627055,
+   "detector": "D3",
+   "uri": "ibe/data/spherex/dr1/level2/2026W13_2A/l2b-v27-2026-237/3/level2_2026W13_2A_0100_3D3_spx_l2b-v27-2026-237.fits",
+   "plane_id": "01A0F313-EEAA-7D2D-AE41-AEEE98891B66",
+   "vmag": 12.45
+  },
+  {
+   "ra": 271.433247,
+   "dec": -12.637363,
+   "mjd": 61125.982554951,
+   "detector": "D6",
+   "uri": "ibe/data/spherex/dr1/level2/2026W13_2A/l2b-v27-2026-237/6/level2_2026W13_2A_0100_4D6_spx_l2b-v27-2026-237.fits",
+   "plane_id": "01A0F319-A8EF-7311-B965-C8DB29CEA64A",
+   "vmag": 12.45
+  },
+  {
+   "ra": 271.433247,
+   "dec": -12.637363,
+   "mjd": 61125.982554962495,
+   "detector": "D3",
+   "uri": "ibe/data/spherex/dr1/level2/2026W13_2A/l2b-v27-2026-237/3/level2_2026W13_2A_0100_4D3_spx_l2b-v27-2026-237.fits",
+   "plane_id": "01A0F314-117C-7A04-9333-DC6612F529D0",
+   "vmag": 12.45
+  },
+  {
+   "ra": 271.485681,
+   "dec": -12.619332,
+   "mjd": 61126.182179534,
+   "detector": "D6",
+   "uri": "ibe/data/spherex/dr1/level2/2026W13_2A/l2b-v27-2026-237/6/level2_2026W13_2A_0140_1D6_spx_l2b-v27-2026-237.fits",
+   "plane_id": "01A0F326-5F3E-76C4-A418-65784CBBF948",
+   "vmag": 12.45
+  },
+  {
+   "ra": 271.485681,
+   "dec": -12.619332,
+   "mjd": 61126.182179534,
+   "detector": "D3",
+   "uri": "ibe/data/spherex/dr1/level2/2026W13_2A/l2b-v27-2026-237/3/level2_2026W13_2A_0140_1D3_spx_l2b-v27-2026-237.fits",
+   "plane_id": "01A0F321-0473-7BDA-BB15-5B8D9BD408D7",
+   "vmag": 12.45
+  },
+  {
+   "ra": 271.486099,
+   "dec": -12.619379,
+   "mjd": 61126.183671791,
+   "detector": "D6",
+   "uri": "ibe/data/spherex/dr1/level2/2026W13_2A/l2b-v27-2026-237/6/level2_2026W13_2A_0140_2D6_spx_l2b-v27-2026-237.fits",
+   "plane_id": "01A0F326-8096-7105-BDBD-C52A2FD1634F",
+   "vmag": 12.45
+  },
+  {
+   "ra": 271.486099,
+   "dec": -12.619379,
+   "mjd": 61126.183671791,
+   "detector": "D3",
+   "uri": "ibe/data/spherex/dr1/level2/2026W13_2A/l2b-v27-2026-237/3/level2_2026W13_2A_0140_2D3_spx_l2b-v27-2026-237.fits",
+   "plane_id": "01A0F321-213F-7630-A3CA-2D1A0684D691",
+   "vmag": 12.45
+  },
+  {
+   "ra": 271.486517,
+   "dec": -12.619416,
+   "mjd": 61126.185164048,
+   "detector": "D6",
+   "uri": "ibe/data/spherex/dr1/level2/2026W13_2A/l2b-v27-2026-237/6/level2_2026W13_2A_0140_3D6_spx_l2b-v27-2026-237.fits",
+   "plane_id": "01A0F326-9A05-7226-8F62-87FC84D842CA",
+   "vmag": 12.45
+  },
+  {
+   "ra": 271.486517,
+   "dec": -12.619416,
+   "mjd": 61126.185164048,
+   "detector": "D3",
+   "uri": "ibe/data/spherex/dr1/level2/2026W13_2A/l2b-v27-2026-237/3/level2_2026W13_2A_0140_3D3_spx_l2b-v27-2026-237.fits",
+   "plane_id": "01A0F321-3862-7698-8FD4-95FEE4ECDD97",
+   "vmag": 12.45
+  },
+  {
+   "ra": 271.974972,
+   "dec": -12.449933,
+   "mjd": 61128.0822459115,
+   "detector": "D5",
+   "uri": "ibe/data/spherex/dr1/level2/2026W13_2A/l2b-v27-2026-237/5/level2_2026W13_2A_0506_1D5_spx_l2b-v27-2026-237.fits",
+   "plane_id": "01A0F3B9-47C7-7282-845D-046F5F5AEDD5",
+   "vmag": 12.42
+  },
+  {
+   "ra": 271.974972,
+   "dec": -12.449933,
+   "mjd": 61128.0822459115,
+   "detector": "D2",
+   "uri": "ibe/data/spherex/dr1/level2/2026W13_2A/l2b-v27-2026-237/2/level2_2026W13_2A_0506_1D2_spx_l2b-v27-2026-237.fits",
+   "plane_id": "01A0F3B9-0DD3-78D2-8E8A-D658F923E50C",
+   "vmag": 12.42
+  },
+  {
+   "ra": 271.975375,
+   "dec": -12.449981,
+   "mjd": 61128.0837381685,
+   "detector": "D5",
+   "uri": "ibe/data/spherex/dr1/level2/2026W13_2A/l2b-v27-2026-237/5/level2_2026W13_2A_0506_2D5_spx_l2b-v27-2026-237.fits",
+   "plane_id": "01A0F3B9-58B7-779F-92C7-8B40558D7016",
+   "vmag": 12.42
+  },
+  {
+   "ra": 271.975375,
+   "dec": -12.449981,
+   "mjd": 61128.0837381685,
+   "detector": "D2",
+   "uri": "ibe/data/spherex/dr1/level2/2026W13_2A/l2b-v27-2026-237/2/level2_2026W13_2A_0506_2D2_spx_l2b-v27-2026-237.fits",
+   "plane_id": "01A0F3B9-1C3F-76B3-AEBA-7B39AD8D244D",
+   "vmag": 12.42
+  },
+  {
+   "ra": 271.975778,
+   "dec": -12.450023,
+   "mjd": 61128.085230414,
+   "detector": "D2",
+   "uri": "ibe/data/spherex/dr1/level2/2026W13_2A/l2b-v27-2026-237/2/level2_2026W13_2A_0506_3D2_spx_l2b-v27-2026-237.fits",
+   "plane_id": "01A0F3B9-2574-7CFA-BFC4-155BE0A1ACE3",
+   "vmag": 12.42
+  },
+  {
+   "ra": 271.975778,
+   "dec": -12.450023,
+   "mjd": 61128.085230425495,
+   "detector": "D5",
+   "uri": "ibe/data/spherex/dr1/level2/2026W13_2A/l2b-v27-2026-237/5/level2_2026W13_2A_0506_3D5_spx_l2b-v27-2026-237.fits",
+   "plane_id": "01A0F3B9-6127-7F66-BF37-4E2BA94ECC46",
+   "vmag": 12.42
+  },
+  {
+   "ra": 271.976182,
+   "dec": -12.450055,
+   "mjd": 61128.0867226705,
+   "detector": "D5",
+   "uri": "ibe/data/spherex/dr1/level2/2026W13_2A/l2b-v27-2026-237/5/level2_2026W13_2A_0506_4D5_spx_l2b-v27-2026-237.fits",
+   "plane_id": "01A0F3B9-75BB-7D67-9043-A4F570AB92BF",
+   "vmag": 12.42
+  },
+  {
+   "ra": 271.976182,
+   "dec": -12.450055,
+   "mjd": 61128.0867226705,
+   "detector": "D2",
+   "uri": "ibe/data/spherex/dr1/level2/2026W13_2A/l2b-v27-2026-237/2/level2_2026W13_2A_0506_4D2_spx_l2b-v27-2026-237.fits",
+   "plane_id": "01A0F3B9-38A6-7A79-AD14-4F3F7C155189",
+   "vmag": 12.42
+  },
+  {
+   "ra": 272.33051,
+   "dec": -12.320659,
+   "mjd": 61129.511683562,
+   "detector": "D6",
+   "uri": "ibe/data/spherex/dr1/level2/2026W14_1A/l2b-v27-2026-238/6/level2_2026W14_1A_0126_4D6_spx_l2b-v27-2026-238.fits",
+   "plane_id": "01A0F31A-A972-75C4-9849-EC66F81FD239",
+   "vmag": 12.4
+  },
+  {
+   "ra": 272.33051,
+   "dec": -12.320659,
+   "mjd": 61129.511683573495,
+   "detector": "D3",
+   "uri": "ibe/data/spherex/dr1/level2/2026W14_1A/l2b-v27-2026-238/3/level2_2026W14_1A_0126_4D3_spx_l2b-v27-2026-238.fits",
+   "plane_id": "01A0F315-2E4E-767E-8473-5CB7F5B712B2",
+   "vmag": 12.4
+  },
+  {
+   "ra": 272.362812,
+   "dec": -12.308139,
+   "mjd": 61129.6440678445,
+   "detector": "D5",
+   "uri": "ibe/data/spherex/dr1/level2/2026W14_1A/l2b-v27-2026-238/5/level2_2026W14_1A_0157_1D5_spx_l2b-v27-2026-238.fits",
+   "plane_id": "01A0F31F-4602-7C92-8B52-118EFA777F96",
+   "vmag": 12.4
+  },
+  {
+   "ra": 272.362812,
+   "dec": -12.308139,
+   "mjd": 61129.644067856,
+   "detector": "D2",
+   "uri": "ibe/data/spherex/dr1/level2/2026W14_1A/l2b-v27-2026-238/2/level2_2026W14_1A_0157_1D2_spx_l2b-v27-2026-238.fits",
+   "plane_id": "01A0F31D-3794-7CDC-87DE-FFF1D3E4893B",
+   "vmag": 12.4
+  },
+  {
+   "ra": 272.445308,
+   "dec": -12.276998,
+   "mjd": 61129.983307011,
+   "detector": "D6",
+   "uri": "ibe/data/spherex/dr1/level2/2026W14_1A/l2b-v27-2026-238/6/level2_2026W14_1A_0224_1D6_spx_l2b-v27-2026-238.fits",
+   "plane_id": "01A0F337-49C1-7F2E-927F-35B37CFCE3EB",
+   "vmag": 12.4
+  },
+  {
+   "ra": 272.445308,
+   "dec": -12.276998,
+   "mjd": 61129.983307011,
+   "detector": "D3",
+   "uri": "ibe/data/spherex/dr1/level2/2026W14_1A/l2b-v27-2026-238/3/level2_2026W14_1A_0224_1D3_spx_l2b-v27-2026-238.fits",
+   "plane_id": "01A0F332-1E11-7F9C-A003-9E83EB6F5959",
+   "vmag": 12.4
+  },
+  {
+   "ra": 272.445696,
+   "dec": -12.277046,
+   "mjd": 61129.984799256505,
+   "detector": "D3",
+   "uri": "ibe/data/spherex/dr1/level2/2026W14_1A/l2b-v27-2026-238/3/level2_2026W14_1A_0224_2D3_spx_l2b-v27-2026-238.fits",
+   "plane_id": "01A0F332-372F-70E6-8452-EACBE4CC7DA3",
+   "vmag": 12.4
+  },
+  {
+   "ra": 272.445696,
+   "dec": -12.277046,
+   "mjd": 61129.984799256505,
+   "detector": "D6",
+   "uri": "ibe/data/spherex/dr1/level2/2026W14_1A/l2b-v27-2026-238/6/level2_2026W14_1A_0224_2D6_spx_l2b-v27-2026-238.fits",
+   "plane_id": "01A0F337-693E-7FCD-A654-88735165458A",
+   "vmag": 12.4
+  },
+  {
+   "ra": 272.446085,
+   "dec": -12.277086,
+   "mjd": 61129.986291525,
+   "detector": "D6",
+   "uri": "ibe/data/spherex/dr1/level2/2026W14_1A/l2b-v27-2026-238/6/level2_2026W14_1A_0224_3D6_spx_l2b-v27-2026-238.fits",
+   "plane_id": "01A0F337-85A6-76AA-84FC-972CADA0C9B6",
+   "vmag": 12.4
+  },
+  {
+   "ra": 272.446085,
+   "dec": -12.277086,
+   "mjd": 61129.986291525,
+   "detector": "D3",
+   "uri": "ibe/data/spherex/dr1/level2/2026W14_1A/l2b-v27-2026-238/3/level2_2026W14_1A_0224_3D3_spx_l2b-v27-2026-238.fits",
+   "plane_id": "01A0F332-562C-7995-B5BF-5C9831323637",
+   "vmag": 12.4
+  },
+  {
+   "ra": 272.446475,
+   "dec": -12.277115,
+   "mjd": 61129.98778377,
+   "detector": "D6",
+   "uri": "ibe/data/spherex/dr1/level2/2026W14_1A/l2b-v27-2026-238/6/level2_2026W14_1A_0224_4D6_spx_l2b-v27-2026-238.fits",
+   "plane_id": "01A0F337-A4C5-7C02-9A48-BCAA20DFACC8",
+   "vmag": 12.4
+  },
+  {
+   "ra": 272.446475,
+   "dec": -12.277115,
+   "mjd": 61129.98778377,
+   "detector": "D3",
+   "uri": "ibe/data/spherex/dr1/level2/2026W14_1A/l2b-v27-2026-238/3/level2_2026W14_1A_0224_4D3_spx_l2b-v27-2026-238.fits",
+   "plane_id": "01A0F332-7390-70F2-B6E0-1399D7797A9F",
+   "vmag": 12.4
+  },
+  {
+   "ra": 272.657098,
+   "dec": -12.195562,
+   "mjd": 61130.8662952865,
+   "detector": "D3",
+   "uri": "ibe/data/spherex/dr1/level2/2026W14_1A/l2b-v27-2026-238/3/level2_2026W14_1A_0382_1D3_spx_l2b-v27-2026-238.fits",
+   "plane_id": "01A0F380-4481-7FBF-8CCE-69CCD7D82D30",
+   "vmag": 12.38
+  },
+  {
+   "ra": 272.657098,
+   "dec": -12.195562,
+   "mjd": 61130.866295298,
+   "detector": "D6",
+   "uri": "ibe/data/spherex/dr1/level2/2026W14_1A/l2b-v27-2026-238/6/level2_2026W14_1A_0382_1D6_spx_l2b-v27-2026-238.fits",
+   "plane_id": "01A0F386-DB16-7644-A73E-951D45D9C900",
+   "vmag": 12.38
+  },
+  {
+   "ra": 272.65748,
+   "dec": -12.195608,
+   "mjd": 61130.867787543495,
+   "detector": "D6",
+   "uri": "ibe/data/spherex/dr1/level2/2026W14_1A/l2b-v27-2026-238/6/level2_2026W14_1A_0382_2D6_spx_l2b-v27-2026-238.fits",
+   "plane_id": "01A0F386-FE87-7C04-AE4E-6A51BC32492E",
+   "vmag": 12.38
+  },
+  {
+   "ra": 272.65748,
+   "dec": -12.195608,
+   "mjd": 61130.867787543495,
+   "detector": "D3",
+   "uri": "ibe/data/spherex/dr1/level2/2026W14_1A/l2b-v27-2026-238/3/level2_2026W14_1A_0382_2D3_spx_l2b-v27-2026-238.fits",
+   "plane_id": "01A0F380-724F-7475-95D8-218068EC105C",
+   "vmag": 12.38
+  },
+  {
+   "ra": 272.657867,
+   "dec": -12.195646,
+   "mjd": 61130.8692975665,
+   "detector": "D3",
+   "uri": "ibe/data/spherex/dr1/level2/2026W14_1A/l2b-v27-2026-238/3/level2_2026W14_1A_0382_3D3_spx_l2b-v27-2026-238.fits",
+   "plane_id": "01A0F380-A1AF-72FF-AD8E-EF9C65C0506F",
+   "vmag": 12.38
+  },
+  {
+   "ra": 272.657867,
+   "dec": -12.195646,
+   "mjd": 61130.8692975665,
+   "detector": "D6",
+   "uri": "ibe/data/spherex/dr1/level2/2026W14_1A/l2b-v27-2026-238/6/level2_2026W14_1A_0382_3D6_spx_l2b-v27-2026-238.fits",
+   "plane_id": "01A0F387-237B-77AF-B2A1-AEF9FAC02999",
+   "vmag": 12.38
+  },
+  {
+   "ra": 272.658251,
+   "dec": -12.195671,
+   "mjd": 61130.8707898235,
+   "detector": "D3",
+   "uri": "ibe/data/spherex/dr1/level2/2026W14_1A/l2b-v27-2026-238/3/level2_2026W14_1A_0382_4D3_spx_l2b-v27-2026-238.fits",
+   "plane_id": "01A0F380-D5C5-79F5-BD53-87D9C5BD13B1",
+   "vmag": 12.38
+  },
+  {
+   "ra": 272.658251,
+   "dec": -12.195671,
+   "mjd": 61130.8707898235,
+   "detector": "D6",
+   "uri": "ibe/data/spherex/dr1/level2/2026W14_1A/l2b-v27-2026-238/6/level2_2026W14_1A_0382_4D6_spx_l2b-v27-2026-238.fits",
+   "plane_id": "01A0F387-509A-7713-AC8B-E15D8D03A8C6",
+   "vmag": 12.38
+  },
+  {
+   "ra": 272.689216,
+   "dec": -12.182959,
+   "mjd": 61131.0018062125,
+   "detector": "D6",
+   "uri": "ibe/data/spherex/dr1/level2/2026W14_1A/l2b-v27-2026-238/6/level2_2026W14_1A_0404_1D6_spx_l2b-v27-2026-238.fits",
+   "plane_id": "01A0F392-A2AB-7ADA-9669-3E7D737150E0",
+   "vmag": 12.38
+  },
+  {
+   "ra": 272.689216,
+   "dec": -12.182959,
+   "mjd": 61131.001806224,
+   "detector": "D3",
+   "uri": "ibe/data/spherex/dr1/level2/2026W14_1A/l2b-v27-2026-238/3/level2_2026W14_1A_0404_1D3_spx_l2b-v27-2026-238.fits",
+   "plane_id": "01A0F38C-7CC1-70F5-8EDF-01FC2BDD4669",
+   "vmag": 12.38
+  },
+  {
+   "ra": 274.739151,
+   "dec": -11.231112,
+   "mjd": 61140.848073955494,
+   "detector": "D4",
+   "uri": "ibe/data/spherex/dr1/level2/2026W15_2A/l2b-v27-2026-240/4/level2_2026W15_2A_0352_1D4_spx_l2b-v27-2026-240.fits",
+   "plane_id": "01A0F515-FD49-7D33-B5D7-76525CBDD99F",
+   "vmag": 12.24
+  },
+  {
+   "ra": 274.739151,
+   "dec": -11.231112,
+   "mjd": 61140.848073955494,
+   "detector": "D1",
+   "uri": "ibe/data/spherex/dr1/level2/2026W15_2A/l2b-v27-2026-240/1/level2_2026W15_2A_0352_1D1_spx_l2b-v27-2026-240.fits",
+   "plane_id": "01A0F50F-6341-73BD-9F5D-5DC6A830C24F",
+   "vmag": 12.24
+  },
+  {
+   "ra": 277.008751,
+   "dec": -8.377948,
+   "mjd": 61169.086096224,
+   "detector": "D6",
+   "uri": "ibe/data/spherex/dr1/level2/2026W19_2A/l2b-v27-2026-245/6/level2_2026W19_2A_0607_1D6_spx_l2b-v27-2026-245.fits",
+   "plane_id": "01A0F770-D1A3-7B29-8A0B-4856DD524C53",
+   "vmag": 11.71
+  },
+  {
+   "ra": 277.008751,
+   "dec": -8.377948,
+   "mjd": 61169.086096224,
+   "detector": "D3",
+   "uri": "ibe/data/spherex/dr1/level2/2026W19_2A/l2b_retry-v27-2026-246/3/level2_2026W19_2A_0607_1D3_spx_l2b_retry-v27-2026-246.fits",
+   "plane_id": "01A0F740-9C7C-7D85-852C-B81A50E5EAEE",
+   "vmag": 11.71
+  },
+  {
+   "ra": 277.003713,
+   "dec": -8.358662,
+   "mjd": 61169.289948909,
+   "detector": "D3",
+   "uri": "ibe/data/spherex/dr1/level2/2026W19_2A/l2b-v27-2026-245/3/level2_2026W19_2A_0688_1D3_spx_l2b-v27-2026-245.fits",
+   "plane_id": "01A0F774-4320-7853-A2B4-CCD4902F3FA3",
+   "vmag": 11.7
+  },
+  {
+   "ra": 277.003713,
+   "dec": -8.358662,
+   "mjd": 61169.2899489205,
+   "detector": "D6",
+   "uri": "ibe/data/spherex/dr1/level2/2026W19_2A/l2b-v27-2026-245/6/level2_2026W19_2A_0688_1D6_spx_l2b-v27-2026-245.fits",
+   "plane_id": "01A0F776-581A-73CE-AE31-16911C9695DC",
+   "vmag": 11.7
+  },
+  {
+   "ra": 276.994609,
+   "dec": -8.326594,
+   "mjd": 61169.629401363,
+   "detector": "D6",
+   "uri": "ibe/data/spherex/dr1/level2/2026W19_2A/l2b-v27-2026-245/6/level2_2026W19_2A_0821_1D6_spx_l2b-v27-2026-245.fits",
+   "plane_id": "01A0F780-53FE-7141-AB01-6CCD2BB2BADC",
+   "vmag": 11.7
+  },
+  {
+   "ra": 276.994609,
+   "dec": -8.326594,
+   "mjd": 61169.6294013745,
+   "detector": "D3",
+   "uri": "ibe/data/spherex/dr1/level2/2026W19_2A/l2b-v27-2026-245/3/level2_2026W19_2A_0821_1D3_spx_l2b-v27-2026-245.fits",
+   "plane_id": "01A0F77E-0313-7538-928D-C8379226638A",
+   "vmag": 11.7
+  },
+  {
+   "ra": 276.927299,
+   "dec": -8.149198,
+   "mjd": 61171.5285801705,
+   "detector": "D3",
+   "uri": "ibe/data/spherex/dr1/level2/2026W20_1A/l2b-v27-2026-246/3/level2_2026W20_1A_0199_1D3_spx_l2b-v27-2026-246.fits",
+   "plane_id": "01A0F764-A1F2-72BB-9B73-D6AA0BF830B8",
+   "vmag": 11.66
+  },
+  {
+   "ra": 276.924376,
+   "dec": -8.14295,
+   "mjd": 61171.5965843375,
+   "detector": "D3",
+   "uri": "ibe/data/spherex/dr1/level2/2026W20_1A/l2b-v27-2026-246/3/level2_2026W20_1A_0226_1D3_spx_l2b-v27-2026-246.fits",
+   "plane_id": "01A0F766-CACE-7BB0-A88D-8FAC496C5D31",
+   "vmag": 11.65
+  },
+  {
+   "ra": 276.924376,
+   "dec": -8.14295,
+   "mjd": 61171.5965843375,
+   "detector": "D6",
+   "uri": "ibe/data/spherex/dr1/level2/2026W20_1A/l2b-v27-2026-246/6/level2_2026W20_1A_0226_1D6_spx_l2b-v27-2026-246.fits",
+   "plane_id": "01A0F769-9E0E-7EB5-A89A-858619CD6C16",
+   "vmag": 11.65
+  },
+  {
+   "ra": 276.918412,
+   "dec": -8.130492,
+   "mjd": 61171.7328769765,
+   "detector": "D6",
+   "uri": "ibe/data/spherex/dr1/level2/2026W20_1A/l2b-v27-2026-246/6/level2_2026W20_1A_0280_1D6_spx_l2b-v27-2026-246.fits",
+   "plane_id": "01A0F76D-B4B9-7A3E-B740-195C48E874F6",
+   "vmag": 11.65
+  },
+  {
+   "ra": 276.918412,
+   "dec": -8.130492,
+   "mjd": 61171.7328769765,
+   "detector": "D3",
+   "uri": "ibe/data/spherex/dr1/level2/2026W20_1A/l2b-v27-2026-246/3/level2_2026W20_1A_0280_1D3_spx_l2b-v27-2026-246.fits",
+   "plane_id": "01A0F76B-0E2F-7A0B-A961-2B9608A66BD3",
+   "vmag": 11.65
+  },
+  {
+   "ra": 276.915375,
+   "dec": -8.124275,
+   "mjd": 61171.801076583,
+   "detector": "D6",
+   "uri": "ibe/data/spherex/dr1/level2/2026W20_1A/l2b-v27-2026-246/6/level2_2026W20_1A_0307_1D6_spx_l2b-v27-2026-246.fits",
+   "plane_id": "01A0F76F-B4DD-74D8-9407-4CB0970EB108",
+   "vmag": 11.65
+  },
+  {
+   "ra": 276.915375,
+   "dec": -8.124275,
+   "mjd": 61171.801076583,
+   "detector": "D3",
+   "uri": "ibe/data/spherex/dr1/level2/2026W20_1A/l2b-v27-2026-246/3/level2_2026W20_1A_0307_1D3_spx_l2b-v27-2026-246.fits",
+   "plane_id": "01A0F76D-163F-7915-96E1-30E0E40B41B1",
+   "vmag": 11.65
+  },
+  {
+   "ra": 276.90609,
+   "dec": -8.105583,
+   "mjd": 61172.004627277,
+   "detector": "D6",
+   "uri": "ibe/data/spherex/dr1/level2/2026W20_1A/l2b-v27-2026-246/6/level2_2026W20_1A_0387_1D6_spx_l2b-v27-2026-246.fits",
+   "plane_id": "01A0F775-5815-7126-AD97-175EE7F3714D",
+   "vmag": 11.65
+  },
+  {
+   "ra": 276.90609,
+   "dec": -8.105583,
+   "mjd": 61172.004627277,
+   "detector": "D3",
+   "uri": "ibe/data/spherex/dr1/level2/2026W20_1A/l2b-v27-2026-246/3/level2_2026W20_1A_0387_1D3_spx_l2b-v27-2026-246.fits",
+   "plane_id": "01A0F772-FFF4-7018-812C-E87A0B8D8101",
+   "vmag": 11.65
+  },
+  {
+   "ra": 263.151031,
+   "dec": -9.683069,
+   "mjd": 61263.472468238004,
+   "detector": "D6",
+   "uri": "ibe/data/spherex/qr3/level2/2026W33_1A/l2b-v27-2026-240/6/level2_2026W33_1A_0289_1D6_spx_l2b-v27-2026-240.fits",
+   "plane_id": "01A0CAB8-5F16-7338-9C01-6FACC1DC3554",
+   "vmag": 11.99
+  },
+  {
+   "ra": 263.151031,
+   "dec": -9.683069,
+   "mjd": 61263.472468238004,
+   "detector": "D3",
+   "uri": "ibe/data/spherex/qr3/level2/2026W33_1A/l2b-v27-2026-240/3/level2_2026W33_1A_0289_1D3_spx_l2b-v27-2026-240.fits",
+   "plane_id": "01A0CAB7-8F49-7A38-91DE-17C49FDC35F1",
+   "vmag": 11.99
+  },
+  {
+   "ra": 263.151108,
+   "dec": -9.683007,
+   "mjd": 61263.473960495,
+   "detector": "D6",
+   "uri": "ibe/data/spherex/qr3/level2/2026W33_1A/l2b-v27-2026-240/6/level2_2026W33_1A_0289_2D6_spx_l2b-v27-2026-240.fits",
+   "plane_id": "01A0CAB8-6852-7F9F-A5D5-1F3059CE2D72",
+   "vmag": 11.99
+  },
+  {
+   "ra": 263.151108,
+   "dec": -9.683007,
+   "mjd": 61263.473960495,
+   "detector": "D3",
+   "uri": "ibe/data/spherex/qr3/level2/2026W33_1A/l2b-v27-2026-240/3/level2_2026W33_1A_0289_2D3_spx_l2b-v27-2026-240.fits",
+   "plane_id": "01A0CAB7-981A-7088-884E-E586A13027B5",
+   "vmag": 11.99
+  },
+  {
+   "ra": 263.151168,
+   "dec": -9.682943,
+   "mjd": 61263.47545274,
+   "detector": "D3",
+   "uri": "ibe/data/spherex/qr3/level2/2026W33_1A/l2b-v27-2026-240/3/level2_2026W33_1A_0289_3D3_spx_l2b-v27-2026-240.fits",
+   "plane_id": "01A0CAB7-A210-7900-8B28-DAF34FE99772",
+   "vmag": 11.99
+  },
+  {
+   "ra": 263.151168,
+   "dec": -9.682943,
+   "mjd": 61263.4754527515,
+   "detector": "D6",
+   "uri": "ibe/data/spherex/qr3/level2/2026W33_1A/l2b-v27-2026-240/6/level2_2026W33_1A_0289_3D6_spx_l2b-v27-2026-240.fits",
+   "plane_id": "01A0CAB8-70C8-7921-9F8B-42238638CFD3",
+   "vmag": 11.99
+  },
+  {
+   "ra": 263.155463,
+   "dec": -9.697177,
+   "mjd": 61263.6094359345,
+   "detector": "D6",
+   "uri": "ibe/data/spherex/qr3/level2/2026W33_1A/l2b-v27-2026-240/6/level2_2026W33_1A_0315_2D6_spx_l2b-v27-2026-240.fits",
+   "plane_id": "01A0CABA-F336-78BA-B02E-542855AA0CC5",
+   "vmag": 11.99
+  },
+  {
+   "ra": 263.155463,
+   "dec": -9.697177,
+   "mjd": 61263.6094359345,
+   "detector": "D3",
+   "uri": "ibe/data/spherex/qr3/level2/2026W33_1A/l2b-v27-2026-240/3/level2_2026W33_1A_0315_2D3_spx_l2b-v27-2026-240.fits",
+   "plane_id": "01A0CABA-5FAC-7B79-8BE1-5E755F074A43",
+   "vmag": 11.99
+  },
+  {
+   "ra": 263.155528,
+   "dec": -9.697113,
+   "mjd": 61263.61092818,
+   "detector": "D3",
+   "uri": "ibe/data/spherex/qr3/level2/2026W33_1A/l2b-v27-2026-240/3/level2_2026W33_1A_0315_3D3_spx_l2b-v27-2026-240.fits",
+   "plane_id": "01A0CABA-6873-70B8-830C-437EBD3FCFEE",
+   "vmag": 11.99
+  },
+  {
+   "ra": 263.155528,
+   "dec": -9.697113,
+   "mjd": 61263.61092818,
+   "detector": "D6",
+   "uri": "ibe/data/spherex/qr3/level2/2026W33_1A/l2b-v27-2026-240/6/level2_2026W33_1A_0315_3D6_spx_l2b-v27-2026-240.fits",
+   "plane_id": "01A0CABA-FB58-772F-A8FB-A83D34106E0E",
+   "vmag": 11.99
+  },
+  {
+   "ra": 263.155573,
+   "dec": -9.697049,
+   "mjd": 61263.612420437,
+   "detector": "D6",
+   "uri": "ibe/data/spherex/qr3/level2/2026W33_1A/l2b-v27-2026-240/6/level2_2026W33_1A_0315_4D6_spx_l2b-v27-2026-240.fits",
+   "plane_id": "01A0CABB-03DE-7A02-AC48-B89C0B5018F2",
+   "vmag": 11.99
+  },
+  {
+   "ra": 263.155573,
+   "dec": -9.697049,
+   "mjd": 61263.612420437,
+   "detector": "D3",
+   "uri": "ibe/data/spherex/qr3/level2/2026W33_1A/l2b-v27-2026-240/3/level2_2026W33_1A_0315_4D3_spx_l2b-v27-2026-240.fits",
+   "plane_id": "01A0CABA-70FD-75AF-80BB-588AFEC264D5",
+   "vmag": 11.99
+  },
+  {
+   "ra": 263.16927,
+   "dec": -9.739739,
+   "mjd": 61264.015169407,
+   "detector": "D6",
+   "uri": "ibe/data/spherex/qr3/level2/2026W33_1A/l2b-v27-2026-240/6/level2_2026W33_1A_0393_1D6_spx_l2b-v27-2026-240.fits",
+   "plane_id": "01A0CAC2-6711-723B-BCC1-C1FCBB400864",
+   "vmag": 12.0
+  },
+  {
+   "ra": 263.16927,
+   "dec": -9.739739,
+   "mjd": 61264.015169407,
+   "detector": "D3",
+   "uri": "ibe/data/spherex/qr3/level2/2026W33_1A/l2b-v27-2026-240/3/level2_2026W33_1A_0393_1D3_spx_l2b-v27-2026-240.fits",
+   "plane_id": "01A0CAC2-69AA-7F9A-88E9-38733A9B7494",
+   "vmag": 12.0
+  },
+  {
+   "ra": 263.169357,
+   "dec": -9.73968,
+   "mjd": 61264.016661652,
+   "detector": "D3",
+   "uri": "ibe/data/spherex/qr3/level2/2026W33_1A/l2b-v27-2026-240/3/level2_2026W33_1A_0393_2D3_spx_l2b-v27-2026-240.fits",
+   "plane_id": "01A0CAC2-73DB-7B5F-A261-C76E35C2A075",
+   "vmag": 12.0
+  },
+  {
+   "ra": 263.169357,
+   "dec": -9.73968,
+   "mjd": 61264.016661664,
+   "detector": "D6",
+   "uri": "ibe/data/spherex/qr3/level2/2026W33_1A/l2b-v27-2026-240/6/level2_2026W33_1A_0393_2D6_spx_l2b-v27-2026-240.fits",
+   "plane_id": "01A0CAC2-710C-7AC6-84CD-443A9F803389",
+   "vmag": 12.0
+  },
+  {
+   "ra": 263.169426,
+   "dec": -9.739617,
+   "mjd": 61264.0181539205,
+   "detector": "D6",
+   "uri": "ibe/data/spherex/qr3/level2/2026W33_1A/l2b-v27-2026-240/6/level2_2026W33_1A_0393_3D6_spx_l2b-v27-2026-240.fits",
+   "plane_id": "01A0CAC2-7B13-7F59-9D91-0F2A56964EF9",
+   "vmag": 12.0
+  },
+  {
+   "ra": 263.169426,
+   "dec": -9.739617,
+   "mjd": 61264.0181539325,
+   "detector": "D3",
+   "uri": "ibe/data/spherex/qr3/level2/2026W33_1A/l2b-v27-2026-240/3/level2_2026W33_1A_0393_3D3_spx_l2b-v27-2026-240.fits",
+   "plane_id": "01A0CAC2-7EA8-7D3B-86CF-6BCA326063A1",
+   "vmag": 12.0
+  },
+  {
+   "ra": 263.169477,
+   "dec": -9.739554,
+   "mjd": 61264.019646177505,
+   "detector": "D3",
+   "uri": "ibe/data/spherex/qr3/level2/2026W33_1A/l2b-v27-2026-240/3/level2_2026W33_1A_0393_4D3_spx_l2b-v27-2026-240.fits",
+   "plane_id": "01A0CAC2-88B3-740D-A78A-5B7DA1FB7410",
+   "vmag": 12.0
+  },
+  {
+   "ra": 263.169477,
+   "dec": -9.739554,
+   "mjd": 61264.019646177505,
+   "detector": "D6",
+   "uri": "ibe/data/spherex/qr3/level2/2026W33_1A/l2b-v27-2026-240/6/level2_2026W33_1A_0393_4D6_spx_l2b-v27-2026-240.fits",
+   "plane_id": "01A0CAC2-83B2-75D0-94D6-47684126EA29",
+   "vmag": 12.0
+  },
+  {
+   "ra": 263.195041,
+   "dec": -9.810671,
+   "mjd": 61264.693772346494,
+   "detector": "D6",
+   "uri": "ibe/data/spherex/qr3/level2/2026W33_1A/l2b-v27-2026-240/6/level2_2026W33_1A_0525_1D6_spx_l2b-v27-2026-240.fits",
+   "plane_id": "01A0CACF-6ABC-7FCB-94D6-F167B6EC4906",
+   "vmag": 12.01
+  },
+  {
+   "ra": 263.195041,
+   "dec": -9.810671,
+   "mjd": 61264.693772346494,
+   "detector": "D3",
+   "uri": "ibe/data/spherex/qr3/level2/2026W33_1A/l2b-v27-2026-240/3/level2_2026W33_1A_0525_1D3_spx_l2b-v27-2026-240.fits",
+   "plane_id": "01A0CAD0-8DB9-72FD-9EFC-ADD923C3C38C",
+   "vmag": 12.01
+  },
+  {
+   "ra": 263.195137,
+   "dec": -9.810614,
+   "mjd": 61264.6952646035,
+   "detector": "D3",
+   "uri": "ibe/data/spherex/qr3/level2/2026W33_1A/l2b-v27-2026-240/3/level2_2026W33_1A_0525_2D3_spx_l2b-v27-2026-240.fits",
+   "plane_id": "01A0CAD0-9828-72CD-89B6-7EF1AE0D03A4",
+   "vmag": 12.01
+  },
+  {
+   "ra": 263.195137,
+   "dec": -9.810614,
+   "mjd": 61264.695264615,
+   "detector": "D6",
+   "uri": "ibe/data/spherex/qr3/level2/2026W33_1A/l2b-v27-2026-240/6/level2_2026W33_1A_0525_2D6_spx_l2b-v27-2026-240.fits",
+   "plane_id": "01A0CACF-7374-7184-AFDE-EB4141F3F2B7",
+   "vmag": 12.01
+  },
+  {
+   "ra": 263.195216,
+   "dec": -9.810552,
+   "mjd": 61264.6967568605,
+   "detector": "D6",
+   "uri": "ibe/data/spherex/qr3/level2/2026W33_1A/l2b-v27-2026-240/6/level2_2026W33_1A_0525_3D6_spx_l2b-v27-2026-240.fits",
+   "plane_id": "01A0CACF-7C80-78B0-A84A-31BA0B7E737E",
+   "vmag": 12.01
+  },
+  {
+   "ra": 263.195216,
+   "dec": -9.810552,
+   "mjd": 61264.6967568605,
+   "detector": "D3",
+   "uri": "ibe/data/spherex/qr3/level2/2026W33_1A/l2b-v27-2026-240/3/level2_2026W33_1A_0525_3D3_spx_l2b-v27-2026-240.fits",
+   "plane_id": "01A0CAD0-A239-7911-B00F-395A0E58B093",
+   "vmag": 12.01
+  },
+  {
+   "ra": 263.195277,
+   "dec": -9.81049,
+   "mjd": 61264.6982491175,
+   "detector": "D6",
+   "uri": "ibe/data/spherex/qr3/level2/2026W33_1A/l2b-v27-2026-240/6/level2_2026W33_1A_0525_4D6_spx_l2b-v27-2026-240.fits",
+   "plane_id": "01A0CACF-86ED-7481-93E5-FA89C9C8E478",
+   "vmag": 12.01
+  },
+  {
+   "ra": 263.195277,
+   "dec": -9.81049,
+   "mjd": 61264.6982491175,
+   "detector": "D3",
+   "uri": "ibe/data/spherex/qr3/level2/2026W33_1A/l2b-v27-2026-240/3/level2_2026W33_1A_0525_4D3_spx_l2b-v27-2026-240.fits",
+   "plane_id": "01A0CAD0-AAD5-7C2F-9C9A-C75301913C93",
+   "vmag": 12.01
+  },
+  {
+   "ra": 263.200582,
+   "dec": -9.824873,
+   "mjd": 61264.829389893,
+   "detector": "D6",
+   "uri": "ibe/data/spherex/qr3/level2/2026W33_1A/l2b-v27-2026-240/6/level2_2026W33_1A_0550_1D6_spx_l2b-v27-2026-240.fits",
+   "plane_id": "01A0CAD1-E35F-7A20-B372-57B4C9C6AC2D",
+   "vmag": 12.02
+  },
+  {
+   "ra": 263.200582,
+   "dec": -9.824873,
+   "mjd": 61264.829389893,
+   "detector": "D3",
+   "uri": "ibe/data/spherex/qr3/level2/2026W33_1A/l2b-v27-2026-240/3/level2_2026W33_1A_0550_1D3_spx_l2b-v27-2026-240.fits",
+   "plane_id": "01A0CAD3-3DE6-7618-B0FA-EC0A69B8CC14",
+   "vmag": 12.02
+  },
+  {
+   "ra": 263.2034,
+   "dec": -9.831976,
+   "mjd": 61264.8971809,
+   "detector": "D3",
+   "uri": "ibe/data/spherex/qr3/level2/2026W33_1A/l2b-v27-2026-240/3/level2_2026W33_1A_0563_1D3_spx_l2b-v27-2026-240.fits",
+   "plane_id": "01A0CAD4-73B1-71A5-94EF-F2B5B4A92A64",
+   "vmag": 12.02
+  },
+  {
+   "ra": 263.2034,
+   "dec": -9.831976,
+   "mjd": 61264.8971809115,
+   "detector": "D6",
+   "uri": "ibe/data/spherex/qr3/level2/2026W33_1A/l2b-v27-2026-240/6/level2_2026W33_1A_0563_1D6_spx_l2b-v27-2026-240.fits",
+   "plane_id": "01A0CAD3-17DE-7915-994A-03D1835F1FAA",
+   "vmag": 12.02
+  },
+  {
+   "ra": 263.203501,
+   "dec": -9.83192,
+   "mjd": 61264.898673157,
+   "detector": "D3",
+   "uri": "ibe/data/spherex/qr3/level2/2026W33_1A/l2b-v27-2026-240/3/level2_2026W33_1A_0563_2D3_spx_l2b-v27-2026-240.fits",
+   "plane_id": "01A0CAD4-7CC2-791D-8578-F2FF46CB8A87",
+   "vmag": 12.02
+  },
+  {
+   "ra": 263.203501,
+   "dec": -9.83192,
+   "mjd": 61264.898673157,
+   "detector": "D6",
+   "uri": "ibe/data/spherex/qr3/level2/2026W33_1A/l2b-v27-2026-240/6/level2_2026W33_1A_0563_2D6_spx_l2b-v27-2026-240.fits",
+   "plane_id": "01A0CAD3-1F4F-7A03-952F-3456C15C4E99",
+   "vmag": 12.02
+  },
+  {
+   "ra": 263.221069,
+   "dec": -9.874577,
+   "mjd": 61265.304921791,
+   "detector": "D3",
+   "uri": "ibe/data/spherex/qr3/level2/2026W33_1A/l2b-v27-2026-240/3/level2_2026W33_1A_0644_1D3_spx_l2b-v27-2026-240.fits",
+   "plane_id": "01A0CADC-F67F-7066-9F03-1C61A33D172C",
+   "vmag": 12.03
+  },
+  {
+   "ra": 263.221069,
+   "dec": -9.874577,
+   "mjd": 61265.304921791,
+   "detector": "D6",
+   "uri": "ibe/data/spherex/qr3/level2/2026W33_1A/l2b-v27-2026-240/6/level2_2026W33_1A_0644_1D6_spx_l2b-v27-2026-240.fits",
+   "plane_id": "01A0CADA-CC5C-73C8-8B17-C2AB0A6B4DFC",
+   "vmag": 12.03
+  },
+  {
+   "ra": 263.221169,
+   "dec": -9.87452,
+   "mjd": 61265.306414048,
+   "detector": "D6",
+   "uri": "ibe/data/spherex/qr3/level2/2026W33_1A/l2b-v27-2026-240/6/level2_2026W33_1A_0644_2D6_spx_l2b-v27-2026-240.fits",
+   "plane_id": "01A0CADA-D54B-780B-AB56-4333891AF52E",
+   "vmag": 12.03
+  },
+  {
+   "ra": 263.221169,
+   "dec": -9.87452,
+   "mjd": 61265.306414048,
+   "detector": "D3",
+   "uri": "ibe/data/spherex/qr3/level2/2026W33_1A/l2b-v27-2026-240/3/level2_2026W33_1A_0644_2D3_spx_l2b-v27-2026-240.fits",
+   "plane_id": "01A0CADC-FF08-734D-B098-05D47EA6B3B6",
+   "vmag": 12.03
+  },
+  {
+   "ra": 263.326839,
+   "dec": -10.088025,
+   "mjd": 61267.3413345805,
+   "detector": "D5",
+   "uri": "ibe/data/spherex/qr3/level2/2026W33_2A/l2b-v27-2026-241/5/level2_2026W33_2A_0352_1D5_spx_l2b-v27-2026-241.fits",
+   "plane_id": "01A0CAC1-88C3-7751-9B6E-C2E695470868",
+   "vmag": 12.07
+  },
+  {
+   "ra": 263.326839,
+   "dec": -10.088025,
+   "mjd": 61267.3413345805,
+   "detector": "D2",
+   "uri": "ibe/data/spherex/qr3/level2/2026W33_2A/l2b-v27-2026-241/2/level2_2026W33_2A_0352_1D2_spx_l2b-v27-2026-241.fits",
+   "plane_id": "01A0CABC-F88E-74F3-9926-6ED6D5DEB9A3",
+   "vmag": 12.07
+  },
+  {
+   "ra": 263.326958,
+   "dec": -10.087971,
+   "mjd": 61267.342826826,
+   "detector": "D5",
+   "uri": "ibe/data/spherex/qr3/level2/2026W33_2A/l2b-v27-2026-241/5/level2_2026W33_2A_0352_2D5_spx_l2b-v27-2026-241.fits",
+   "plane_id": "01A0CAC1-92AE-7273-94EB-3F68BEAF26E2",
+   "vmag": 12.07
+  },
+  {
+   "ra": 263.326958,
+   "dec": -10.087971,
+   "mjd": 61267.342826826,
+   "detector": "D2",
+   "uri": "ibe/data/spherex/qr3/level2/2026W33_2A/l2b-v27-2026-241/2/level2_2026W33_2A_0352_2D2_spx_l2b-v27-2026-241.fits",
+   "plane_id": "01A0CABD-00FF-7D57-B5BD-0C899CA773E7",
+   "vmag": 12.07
+  },
+  {
+   "ra": 263.327061,
+   "dec": -10.087913,
+   "mjd": 61267.344319083,
+   "detector": "D5",
+   "uri": "ibe/data/spherex/qr3/level2/2026W33_2A/l2b-v27-2026-241/5/level2_2026W33_2A_0352_3D5_spx_l2b-v27-2026-241.fits",
+   "plane_id": "01A0CAC1-9C26-7AFC-BADC-57957FD911AB",
+   "vmag": 12.07
+  },
+  {
+   "ra": 263.327061,
+   "dec": -10.087913,
+   "mjd": 61267.344319083,
+   "detector": "D2",
+   "uri": "ibe/data/spherex/qr3/level2/2026W33_2A/l2b-v27-2026-241/2/level2_2026W33_2A_0352_3D2_spx_l2b-v27-2026-241.fits",
+   "plane_id": "01A0CABD-0BB6-731D-857B-06BAEF0CFCAB",
+   "vmag": 12.07
+  },
+  {
+   "ra": 263.327147,
+   "dec": -10.087855,
+   "mjd": 61267.345811328,
+   "detector": "D5",
+   "uri": "ibe/data/spherex/qr3/level2/2026W33_2A/l2b-v27-2026-241/5/level2_2026W33_2A_0352_4D5_spx_l2b-v27-2026-241.fits",
+   "plane_id": "01A0CAC1-A503-7257-98B4-10500BEA1122",
+   "vmag": 12.07
+  },
+  {
+   "ra": 263.327147,
+   "dec": -10.087855,
+   "mjd": 61267.3458113395,
+   "detector": "D2",
+   "uri": "ibe/data/spherex/qr3/level2/2026W33_2A/l2b-v27-2026-241/2/level2_2026W33_2A_0352_4D2_spx_l2b-v27-2026-241.fits",
+   "plane_id": "01A0CABD-1431-7790-86E2-7458AB0F46CC",
+   "vmag": 12.07
+  },
+  {
+   "ra": 263.335193,
+   "dec": -10.102131,
+   "mjd": 61267.480753828,
+   "detector": "D5",
+   "uri": "ibe/data/spherex/qr3/level2/2026W33_2A/l2b-v27-2026-241/5/level2_2026W33_2A_0374_4D5_spx_l2b-v27-2026-241.fits",
+   "plane_id": "01A0CAC4-0DB4-7651-8BF7-5074160F0301",
+   "vmag": 12.07
+  },
+  {
+   "ra": 263.335193,
+   "dec": -10.102131,
+   "mjd": 61267.480753828,
+   "detector": "D2",
+   "uri": "ibe/data/spherex/qr3/level2/2026W33_2A/l2b-v27-2026-241/2/level2_2026W33_2A_0374_4D2_spx_l2b-v27-2026-241.fits",
+   "plane_id": "01A0CABF-7BD7-7651-BE40-D3262997FDEC",
+   "vmag": 12.07
+  },
+  {
+   "ra": 263.339035,
+   "dec": -10.109385,
+   "mjd": 61267.545169488,
+   "detector": "D5",
+   "uri": "ibe/data/spherex/qr3/level2/2026W33_2A/l2b-v27-2026-241/5/level2_2026W33_2A_0387_1D5_spx_l2b-v27-2026-241.fits",
+   "plane_id": "01A0CAC5-5CF0-7EFD-8C2F-0096DB82F532",
+   "vmag": 12.08
+  },
+  {
+   "ra": 263.339035,
+   "dec": -10.109385,
+   "mjd": 61267.545169488,
+   "detector": "D2",
+   "uri": "ibe/data/spherex/qr3/level2/2026W33_2A/l2b-v27-2026-241/2/level2_2026W33_2A_0387_1D2_spx_l2b-v27-2026-241.fits",
+   "plane_id": "01A0CAC0-BA0F-7C01-AE6C-2A12E8053117",
+   "vmag": 12.08
+  },
+  {
+   "ra": 263.339155,
+   "dec": -10.109329,
+   "mjd": 61267.5466795225,
+   "detector": "D2",
+   "uri": "ibe/data/spherex/qr3/level2/2026W33_2A/l2b-v27-2026-241/2/level2_2026W33_2A_0387_2D2_spx_l2b-v27-2026-241.fits",
+   "plane_id": "01A0CAC0-C4B2-73CD-A973-2C39BF1A0248",
+   "vmag": 12.08
+  },
+  {
+   "ra": 263.339155,
+   "dec": -10.109329,
+   "mjd": 61267.5466795225,
+   "detector": "D5",
+   "uri": "ibe/data/spherex/qr3/level2/2026W33_2A/l2b-v27-2026-241/5/level2_2026W33_2A_0387_2D5_spx_l2b-v27-2026-241.fits",
+   "plane_id": "01A0CAC5-6536-7F1F-AB97-953DF8F19DCF",
+   "vmag": 12.08
+  },
+  {
+   "ra": 263.339258,
+   "dec": -10.109271,
+   "mjd": 61267.548171779505,
+   "detector": "D5",
+   "uri": "ibe/data/spherex/qr3/level2/2026W33_2A/l2b-v27-2026-241/5/level2_2026W33_2A_0387_3D5_spx_l2b-v27-2026-241.fits",
+   "plane_id": "01A0CAC5-6E1F-7EC1-9574-78DD28EEEE74",
+   "vmag": 12.08
+  },
+  {
+   "ra": 263.339258,
+   "dec": -10.109271,
+   "mjd": 61267.548171779505,
+   "detector": "D2",
+   "uri": "ibe/data/spherex/qr3/level2/2026W33_2A/l2b-v27-2026-241/2/level2_2026W33_2A_0387_3D2_spx_l2b-v27-2026-241.fits",
+   "plane_id": "01A0CAC0-CEF4-7561-9A22-40C3A1111BB6",
+   "vmag": 12.08
+  },
+  {
+   "ra": 263.339344,
+   "dec": -10.109214,
+   "mjd": 61267.549664025,
+   "detector": "D2",
+   "uri": "ibe/data/spherex/qr3/level2/2026W33_2A/l2b-v27-2026-241/2/level2_2026W33_2A_0387_4D2_spx_l2b-v27-2026-241.fits",
+   "plane_id": "01A0CAC0-D905-709B-9CA1-E3D6CB97E8FC",
+   "vmag": 12.08
+  },
+  {
+   "ra": 263.339344,
+   "dec": -10.109214,
+   "mjd": 61267.5496640365,
+   "detector": "D5",
+   "uri": "ibe/data/spherex/qr3/level2/2026W33_2A/l2b-v27-2026-241/5/level2_2026W33_2A_0387_4D5_spx_l2b-v27-2026-241.fits",
+   "plane_id": "01A0CAC5-77BF-7E05-B79F-BC797A47CC7E",
+   "vmag": 12.08
+  },
+  {
+   "ra": 263.359986,
+   "dec": -10.144995,
+   "mjd": 61267.8846752635,
+   "detector": "D5",
+   "uri": "ibe/data/spherex/qr3/level2/2026W33_2A/l2b-v27-2026-241/5/level2_2026W33_2A_0455_1D5_spx_l2b-v27-2026-241.fits",
+   "plane_id": "01A0CACC-2DD4-7A3B-8C51-B4DBE30B4C27",
+   "vmag": 12.08
+  },
+  {
+   "ra": 263.359986,
+   "dec": -10.144995,
+   "mjd": 61267.8846752635,
+   "detector": "D2",
+   "uri": "ibe/data/spherex/qr3/level2/2026W33_2A/l2b-v27-2026-241/2/level2_2026W33_2A_0455_1D2_spx_l2b-v27-2026-241.fits",
+   "plane_id": "01A0CAC7-3B9A-77A2-A974-3C08C09C2314",
+   "vmag": 12.08
+  },
+  {
+   "ra": 263.36855,
+   "dec": -10.159257,
+   "mjd": 61268.020008562,
+   "detector": "D2",
+   "uri": "ibe/data/spherex/qr3/level2/2026W33_2A/l2b-v27-2026-241/2/level2_2026W33_2A_0484_1D2_spx_l2b-v27-2026-241.fits",
+   "plane_id": "01A0CAC9-B246-7396-A608-1F1F31BA5B23",
+   "vmag": 12.09
+  },
+  {
+   "ra": 263.36855,
+   "dec": -10.159257,
+   "mjd": 61268.0200085735,
+   "detector": "D5",
+   "uri": "ibe/data/spherex/qr3/level2/2026W33_2A/l2b-v27-2026-241/5/level2_2026W33_2A_0484_1D5_spx_l2b-v27-2026-241.fits",
+   "plane_id": "01A0CACE-D74C-7F0F-943D-44E775FB4C27",
+   "vmag": 12.09
+  },
+  {
+   "ra": 263.368677,
+   "dec": -10.159204,
+   "mjd": 61268.021500819,
+   "detector": "D5",
+   "uri": "ibe/data/spherex/qr3/level2/2026W33_2A/l2b-v27-2026-241/5/level2_2026W33_2A_0484_2D5_spx_l2b-v27-2026-241.fits",
+   "plane_id": "01A0CACE-E218-7483-BB51-3CAA7305639C",
+   "vmag": 12.09
+  },
+  {
+   "ra": 263.368677,
+   "dec": -10.159204,
+   "mjd": 61268.021500819,
+   "detector": "D2",
+   "uri": "ibe/data/spherex/qr3/level2/2026W33_2A/l2b-v27-2026-241/2/level2_2026W33_2A_0484_2D2_spx_l2b-v27-2026-241.fits",
+   "plane_id": "01A0CAC9-BAB0-7BAA-BC51-3BFC0ED71A7F",
+   "vmag": 12.09
+  },
+  {
+   "ra": 263.386171,
+   "dec": -10.187739,
+   "mjd": 61268.291900958,
+   "detector": "D5",
+   "uri": "ibe/data/spherex/qr3/level2/2026W33_2A/l2b-v27-2026-241/5/level2_2026W33_2A_0533_1D5_spx_l2b-v27-2026-241.fits",
+   "plane_id": "01A0CAD4-7F1E-783C-862A-9867628966E1",
+   "vmag": 12.09
+  },
+  {
+   "ra": 263.386171,
+   "dec": -10.187739,
+   "mjd": 61268.291900958,
+   "detector": "D2",
+   "uri": "ibe/data/spherex/qr3/level2/2026W33_2A/l2b-v27-2026-241/2/level2_2026W33_2A_0533_1D2_spx_l2b-v27-2026-241.fits",
+   "plane_id": "01A0CACF-50BF-7B21-9896-1839B87B3912",
+   "vmag": 12.09
+  },
+  {
+   "ra": 263.386297,
+   "dec": -10.187685,
+   "mjd": 61268.293393214495,
+   "detector": "D2",
+   "uri": "ibe/data/spherex/qr3/level2/2026W33_2A/l2b-v27-2026-241/2/level2_2026W33_2A_0533_2D2_spx_l2b-v27-2026-241.fits",
+   "plane_id": "01A0CACF-59AD-729E-9005-78F3FA58B9D2",
+   "vmag": 12.09
+  },
+  {
+   "ra": 263.386297,
+   "dec": -10.187685,
+   "mjd": 61268.2933932265,
+   "detector": "D5",
+   "uri": "ibe/data/spherex/qr3/level2/2026W33_2A/l2b-v27-2026-241/5/level2_2026W33_2A_0533_2D5_spx_l2b-v27-2026-241.fits",
+   "plane_id": "01A0CAD4-8879-77FC-8DB0-4743D45C1802",
+   "vmag": 12.09
+  },
+  {
+   "ra": 263.386407,
+   "dec": -10.187629,
+   "mjd": 61268.2948854715,
+   "detector": "D2",
+   "uri": "ibe/data/spherex/qr3/level2/2026W33_2A/l2b-v27-2026-241/2/level2_2026W33_2A_0533_3D2_spx_l2b-v27-2026-241.fits",
+   "plane_id": "01A0CACF-641A-7902-85AA-7E9C61235F4A",
+   "vmag": 12.09
+  },
+  {
+   "ra": 263.386407,
+   "dec": -10.187629,
+   "mjd": 61268.2948854715,
+   "detector": "D5",
+   "uri": "ibe/data/spherex/qr3/level2/2026W33_2A/l2b-v27-2026-241/5/level2_2026W33_2A_0533_3D5_spx_l2b-v27-2026-241.fits",
+   "plane_id": "01A0CAD4-9143-7553-BFE5-FDD68810A172",
+   "vmag": 12.09
+  },
+  {
+   "ra": 263.386501,
+   "dec": -10.187573,
+   "mjd": 61268.296377717,
+   "detector": "D5",
+   "uri": "ibe/data/spherex/qr3/level2/2026W33_2A/l2b-v27-2026-241/5/level2_2026W33_2A_0533_4D5_spx_l2b-v27-2026-241.fits",
+   "plane_id": "01A0CAD4-9A73-7B23-92D3-64C38928FC41",
+   "vmag": 12.09
+  },
+  {
+   "ra": 263.386501,
+   "dec": -10.187573,
+   "mjd": 61268.296377717,
+   "detector": "D2",
+   "uri": "ibe/data/spherex/qr3/level2/2026W33_2A/l2b-v27-2026-241/2/level2_2026W33_2A_0533_4D2_spx_l2b-v27-2026-241.fits",
+   "plane_id": "01A0CACF-6C92-75C3-980B-9B3F34E2B9DF",
+   "vmag": 12.09
+  },
+  {
+   "ra": 263.427594,
+   "dec": -10.25186,
+   "mjd": 61268.9026418375,
+   "detector": "D5",
+   "uri": "ibe/data/spherex/qr3/level2/2026W33_2A/l2b-v27-2026-241/5/level2_2026W33_2A_0647_1D5_spx_l2b-v27-2026-241.fits",
+   "plane_id": "01A0CAE0-5542-7168-A943-C436CCBB0474",
+   "vmag": 12.1
+  },
+  {
+   "ra": 263.427594,
+   "dec": -10.25186,
+   "mjd": 61268.9026418375,
+   "detector": "D2",
+   "uri": "ibe/data/spherex/qr3/level2/2026W33_2A/l2b-v27-2026-241/2/level2_2026W33_2A_0647_1D2_spx_l2b-v27-2026-241.fits",
+   "plane_id": "01A0CADB-46BD-7E93-88AA-347E8C727599",
+   "vmag": 12.1
+  },
+  {
+   "ra": 263.572798,
+   "dec": -10.451249,
+   "mjd": 61270.802229083,
+   "detector": "D5",
+   "uri": "ibe/data/spherex/qr3/level2/2026W34_1A/l2b-v27-2026-243/5/level2_2026W34_1A_0350_1D5_spx_l2b-v27-2026-243.fits",
+   "plane_id": "01A0EEC8-1690-7182-B603-904504142DFE",
+   "vmag": 12.14
+  },
+  {
+   "ra": 263.572798,
+   "dec": -10.451249,
+   "mjd": 61270.802229083,
+   "detector": "D2",
+   "uri": "ibe/data/spherex/qr3/level2/2026W34_1A/l2b-v27-2026-243/2/level2_2026W34_1A_0350_1D2_spx_l2b-v27-2026-243.fits",
+   "plane_id": "01A0EEC1-6119-7479-B1B2-A81B2242DF26",
+   "vmag": 12.14
+  },
+  {
+   "ra": 263.572961,
+   "dec": -10.451203,
+   "mjd": 61270.803721328,
+   "detector": "D5",
+   "uri": "ibe/data/spherex/qr3/level2/2026W34_1A/l2b-v27-2026-243/5/level2_2026W34_1A_0350_2D5_spx_l2b-v27-2026-243.fits",
+   "plane_id": "01A0EEC8-228B-777E-86BA-B8C9D60E2440",
+   "vmag": 12.14
+  },
+  {
+   "ra": 263.572961,
+   "dec": -10.451203,
+   "mjd": 61270.803721328,
+   "detector": "D2",
+   "uri": "ibe/data/spherex/qr3/level2/2026W34_1A/l2b-v27-2026-243/2/level2_2026W34_1A_0350_2D2_spx_l2b-v27-2026-243.fits",
+   "plane_id": "01A0EEC1-6D68-790C-80FD-1CC93AFD591A",
+   "vmag": 12.14
+  },
+  {
+   "ra": 263.630671,
+   "dec": -10.522355,
+   "mjd": 61271.481240564,
+   "detector": "D4",
+   "uri": "ibe/data/spherex/qr3/level2/2026W34_1A/l2b-v27-2026-243/4/level2_2026W34_1A_0481_1D4_spx_l2b-v27-2026-243.fits",
+   "plane_id": "01A0EEDE-DDCD-72A6-BC83-66CAB486D352",
+   "vmag": 12.16
+  },
+  {
+   "ra": 263.630671,
+   "dec": -10.522355,
+   "mjd": 61271.481240564,
+   "detector": "D1",
+   "uri": "ibe/data/spherex/qr3/level2/2026W34_1A/l2b-v27-2026-243/1/level2_2026W34_1A_0481_1D1_spx_l2b-v27-2026-243.fits",
+   "plane_id": "01A0EED4-770A-7A7C-839A-C76F1E2B0BBC",
+   "vmag": 12.16
+  },
+  {
+   "ra": 263.630838,
+   "dec": -10.522309,
+   "mjd": 61271.4827328095,
+   "detector": "D1",
+   "uri": "ibe/data/spherex/qr3/level2/2026W34_1A/l2b-v27-2026-243/1/level2_2026W34_1A_0481_2D1_spx_l2b-v27-2026-243.fits",
+   "plane_id": "01A0EED4-83BD-7935-954E-79F72F34388A",
+   "vmag": 12.16
+  },
+  {
+   "ra": 263.630838,
+   "dec": -10.522309,
+   "mjd": 61271.482732821,
+   "detector": "D4",
+   "uri": "ibe/data/spherex/qr3/level2/2026W34_1A/l2b-v27-2026-243/4/level2_2026W34_1A_0481_2D4_spx_l2b-v27-2026-243.fits",
+   "plane_id": "01A0EEDE-F2E6-7ED5-B245-99DC9BF56F4D",
+   "vmag": 12.16
+  },
+  {
+   "ra": 263.63099,
+   "dec": -10.522257,
+   "mjd": 61271.484225066495,
+   "detector": "D4",
+   "uri": "ibe/data/spherex/qr3/level2/2026W34_1A/l2b-v27-2026-243/4/level2_2026W34_1A_0481_3D4_spx_l2b-v27-2026-243.fits",
+   "plane_id": "01A0EEDF-0C84-70A4-8412-DD5AF74E1EF7",
+   "vmag": 12.16
+  },
+  {
+   "ra": 263.63099,
+   "dec": -10.522257,
+   "mjd": 61271.484225066495,
+   "detector": "D1",
+   "uri": "ibe/data/spherex/qr3/level2/2026W34_1A/l2b-v27-2026-243/1/level2_2026W34_1A_0481_3D1_spx_l2b-v27-2026-243.fits",
+   "plane_id": "01A0EED4-8F15-7C10-9D88-FD84E2835DCC",
+   "vmag": 12.16
+  },
+  {
+   "ra": 263.631128,
+   "dec": -10.522204,
+   "mjd": 61271.4857173235,
+   "detector": "D4",
+   "uri": "ibe/data/spherex/qr3/level2/2026W34_1A/l2b-v27-2026-243/4/level2_2026W34_1A_0481_4D4_spx_l2b-v27-2026-243.fits",
+   "plane_id": "01A0EEDF-2231-7168-99B3-D856C43F3E33",
+   "vmag": 12.16
+  },
+  {
+   "ra": 263.631128,
+   "dec": -10.522204,
+   "mjd": 61271.4857173235,
+   "detector": "D1",
+   "uri": "ibe/data/spherex/qr3/level2/2026W34_1A/l2b-v27-2026-243/1/level2_2026W34_1A_0481_4D1_spx_l2b-v27-2026-243.fits",
+   "plane_id": "01A0EED4-993C-75C5-B5B1-AFC00CAB60DF",
+   "vmag": 12.16
+  },
+  {
+   "ra": 263.648749,
+   "dec": -10.543645,
+   "mjd": 61271.685910437,
+   "detector": "D2",
+   "uri": "ibe/data/spherex/qr3/level2/2026W34_1A/l2b-v27-2026-243/2/level2_2026W34_1A_0523_1D2_spx_l2b-v27-2026-243.fits",
+   "plane_id": "01A0EED7-F5CD-7B82-AA6C-798365FAA076",
+   "vmag": 12.16
+  },
+  {
+   "ra": 263.648749,
+   "dec": -10.543645,
+   "mjd": 61271.685910437,
+   "detector": "D5",
+   "uri": "ibe/data/spherex/qr3/level2/2026W34_1A/l2b-v27-2026-243/5/level2_2026W34_1A_0523_1D5_spx_l2b-v27-2026-243.fits",
+   "plane_id": "01A0EEDF-2E2A-77C9-AC38-C80C6E4587E5",
+   "vmag": 12.16
+  },
+  {
+   "ra": 263.660773,
+   "dec": -10.557882,
+   "mjd": 61271.820764094504,
+   "detector": "D4",
+   "uri": "ibe/data/spherex/qr3/level2/2026W34_1A/l2b-v27-2026-243/4/level2_2026W34_1A_0549_1D4_spx_l2b-v27-2026-243.fits",
+   "plane_id": "01A0EEEA-28FD-7B0C-8570-6ECA94579FCC",
+   "vmag": 12.16
+  },
+  {
+   "ra": 263.660773,
+   "dec": -10.557882,
+   "mjd": 61271.820764094504,
+   "detector": "D1",
+   "uri": "ibe/data/spherex/qr3/level2/2026W34_1A/l2b-v27-2026-243/1/level2_2026W34_1A_0549_1D1_spx_l2b-v27-2026-243.fits",
+   "plane_id": "01A0EEDD-284C-7129-87F3-31E4347506E3",
+   "vmag": 12.16
+  },
+  {
+   "ra": 263.67305,
+   "dec": -10.572083,
+   "mjd": 61271.9567369415,
+   "detector": "D4",
+   "uri": "ibe/data/spherex/qr3/level2/2026W34_1A/l2b-v27-2026-243/4/level2_2026W34_1A_0576_1D4_spx_l2b-v27-2026-243.fits",
+   "plane_id": "01A0EEED-E748-75BC-9A7B-F6E568128C81",
+   "vmag": 12.17
+  },
+  {
+   "ra": 263.67305,
+   "dec": -10.572083,
+   "mjd": 61271.9567369415,
+   "detector": "D1",
+   "uri": "ibe/data/spherex/qr3/level2/2026W34_1A/l2b-v27-2026-243/1/level2_2026W34_1A_0576_1D1_spx_l2b-v27-2026-243.fits",
+   "plane_id": "01A0EEE0-C248-7616-A1E6-8701BCEBD984",
+   "vmag": 12.17
+  },
+  {
+   "ra": 263.673218,
+   "dec": -10.572035,
+   "mjd": 61271.9582291985,
+   "detector": "D1",
+   "uri": "ibe/data/spherex/qr3/level2/2026W34_1A/l2b-v27-2026-243/1/level2_2026W34_1A_0576_2D1_spx_l2b-v27-2026-243.fits",
+   "plane_id": "01A0EEE0-D02D-7AEE-A153-00EB9CD7BA38",
+   "vmag": 12.17
+  },
+  {
+   "ra": 263.673218,
+   "dec": -10.572035,
+   "mjd": 61271.95822921,
+   "detector": "D4",
+   "uri": "ibe/data/spherex/qr3/level2/2026W34_1A/l2b-v27-2026-243/4/level2_2026W34_1A_0576_2D4_spx_l2b-v27-2026-243.fits",
+   "plane_id": "01A0EEED-F590-7333-A56A-EF425F68392B",
+   "vmag": 12.17
+  },
+  {
+   "ra": 263.679277,
+   "dec": -10.579171,
+   "mjd": 61272.025096444,
+   "detector": "D1",
+   "uri": "ibe/data/spherex/qr3/level2/2026W34_1A/l2b-v27-2026-243/1/level2_2026W34_1A_0590_1D1_spx_l2b-v27-2026-243.fits",
+   "plane_id": "01A0EEE2-9FD0-722C-9DEA-B3C2B341B503",
+   "vmag": 12.17
+  },
+  {
+   "ra": 263.679277,
+   "dec": -10.579171,
+   "mjd": 61272.025096444,
+   "detector": "D4",
+   "uri": "ibe/data/spherex/qr3/level2/2026W34_1A/l2b-v27-2026-243/4/level2_2026W34_1A_0590_1D4_spx_l2b-v27-2026-243.fits",
+   "plane_id": "01A0EEEF-D2F3-7CD3-A768-4EF3A00AFB6A",
+   "vmag": 12.17
+  },
+  {
+   "ra": 263.679441,
+   "dec": -10.579122,
+   "mjd": 61272.0265886775,
+   "detector": "D4",
+   "uri": "ibe/data/spherex/qr3/level2/2026W34_1A/l2b-v27-2026-243/4/level2_2026W34_1A_0590_2D4_spx_l2b-v27-2026-243.fits",
+   "plane_id": "01A0EEEF-DF28-7F88-BDAC-B48393B380A6",
+   "vmag": 12.17
+  },
+  {
+   "ra": 263.679442,
+   "dec": -10.579122,
+   "mjd": 61272.026588689,
+   "detector": "D1",
+   "uri": "ibe/data/spherex/qr3/level2/2026W34_1A/l2b-v27-2026-243/1/level2_2026W34_1A_0590_2D1_spx_l2b-v27-2026-243.fits",
+   "plane_id": "01A0EEE2-AE0E-7A4F-86DD-5837FA4F835D",
+   "vmag": 12.17
+  },
+  {
+   "ra": 263.679591,
+   "dec": -10.579069,
+   "mjd": 61272.0280809345,
+   "detector": "D4",
+   "uri": "ibe/data/spherex/qr3/level2/2026W34_1A/l2b-v27-2026-243/4/level2_2026W34_1A_0590_3D4_spx_l2b-v27-2026-243.fits",
+   "plane_id": "01A0EEEF-EB70-750F-8860-09F33E5D9024",
+   "vmag": 12.17
+  },
+  {
+   "ra": 263.679591,
+   "dec": -10.579069,
+   "mjd": 61272.028080946,
+   "detector": "D1",
+   "uri": "ibe/data/spherex/qr3/level2/2026W34_1A/l2b-v27-2026-243/1/level2_2026W34_1A_0590_3D1_spx_l2b-v27-2026-243.fits",
+   "plane_id": "01A0EEE2-BBC3-77FD-BBCB-8693F0C0FDDE",
+   "vmag": 12.17
+  },
+  {
+   "ra": 263.679727,
+   "dec": -10.579018,
+   "mjd": 61272.029573191496,
+   "detector": "D4",
+   "uri": "ibe/data/spherex/qr3/level2/2026W34_1A/l2b-v27-2026-243/4/level2_2026W34_1A_0590_4D4_spx_l2b-v27-2026-243.fits",
+   "plane_id": "01A0EEEF-F7D3-7CFB-8C3E-99E6569AE43A",
+   "vmag": 12.17
+  },
+  {
+   "ra": 263.679727,
+   "dec": -10.579018,
+   "mjd": 61272.029573203,
+   "detector": "D1",
+   "uri": "ibe/data/spherex/qr3/level2/2026W34_1A/l2b-v27-2026-243/1/level2_2026W34_1A_0590_4D1_spx_l2b-v27-2026-243.fits",
+   "plane_id": "01A0EEE2-C991-74AB-958C-C1A052717DC9",
+   "vmag": 12.17
+  },
+  {
+   "ra": 263.685529,
+   "dec": -10.586259,
+   "mjd": 61272.0934026245,
+   "detector": "D4",
+   "uri": "ibe/data/spherex/qr3/level2/2026W34_1A/l2b-v27-2026-243/4/level2_2026W34_1A_0601_1D4_spx_l2b-v27-2026-243.fits",
+   "plane_id": "01A0EEF1-C6D1-7B58-90C3-5303B0FBD05B",
+   "vmag": 12.17
+  },
+  {
+   "ra": 263.685529,
+   "dec": -10.586259,
+   "mjd": 61272.0934026245,
+   "detector": "D1",
+   "uri": "ibe/data/spherex/qr3/level2/2026W34_1A/l2b-v27-2026-243/1/level2_2026W34_1A_0601_1D1_spx_l2b-v27-2026-243.fits",
+   "plane_id": "01A0EEE4-9137-7BFF-B5AD-07744AC52615",
+   "vmag": 12.17
+  },
+  {
+   "ra": 263.68569,
+   "dec": -10.586208,
+   "mjd": 61272.09489487,
+   "detector": "D4",
+   "uri": "ibe/data/spherex/qr3/level2/2026W34_1A/l2b-v27-2026-243/4/level2_2026W34_1A_0601_2D4_spx_l2b-v27-2026-243.fits",
+   "plane_id": "01A0EEF1-D32C-7FE0-B96A-6491DE6E4D35",
+   "vmag": 12.17
+  },
+  {
+   "ra": 263.68569,
+   "dec": -10.586208,
+   "mjd": 61272.09489487,
+   "detector": "D1",
+   "uri": "ibe/data/spherex/qr3/level2/2026W34_1A/l2b-v27-2026-243/1/level2_2026W34_1A_0601_2D1_spx_l2b-v27-2026-243.fits",
+   "plane_id": "01A0EEE4-A049-715D-8A95-652948D76D7A",
+   "vmag": 12.17
+  },
+  {
+   "ra": 263.685836,
+   "dec": -10.586156,
+   "mjd": 61272.096387127,
+   "detector": "D1",
+   "uri": "ibe/data/spherex/qr3/level2/2026W34_1A/l2b-v27-2026-243/1/level2_2026W34_1A_0601_3D1_spx_l2b-v27-2026-243.fits",
+   "plane_id": "01A0EEE4-ADC5-7A3C-ABCB-5F6487B0D2CE",
+   "vmag": 12.17
+  },
+  {
+   "ra": 263.685836,
+   "dec": -10.586156,
+   "mjd": 61272.0963871385,
+   "detector": "D4",
+   "uri": "ibe/data/spherex/qr3/level2/2026W34_1A/l2b-v27-2026-243/4/level2_2026W34_1A_0601_3D4_spx_l2b-v27-2026-243.fits",
+   "plane_id": "01A0EEF1-DE7D-7E9A-848E-69CDB1DBEF8F",
+   "vmag": 12.17
+  },
+  {
+   "ra": 263.685968,
+   "dec": -10.586106,
+   "mjd": 61272.097879395,
+   "detector": "D4",
+   "uri": "ibe/data/spherex/qr3/level2/2026W34_1A/l2b-v27-2026-243/4/level2_2026W34_1A_0601_4D4_spx_l2b-v27-2026-243.fits",
+   "plane_id": "01A0EEF1-EAD4-7519-AE1D-17755789B112",
+   "vmag": 12.17
+  },
+  {
+   "ra": 263.685968,
+   "dec": -10.586106,
+   "mjd": 61272.097879395,
+   "detector": "D1",
+   "uri": "ibe/data/spherex/qr3/level2/2026W34_1A/l2b-v27-2026-243/1/level2_2026W34_1A_0601_4D1_spx_l2b-v27-2026-243.fits",
+   "plane_id": "01A0EEE4-BC51-7FC6-B845-801E36C6034B",
+   "vmag": 12.17
+  },
+  {
+   "ra": 263.717132,
+   "dec": -10.621715,
+   "mjd": 61272.433938747,
+   "detector": "D4",
+   "uri": "ibe/data/spherex/qr3/level2/2026W34_1A/l2b-v27-2026-243/4/level2_2026W34_1A_0672_1D4_spx_l2b-v27-2026-243.fits",
+   "plane_id": "01A0EEF9-6EE0-7807-A52C-749514BBFBD9",
+   "vmag": 12.18
+  },
+  {
+   "ra": 263.717132,
+   "dec": -10.621715,
+   "mjd": 61272.433938747,
+   "detector": "D1",
+   "uri": "ibe/data/spherex/qr3/level2/2026W34_1A/l2b-v27-2026-243/1/level2_2026W34_1A_0672_1D1_spx_l2b-v27-2026-243.fits",
+   "plane_id": "01A0EEED-31DA-7599-8864-2BC7299AD5A5",
+   "vmag": 12.18
+  },
+  {
+   "ra": 263.717285,
+   "dec": -10.621663,
+   "mjd": 61272.4354310155,
+   "detector": "D4",
+   "uri": "ibe/data/spherex/qr3/level2/2026W34_1A/l2b-v27-2026-243/4/level2_2026W34_1A_0672_2D4_spx_l2b-v27-2026-243.fits",
+   "plane_id": "01A0EEF9-794A-78D0-B38F-CE5734A60D06",
+   "vmag": 12.18
+  },
+  {
+   "ra": 263.717285,
+   "dec": -10.621663,
+   "mjd": 61272.4354310155,
+   "detector": "D1",
+   "uri": "ibe/data/spherex/qr3/level2/2026W34_1A/l2b-v27-2026-243/1/level2_2026W34_1A_0672_2D1_spx_l2b-v27-2026-243.fits",
+   "plane_id": "01A0EEED-3F7C-780C-9918-EBFE2A0AEF82",
+   "vmag": 12.18
+  },
+  {
+   "ra": 264.270766,
+   "dec": -11.143524,
+   "mjd": 61277.45500296,
+   "detector": "D4",
+   "uri": "ibe/data/spherex/qr3/level2/2026W35_1A/l2b_retry-v27-2026-245/4/level2_2026W35_1A_0296_1D4_spx_l2b_retry-v27-2026-245.fits",
+   "plane_id": "01A0EF15-8AB4-7BD3-BF65-1E5E02C41F73",
+   "vmag": 12.28
+  },
+  {
+   "ra": 264.270766,
+   "dec": -11.143524,
+   "mjd": 61277.45500296,
+   "detector": "D1",
+   "uri": "ibe/data/spherex/qr3/level2/2026W35_1A/l2b-v27-2026-243/1/level2_2026W35_1A_0296_1D1_spx_l2b-v27-2026-243.fits",
+   "plane_id": "01A0EF41-11B2-7E0A-9740-C05F42992AF2",
+   "vmag": 12.28
+  },
+  {
+   "ra": 264.270984,
+   "dec": -11.143481,
+   "mjd": 61277.456495217,
+   "detector": "D1",
+   "uri": "ibe/data/spherex/qr3/level2/2026W35_1A/l2b-v27-2026-243/1/level2_2026W35_1A_0296_2D1_spx_l2b-v27-2026-243.fits",
+   "plane_id": "01A0EF41-1C15-76D3-B21B-347F5ACBFF9A",
+   "vmag": 12.28
+  },
+  {
+   "ra": 264.270984,
+   "dec": -11.143481,
+   "mjd": 61277.4564952285,
+   "detector": "D4",
+   "uri": "ibe/data/spherex/qr3/level2/2026W35_1A/l2b-v27-2026-243/4/level2_2026W35_1A_0296_2D4_spx_l2b-v27-2026-243.fits",
+   "plane_id": "01A0EF4A-B68A-7777-82D0-F21CE140B048",
+   "vmag": 12.28
+  },
+  {
+   "ra": 264.27119,
+   "dec": -11.143434,
+   "mjd": 61277.457987462505,
+   "detector": "D4",
+   "uri": "ibe/data/spherex/qr3/level2/2026W35_1A/l2b-v27-2026-243/4/level2_2026W35_1A_0296_3D4_spx_l2b-v27-2026-243.fits",
+   "plane_id": "01A0EF4A-C70A-7902-A17C-C09F8DCEEEBB",
+   "vmag": 12.28
+  },
+  {
+   "ra": 264.27119,
+   "dec": -11.143434,
+   "mjd": 61277.457987474,
+   "detector": "D1",
+   "uri": "ibe/data/spherex/qr3/level2/2026W35_1A/l2b-v27-2026-243/1/level2_2026W35_1A_0296_3D1_spx_l2b-v27-2026-243.fits",
+   "plane_id": "01A0EF41-28F7-7769-A794-C9A0FDC843A9",
+   "vmag": 12.28
+  },
+  {
+   "ra": 264.271384,
+   "dec": -11.143387,
+   "mjd": 61277.459479708,
+   "detector": "D4",
+   "uri": "ibe/data/spherex/qr3/level2/2026W35_1A/l2b-v27-2026-243/4/level2_2026W35_1A_0296_4D4_spx_l2b-v27-2026-243.fits",
+   "plane_id": "01A0EF4A-D8AD-745A-B85D-CAC857EB9CC7",
+   "vmag": 12.28
+  },
+  {
+   "ra": 264.271384,
+   "dec": -11.143387,
+   "mjd": 61277.4594797195,
+   "detector": "D1",
+   "uri": "ibe/data/spherex/qr3/level2/2026W35_1A/l2b-v27-2026-243/1/level2_2026W35_1A_0296_4D1_spx_l2b-v27-2026-243.fits",
+   "plane_id": "01A0EF41-3755-787E-AA69-77DD48720D71",
+   "vmag": 12.28
+  },
+  {
+   "ra": 264.287919,
+   "dec": -11.157515,
+   "mjd": 61277.590389569,
+   "detector": "D4",
+   "uri": "ibe/data/spherex/qr3/level2/2026W35_1A/l2b-v27-2026-243/4/level2_2026W35_1A_0327_1D4_spx_l2b-v27-2026-243.fits",
+   "plane_id": "01A0EF4F-4601-779C-AFB0-FFAEF7FB49E2",
+   "vmag": 12.28
+  },
+  {
+   "ra": 264.287919,
+   "dec": -11.157515,
+   "mjd": 61277.590389569,
+   "detector": "D1",
+   "uri": "ibe/data/spherex/qr3/level2/2026W35_1A/l2b-v27-2026-243/1/level2_2026W35_1A_0327_1D1_spx_l2b-v27-2026-243.fits",
+   "plane_id": "01A0EF44-E526-7B81-8459-33B75884FE85",
+   "vmag": 12.28
+  },
+  {
+   "ra": 264.288141,
+   "dec": -11.157474,
+   "mjd": 61277.591881826,
+   "detector": "D1",
+   "uri": "ibe/data/spherex/qr3/level2/2026W35_1A/l2b-v27-2026-243/1/level2_2026W35_1A_0327_2D1_spx_l2b-v27-2026-243.fits",
+   "plane_id": "01A0EF44-F187-7C70-BB42-37132EF5A103",
+   "vmag": 12.28
+  },
+  {
+   "ra": 264.288141,
+   "dec": -11.157474,
+   "mjd": 61277.5918818375,
+   "detector": "D4",
+   "uri": "ibe/data/spherex/qr3/level2/2026W35_1A/l2b-v27-2026-243/4/level2_2026W35_1A_0327_2D4_spx_l2b-v27-2026-243.fits",
+   "plane_id": "01A0EF4F-55A1-74B2-82EF-B253FA2A168D",
+   "vmag": 12.28
+  },
+  {
+   "ra": 264.288351,
+   "dec": -11.157427,
+   "mjd": 61277.593374083,
+   "detector": "D4",
+   "uri": "ibe/data/spherex/qr3/level2/2026W35_1A/l2b-v27-2026-243/4/level2_2026W35_1A_0327_3D4_spx_l2b-v27-2026-243.fits",
+   "plane_id": "01A0EF4F-6376-7AE9-8165-601E6DF49F06",
+   "vmag": 12.28
+  },
+  {
+   "ra": 264.288351,
+   "dec": -11.157427,
+   "mjd": 61277.593374083,
+   "detector": "D1",
+   "uri": "ibe/data/spherex/qr3/level2/2026W35_1A/l2b-v27-2026-243/1/level2_2026W35_1A_0327_3D1_spx_l2b-v27-2026-243.fits",
+   "plane_id": "01A0EF44-FFAC-707E-B970-792CEC62E8BF",
+   "vmag": 12.28
+  },
+  {
+   "ra": 264.288549,
+   "dec": -11.15738,
+   "mjd": 61277.594866328,
+   "detector": "D1",
+   "uri": "ibe/data/spherex/qr3/level2/2026W35_1A/l2b-v27-2026-243/1/level2_2026W35_1A_0327_4D1_spx_l2b-v27-2026-243.fits",
+   "plane_id": "01A0EF45-0EA1-7D11-846F-4A6A212533A8",
+   "vmag": 12.28
+  },
+  {
+   "ra": 264.288549,
+   "dec": -11.15738,
+   "mjd": 61277.594866339496,
+   "detector": "D4",
+   "uri": "ibe/data/spherex/qr3/level2/2026W35_1A/l2b-v27-2026-243/4/level2_2026W35_1A_0327_4D4_spx_l2b-v27-2026-243.fits",
+   "plane_id": "01A0EF4F-71FB-7531-8014-FE28A0661FD3",
+   "vmag": 12.28
+  },
+  {
+   "ra": 264.384778,
+   "dec": -11.234246,
+   "mjd": 61278.338062613,
+   "detector": "D4",
+   "uri": "ibe/data/spherex/qr3/level2/2026W35_1A/l2b-v27-2026-243/4/level2_2026W35_1A_0495_1D4_spx_l2b-v27-2026-243.fits",
+   "plane_id": "01A0EF68-3FBE-7E64-9EA1-13F92B34875B",
+   "vmag": 12.29
+  },
+  {
+   "ra": 264.384778,
+   "dec": -11.234246,
+   "mjd": 61278.338062613,
+   "detector": "D1",
+   "uri": "ibe/data/spherex/qr3/level2/2026W35_1A/l2b-v27-2026-243/1/level2_2026W35_1A_0495_1D1_spx_l2b-v27-2026-243.fits",
+   "plane_id": "01A0EF5A-E83E-70A4-B59A-F670F8A4D38C",
+   "vmag": 12.29
+  },
+  {
+   "ra": 264.384998,
+   "dec": -11.234201,
+   "mjd": 61278.33955487,
+   "detector": "D1",
+   "uri": "ibe/data/spherex/qr3/level2/2026W35_1A/l2b-v27-2026-243/1/level2_2026W35_1A_0495_2D1_spx_l2b-v27-2026-243.fits",
+   "plane_id": "01A0EF5A-F7A5-7EA6-94D1-0533E066C444",
+   "vmag": 12.29
+  },
+  {
+   "ra": 264.384998,
+   "dec": -11.234201,
+   "mjd": 61278.33955487,
+   "detector": "D4",
+   "uri": "ibe/data/spherex/qr3/level2/2026W35_1A/l2b-v27-2026-243/4/level2_2026W35_1A_0495_2D4_spx_l2b-v27-2026-243.fits",
+   "plane_id": "01A0EF68-4EEE-7A91-8059-0BFD021BA394",
+   "vmag": 12.29
+  },
+  {
+   "ra": 264.385208,
+   "dec": -11.234154,
+   "mjd": 61278.341047115,
+   "detector": "D4",
+   "uri": "ibe/data/spherex/qr3/level2/2026W35_1A/l2b-v27-2026-243/4/level2_2026W35_1A_0495_3D4_spx_l2b-v27-2026-243.fits",
+   "plane_id": "01A0EF68-5BE1-7F7C-9CBC-31A26B0261A2",
+   "vmag": 12.29
+  },
+  {
+   "ra": 264.385208,
+   "dec": -11.234154,
+   "mjd": 61278.341047127,
+   "detector": "D1",
+   "uri": "ibe/data/spherex/qr3/level2/2026W35_1A/l2b-v27-2026-243/1/level2_2026W35_1A_0495_3D1_spx_l2b-v27-2026-243.fits",
+   "plane_id": "01A0EF5B-04BC-742B-9D1D-D65291C3CFA6",
+   "vmag": 12.29
+  },
+  {
+   "ra": 264.385406,
+   "dec": -11.234109,
+   "mjd": 61278.342539372,
+   "detector": "D4",
+   "uri": "ibe/data/spherex/qr3/level2/2026W35_1A/l2b-v27-2026-243/4/level2_2026W35_1A_0495_4D4_spx_l2b-v27-2026-243.fits",
+   "plane_id": "01A0EF68-695A-7B58-9423-7529CD63C9CC",
+   "vmag": 12.29
+  },
+  {
+   "ra": 264.385406,
+   "dec": -11.234109,
+   "mjd": 61278.342539372,
+   "detector": "D1",
+   "uri": "ibe/data/spherex/qr3/level2/2026W35_1A/l2b-v27-2026-243/1/level2_2026W35_1A_0495_4D1_spx_l2b-v27-2026-243.fits",
+   "plane_id": "01A0EF5B-102D-74F4-AFDB-1CA80DCE41A1",
+   "vmag": 12.29
+  },
+  {
+   "ra": 264.512782,
+   "dec": -11.331594,
+   "mjd": 61279.287900668496,
+   "detector": "D5",
+   "uri": "ibe/data/spherex/qr3/level2/2026W35_1A/l2b-v27-2026-243/5/level2_2026W35_1A_0682_1D5_spx_l2b-v27-2026-243.fits",
+   "plane_id": "01A0EF7D-E2E3-7D39-8C59-F649BB98D167",
+   "vmag": 12.31
+  },
+  {
+   "ra": 264.512782,
+   "dec": -11.331594,
+   "mjd": 61279.28790068,
+   "detector": "D2",
+   "uri": "ibe/data/spherex/qr3/level2/2026W35_1A/l2b-v27-2026-243/2/level2_2026W35_1A_0682_1D2_spx_l2b-v27-2026-243.fits",
+   "plane_id": "01A0EF77-D6E5-70C1-A234-A31779EF3E8E",
+   "vmag": 12.31
+  },
+  {
+   "ra": 264.513014,
+   "dec": -11.331551,
+   "mjd": 61279.289392914,
+   "detector": "D5",
+   "uri": "ibe/data/spherex/qr3/level2/2026W35_1A/l2b-v27-2026-243/5/level2_2026W35_1A_0682_2D5_spx_l2b-v27-2026-243.fits",
+   "plane_id": "01A0EF7D-EF65-73FB-B864-8463B0E81B34",
+   "vmag": 12.31
+  },
+  {
+   "ra": 264.513014,
+   "dec": -11.331551,
+   "mjd": 61279.2893929255,
+   "detector": "D2",
+   "uri": "ibe/data/spherex/qr3/level2/2026W35_1A/l2b-v27-2026-243/2/level2_2026W35_1A_0682_2D2_spx_l2b-v27-2026-243.fits",
+   "plane_id": "01A0EF77-E2C3-7976-BB74-8C7F09A5C454",
+   "vmag": 12.31
+  },
+  {
+   "ra": 264.569418,
+   "dec": -11.373171,
+   "mjd": 61279.695481687,
+   "detector": "D4",
+   "uri": "ibe/data/spherex/qr3/level2/2026W35_2A/l2b-v27-2026-246/4/level2_2026W35_2A_0042_1D4_spx_l2b-v27-2026-246.fits",
+   "plane_id": "01A0EF23-3713-7259-9693-61EE1B307A5D",
+   "vmag": 12.32
+  },
+  {
+   "ra": 264.569418,
+   "dec": -11.373171,
+   "mjd": 61279.695481698494,
+   "detector": "D1",
+   "uri": "ibe/data/spherex/qr3/level2/2026W35_2A/l2b-v27-2026-246/1/level2_2026W35_2A_0042_1D1_spx_l2b-v27-2026-246.fits",
+   "plane_id": "01A0EF1E-AE54-7507-9C9C-CD1538A87CC9",
+   "vmag": 12.32
+  },
+  {
+   "ra": 264.569652,
+   "dec": -11.373127,
+   "mjd": 61279.6969739325,
+   "detector": "D1",
+   "uri": "ibe/data/spherex/qr3/level2/2026W35_2A/l2b-v27-2026-246/1/level2_2026W35_2A_0042_2D1_spx_l2b-v27-2026-246.fits",
+   "plane_id": "01A0EF1E-BFD4-711C-9D5C-8FF3195F6B71",
+   "vmag": 12.32
+  },
+  {
+   "ra": 264.569652,
+   "dec": -11.373127,
+   "mjd": 61279.696973944,
+   "detector": "D4",
+   "uri": "ibe/data/spherex/qr3/level2/2026W35_2A/l2b-v27-2026-246/4/level2_2026W35_2A_0042_2D4_spx_l2b-v27-2026-246.fits",
+   "plane_id": "01A0EF23-4736-7895-8156-3A1D2FC5F649",
+   "vmag": 12.32
+  },
+  {
+   "ra": 264.569876,
+   "dec": -11.373081,
+   "mjd": 61279.698466201,
+   "detector": "D4",
+   "uri": "ibe/data/spherex/qr3/level2/2026W35_2A/l2b-v27-2026-246/4/level2_2026W35_2A_0042_3D4_spx_l2b-v27-2026-246.fits",
+   "plane_id": "01A0EF23-57FF-79D8-B27E-2E157CFE2113",
+   "vmag": 12.32
+  },
+  {
+   "ra": 264.569876,
+   "dec": -11.373081,
+   "mjd": 61279.698466201,
+   "detector": "D1",
+   "uri": "ibe/data/spherex/qr3/level2/2026W35_2A/l2b-v27-2026-246/1/level2_2026W35_2A_0042_3D1_spx_l2b-v27-2026-246.fits",
+   "plane_id": "01A0EF1E-D062-7272-847A-563387864798",
+   "vmag": 12.32
+  },
+  {
+   "ra": 264.588452,
+   "dec": -11.387023,
+   "mjd": 61279.830903828,
+   "detector": "D4",
+   "uri": "ibe/data/spherex/qr3/level2/2026W35_2A/l2b-v27-2026-246/4/level2_2026W35_2A_0066_1D4_spx_l2b-v27-2026-246.fits",
+   "plane_id": "01A0EF27-CB4E-75B0-A7B8-90B3F628AEDB",
+   "vmag": 12.32
+  },
+  {
+   "ra": 264.588452,
+   "dec": -11.387023,
+   "mjd": 61279.830903839495,
+   "detector": "D1",
+   "uri": "ibe/data/spherex/qr3/level2/2026W35_2A/l2b-v27-2026-246/1/level2_2026W35_2A_0066_1D1_spx_l2b-v27-2026-246.fits",
+   "plane_id": "01A0EF22-D100-7C7A-89FC-A9A76C8AF7B1",
+   "vmag": 12.32
+  },
+  {
+   "ra": 264.929856,
+   "dec": -11.620912,
+   "mjd": 61282.138320865,
+   "detector": "D4",
+   "uri": "ibe/data/spherex/qr3/level2/2026W35_2A/l2b-v27-2026-246/4/level2_2026W35_2A_0506_1D4_spx_l2b-v27-2026-246.fits",
+   "plane_id": "01A0EF76-516E-74AC-BFD1-476E2B75ADC8",
+   "vmag": 12.36
+  },
+  {
+   "ra": 264.929856,
+   "dec": -11.620912,
+   "mjd": 61282.138320865,
+   "detector": "D1",
+   "uri": "ibe/data/spherex/qr3/level2/2026W35_2A/l2b-v27-2026-246/1/level2_2026W35_2A_0506_1D1_spx_l2b-v27-2026-246.fits",
+   "plane_id": "01A0EF68-973A-7B5B-A1E3-75B5E32C7547",
+   "vmag": 12.36
+  },
+  {
+   "ra": 264.930116,
+   "dec": -11.620872,
+   "mjd": 61282.139813122,
+   "detector": "D1",
+   "uri": "ibe/data/spherex/qr3/level2/2026W35_2A/l2b-v27-2026-246/1/level2_2026W35_2A_0506_2D1_spx_l2b-v27-2026-246.fits",
+   "plane_id": "01A0EF68-A628-7217-BBE1-BB271E7FDA32",
+   "vmag": 12.36
+  },
+  {
+   "ra": 264.930116,
+   "dec": -11.620872,
+   "mjd": 61282.139813122,
+   "detector": "D4",
+   "uri": "ibe/data/spherex/qr3/level2/2026W35_2A/l2b-v27-2026-246/4/level2_2026W35_2A_0506_2D4_spx_l2b-v27-2026-246.fits",
+   "plane_id": "01A0EF76-61FC-732D-863D-C8F4684ED076",
+   "vmag": 12.36
+  },
+  {
+   "ra": 264.930367,
+   "dec": -11.620828,
+   "mjd": 61282.141305379,
+   "detector": "D4",
+   "uri": "ibe/data/spherex/qr3/level2/2026W35_2A/l2b-v27-2026-246/4/level2_2026W35_2A_0506_3D4_spx_l2b-v27-2026-246.fits",
+   "plane_id": "01A0EF76-755A-7315-A5BA-3956E6B07DE3",
+   "vmag": 12.36
+  },
+  {
+   "ra": 264.930367,
+   "dec": -11.620828,
+   "mjd": 61282.141305379,
+   "detector": "D1",
+   "uri": "ibe/data/spherex/qr3/level2/2026W35_2A/l2b-v27-2026-246/1/level2_2026W35_2A_0506_3D1_spx_l2b-v27-2026-246.fits",
+   "plane_id": "01A0EF68-B475-792C-877B-DA60F3AD82A2",
+   "vmag": 12.36
+  },
+  {
+   "ra": 269.978445,
+   "dec": -13.739067,
+   "mjd": 61305.355479812,
+   "detector": "D6",
+   "uri": "ibe/data/spherex/qr3/level2/2026W39_1A/l2b-v27-2026-268/6/level2_2026W39_1A_0306_1D6_spx_l2b-v27-2026-268.fits",
+   "plane_id": "01A0DB40-E09D-72BF-B276-67A4FEAEED50",
+   "vmag": 12.73
+  },
+  {
+   "ra": 269.978445,
+   "dec": -13.739067,
+   "mjd": 61305.355479812,
+   "detector": "D3",
+   "uri": "ibe/data/spherex/qr3/level2/2026W39_1A/l2b-v27-2026-268/3/level2_2026W39_1A_0306_1D3_spx_l2b-v27-2026-268.fits",
+   "plane_id": "01A0DB40-E1E0-7AB1-AC6A-8090C1974590",
+   "vmag": 12.73
+  },
+  {
+   "ra": 273.447273,
+   "dec": -14.575487,
+   "mjd": 61317.035021559495,
+   "detector": "D1",
+   "uri": "ibe/data/spherex/qr3/level2/2026W40_2A/l2b-v27-2026-285/1/level2_2026W40_2A_0662_1D1_spx_l2b-v27-2026-285.fits",
+   "plane_id": "01A132A7-1EAC-7F92-A432-3A4238778FB6",
+   "vmag": 12.87
+  },
+  {
+   "ra": 273.447273,
+   "dec": -14.575487,
+   "mjd": 61317.035021571,
+   "detector": "D4",
+   "uri": "ibe/data/spherex/qr3/level2/2026W40_2A/l2b-v27-2026-285/4/level2_2026W40_2A_0662_1D4_spx_l2b-v27-2026-285.fits",
+   "plane_id": "01A132A7-1D99-7F22-ABB9-D8F7D3C2727D",
+   "vmag": 12.87
+  },
+  {
+   "ra": 273.577597,
+   "dec": -14.601318,
+   "mjd": 61317.4426772655,
+   "detector": "D1",
+   "uri": "ibe/data/spherex/qr3/level2/2026W40_2A/l2b-v27-2026-285/1/level2_2026W40_2A_0784_1D1_spx_l2b-v27-2026-285.fits",
+   "plane_id": "01A132A7-1E80-7376-8C40-93F40B67F433",
+   "vmag": 12.87
+  },
+  {
+   "ra": 273.577597,
+   "dec": -14.601318,
+   "mjd": 61317.4426772655,
+   "detector": "D4",
+   "uri": "ibe/data/spherex/qr3/level2/2026W40_2A/l2b-v27-2026-285/4/level2_2026W40_2A_0784_1D4_spx_l2b-v27-2026-285.fits",
+   "plane_id": "01A132A7-1FA0-7647-8B50-A6E404583B71",
+   "vmag": 12.87
+  }
+ ]
+}
