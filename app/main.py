@@ -5,7 +5,7 @@ from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse
 
-from . import analysis, cache, catalog, flags, movers, nearby, render
+from . import analysis, cache, catalog, flags, movers, nearby, render, track
 from .config import settings
 from .discovery import DiscoveryError
 from .models import (
@@ -85,6 +85,20 @@ def nearby_objects(
         return nearby.named_objects(ra, dec, radius)
     except nearby.NearbyError as error:
         raise HTTPException(status_code=503, detail=str(error)) from error
+
+
+@app.get("/api/track/bodies")
+def track_bodies() -> dict:
+    return {"bodies": list(track.BODIES), "ready": track.available()}
+
+
+@app.get("/api/track")
+def track_body(body: str = Query(min_length=1, max_length=40), det: DetectorId = "D2") -> dict:
+    try:
+        return track.track(body, det)
+    except track.TrackError as error:
+        status = 503 if "not answering" in str(error) else 404
+        raise HTTPException(status_code=status, detail=str(error)) from error
 
 
 @app.get("/api/frames", response_model=FramesResponse)
