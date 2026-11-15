@@ -1,7 +1,9 @@
 """PNG rendering for the browser.
 
 All passes of one view share a single brightness scale, so a change in brightness between passes is real and not an
-artifact of per-image stretching.
+artifact of per-image stretching. The scale is anchored on the sky's own noise: the median sky sits just above black,
+each noise step is visible, and faint sources rise without bright ones blowing out. Images are upsampled four times
+with a Lanczos filter for display only; every measurement uses the original pixels.
 """
 
 import base64
@@ -14,21 +16,34 @@ BACKGROUND = np.array([14, 17, 22], dtype=np.float64)
 NO_DATA = np.array([32, 42, 54], dtype=np.float64)
 ARRIVED = np.array([242, 165, 65], dtype=np.float64)
 LEFT = np.array([92, 200, 255], dtype=np.float64)
+UPSCALE = 4
+SKY_SIGMAS = 4.0
+SKY_LIFT = 1.6
 
 
-def shared_limits(stacks: list[np.ndarray]) -> tuple[float, float]:
+def shared_limits(stacks: list[np.ndarray]) -> tuple[float, float, float]:
+    """Black point, white point and asinh softening shared by every pass of a view."""
     values = np.concatenate([s[np.isfinite(s)] for s in stacks]) if stacks else np.array([])
     if values.size == 0:
-        return 0.0, 1.0
-    low, high = np.percentile(values, [5, 99.7])
+        return 0.0, 1.0, 10.0
+    median = float(np.median(values))
+    sigma = float(1.4826 * np.median(np.abs(values - median)))
+    high = float(np.percentile(values, 99.9))
+    if sigma <= 0:
+        low = float(np.percentile(values, 5))
+        return low, max(high, low + 1.0), 10.0
+    low = median - SKY_SIGMAS * sigma
     if high <= low:
         high = low + 1.0
-    return float(low), float(high)
+    softening = float(np.clip(SKY_LIFT * (high - low) / (SKY_SIGMAS * sigma), 5.0, 50000.0))
+    return low, high, softening
 
 
 def _png(array: np.ndarray) -> bytes:
+    image = Image.fromarray(array)
+    image = image.resize((image.width * UPSCALE, image.height * UPSCALE), Image.LANCZOS)
     buffer = io.BytesIO()
-    Image.fromarray(array).save(buffer, format="PNG", optimize=True)
+    image.save(buffer, format="PNG", optimize=True)
     return buffer.getvalue()
 
 
